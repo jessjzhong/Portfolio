@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
     <head>
         <title>Portfolio | Jessica Zhong</title>
         <meta charset="utf-8">
@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,700i|Poppins:400,500,600|Rubik:400,500" rel="stylesheet">
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/homepage.css">
     </head>
     <body>
 
@@ -15,21 +15,24 @@
     <header>
         <nav class="navbar">
             <a href="index.html"><img src="images/logo.svg" alt="Jessica Zhong logo"></a>
-            <i class="fas fa-bars"></i>
-            <ul class="main-nav">
-                <li>
-                    <a href="projects.html" class="nav-links">WORK</a>
+                <div class="fixed">
+                    <div id="navbar-hamburger"><i class="fas fa-bars"></i>
+                     <ul class="main-nav">
+                    <li>
+                        <a href="index.html" class="nav-links">WORK</a>
+                    </li>
+                     <li>
+                         <a href="about.html" class="nav-links">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="resume.html" class="nav-links">RESUME</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-links">CONTACT</a>
                 </li>
-                <li>
-                    <a href="about.html" class="nav-links">ABOUT</a>
-                </li>
-                <li>
-                    <a href="resume.html" class="nav-links">RESUME</a>
-                </li>
-                <li>
-                    <a href="contact.html" class="nav-links">CONTACT</a>
-                </li>
-            </ul>
+                </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!---Hero Section-->
@@ -37,8 +40,10 @@
         <h1>HELLO!</h1>
         <h1>I'M JESS.</h1>
         <h2>I'm a UX Designer, based in San Francisco. I create user-centric solutions.</h2>
+        <div class="hero-bg-images">
             <img src="images/mobile_dots.svg" alt="mobile dots">
             <img src="images/polygon.svg" alt="polygon">
+        </div>
     </section> 
     <!--Scroll Arrow Indicator-->
     <div class="doublearrow">
@@ -47,7 +52,6 @@
     </div>
     
     <!--Project Section-->
-
     <section class="projects">
             <div class="casestudy1">
                 <img src="images/healthpointimage.svg" alt="healthpoint image">
@@ -57,12 +61,12 @@
                 <div class="project-description">
                     <p>HealthPoint is a mobile app developed specifically for health conscious individuals.  This app is used as a tool to track, share, and organize all health and fitness data in the palm of your hand.</p>
                 </div>
-                <button class="casestudybutton"><h4 class="button-text">CASE STUDY</h4></button>
+                <a href="project1.html"><button class="casestudybutton"><h4 class="button-text">VIEW CASE STUDY</h4></button></a>
             </div>
     </section>
 
-    <!--footer-->
-    <footer class="footer-section">
+    <!--Footer-->
+        <footer class="footer-section">
             <div class=container>
                 <h2>LET'S CONNECT</h2>
                 <h5>Thanks for checking out my work! Want to work together or have any questions? Let’s sync up.</h5>
@@ -74,6 +78,6 @@
                 </ul>
                 <p class="mini-text">© Jessica Zhong 2019</p>
             </div>
-    </footer>
+        </footer>
     </body>
 </html>
