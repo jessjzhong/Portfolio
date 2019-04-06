@@ -1,73 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <title>Portfolio | Jessica Zhong</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,700i|Poppins:400,500,600|Rubik:400,500" rel="stylesheet">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/homepage.css">
-    </head>
-    <body>
-    <!---Navagation-->
+
+<head>
+    <title>Portfolio | Jessica Zhong</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,700i|Poppins:400,500,600|Rubik:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/homepage.css">
+</head>
+
+<body id="homepage">
+    <!---Logo and Navagation-->
     <header>
-        <nav class="navbar">
-            <div class="container-nav">
+        <div id="logo">
             <a href="index.html"><img src="images/logo.svg" alt="Jessica Zhong logo"></a>
-                    <div id="navbar-hamburger"><i class="fas fa-bars"></i>
-                     <ul class="main-nav">
-                    <li><a href="index.html" class="nav-links">WORK</a></li>
-                    <li><a href="about.html" class="nav-links">ABOUT</a></li>
-                    <li><a href="resume.html" class="nav-links">RESUME</a></li>
-                    <li><a href="contact.html" class="nav-links">CONTACT</a></li>
+        </div>
+        <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="#">WORK</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">RESUME</a></li>
+                        <li><a href="#">CONTACT</a></li>
                     </ul>
                 </div>
-            </div>
-        </nav>
+             </div>
+        </div>
     </header>
     <!---Hero Section-->
-    <section class="hero">
-        <h1>HELLO!<br>I'm Jess.</h1>
-        <h2>I'm a UX Designer, based in San Francisco. I create user-centric solutions.</h2>
-        <div class="hero-bg-images">
-            <img src="images/mobile_dots.svg" alt="mobile dots">
-            <img src="images/polygon.svg" alt="polygon">
+   <section class="showcase">
+        <div class="inner">
+            <h1><span class="announce">HELLO!</span><br>I'M JESS.</h1>
+            <h2>I'm a UX Designer, based in San Francisco. I create user-centric solutions.</h2>
         </div>
-    </section> 
+        <div class="container-showcase-bg">
+            <img src="images/background-elements.svg" alt="background">
+        </div>
     <!--Scroll Arrow Indicator-->
-    <div class="doublearrow">
-        <h5>SEE MY WORK</h5>
-        <img src="images/angle-double-down.svg" alt="scroll down">
-    </div>
-    
-    <!--Project Section-->
-    <section class="projects">
-            <div class="casestudy1">
-                <img src="images/healthpointimage.svg" alt="healthpoint image">
-                <div class="project-title">
-                    <h2>HEALTHPOINT</h2>
-                </div>
-                <div class="project-description">
-                    <p>HealthPoint is a mobile app developed specifically for health conscious individuals.  This app is used as a tool to track, share, and organize all health and fitness data in the palm of your hand.</p>
-                </div>
-                <a href="project1.html"><button class="casestudybutton"><h4 class="button-text">VIEW CASE STUDY</h4></button></a>
-            </div>
+        <div class="container arrow">
+            <h5>SEE MY WORK</h5>
+            <img src="images/angle-double-down.svg" alt="scroll down">
+        </div>
     </section>
 
+    <!--Project Section-->
+    <main>
+        <section>
+            <img src="images/healthpointimage.svg" alt="healthpoint image">
+            <h2>HEALTHPOINT</h2>
+            <p>HealthPoint is a mobile app developed specifically for health conscious individuals. This app is used as a
+                tool to track, share, and organize all health and fitness data in the palm of your hand.</p>
+            <a href="project1.html"><button class="casestudybutton">
+                    <h4 class="button-text">VIEW CASE STUDY</h4>
+                </button></a>
+        </section>
+    </main>
     <!--Footer-->
-        <footer class="footer-section">
-            <div class=container>
-                <h2>LET'S CONNECT</h2>
-                <h5>Thanks for checking out my work! Want to work together or have any questions? Let’s sync up.</h5>
-                <ul class="contact-links">
-                    <li><a href="#" i class="far fa-envelope"></i></a></li>
-                    <li><a href="#" i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="#" i class="fab fa-github"></i></a><li>
-                    <li><a href="#" i class="fab fa-dribbble"></i></a></li>
-                </ul>
-                <p class="mini-text">© Jessica Zhong 2019</p>
-            </div>
-        </footer>
-    </body>
+    <footer>
+        <h2>LET'S CONNECT</h2>
+        <h5>Thanks for checking out my work! Want to work together or have any questions? Let’s sync up.</h5>
+        <ul>
+            <li><a href="#" i class="far fa-envelope"></i></a></li>
+            <li><a href="#" i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#" i class="fab fa-github"></i></a></li>
+            <li><a href="#" i class="fab fa-dribbble"></i></a></li>
+        </ul>
+        <p>© Jessica Zhong 2019</p>
+    </footer>
+</body>
+
 </html>
