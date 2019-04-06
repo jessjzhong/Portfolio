@@ -1,5 +1,5 @@
 /* structure */
-* {
+*, *:before, *:after{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -12,37 +12,42 @@ html {
     line-height: 1.4;
 }
 
+/* Hero Section */
+
 body {
-    display: grid;
-}
-
-:root {
-    --primary-color: #1F3948;
-    --overlay-color: #F9F9F9;
-    --menu-speed:0.75x;
-}
-
-.showcase {
-    max-width: 450px;
+    width: 41.1rem;
     margin: auto;
+}
+.showcase {
     overflow: hidden;
-    padding: 0 3rem;
 }
 
-.inner {
-    background-color: var(--primary-color);
+/* .inner {
+    background-color: #1F3948;
     color: #F9F9F9;
-    height: 40rem;
+    height: 50rem;
     position: relative;
-}
+    overflow: visible;
+    width: 100%;
+} */
 
 .showcase .inner {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: left;
     text-align: left;
     height: 100%;
-    padding-left: 3rem;
+    margin-top: 12rem;
+    padding: 0 9rem 0 3rem;
+    background-color: #1F3948;
+    color: #F9F9F9;
+    height: 50rem;
+    position: relative;
+    overflow: visible;
+    width: 100%;
+    z-index: 1;
 }
 
 h1 {
@@ -62,10 +67,28 @@ h2 {
 
 /* navigation */
 
+.navbar {
+    background: #1F3948;
+    position: fixed;
+    width: 41.1rem;
+    margin: 0;
+    z-index: 5;
+    height: 7rem;
+}
+
+#logo {
+    display: flex;
+    height: 5rem;
+    width: auto;
+    z-index: 3;
+    padding-left: 3rem;
+    padding-top: 1rem;
+}
+
 .menu-wrap {
     position: fixed;
     top: 0;
-    right: 0;
+    display: block;
     z-index: 1;
 }
 
@@ -85,10 +108,10 @@ h2 {
     top: 0;
     right: 0;
     z-index: 1;
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 7rem;
     padding: 1rem;
-    background: var(--primary-color);
+    background: #1F3948;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,6 +130,7 @@ h2 {
     transition: all 0.4s ease;
 }
 
+/* Hamburger lines - Top and Bottom */
 .menu-wrap .hamburger > div:before,
 .menu-wrap .hamburger > div:after {
     content: '';
@@ -148,7 +172,7 @@ h2 {
 
 .menu-wrap .toggler:checked ~ .menu > div {
     transform: scale(1);
-    transition-duration: var(--menu-speed);
+    transition-duration: 0.75x;
 }
 
 .menu-wrap .toggler:checked ~ .menu > div > div {
@@ -170,6 +194,7 @@ h2 {
 
 .menu-wrap .menu > div {
     background: #1F3948;
+    opacity: 0.9;
     border-radius: 50%;
     width: 200vw;
     height: 200vh;
