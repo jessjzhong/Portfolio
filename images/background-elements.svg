@@ -2,7 +2,7 @@
 <g filter="url(#filter0_d)">
 <path d="M217.351 283.866C209.624 269.247 209.624 251.753 217.351 237.134L310.172 61.5344C318.832 45.1505 335.844 34.9004 354.376 34.9004H532.624C551.156 34.9004 568.168 45.1504 576.828 61.5343L669.649 237.134C677.376 251.753 677.376 269.247 669.649 283.866L576.828 459.466C568.168 475.85 551.156 486.1 532.624 486.1H354.376C335.844 486.1 318.832 475.85 310.172 459.466L217.351 283.866Z" fill="#02547B"/>
 </g>
-<rect x="-1" y="345" width="186" height="610" transform="rotate(-90 -1 345)" fill="url(#pattern0)"/>
+<rect y="343" width="186" height="604" transform="rotate(-90 0 343)" fill="url(#pattern0)"/>
 <defs>
 <filter id="filter0_d" x="211.555" y="34.9004" width="483.889" height="471.199" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
