@@ -48,7 +48,7 @@ h4 {
   color:#9B0656;
   font-size: 1.6rem;
   font-weight: 600;
-  padding: 0 4.5rem 0 4.5rem;
+  padding: 0 4.5rem;
   font-family: 'open sans', sans-serif;
 }
 
@@ -65,8 +65,20 @@ h4 {
 }
 
 .ta-border {
-  border: 3px solid #9B0656;
-  width: 19.5rem;
+  border: 2.5px solid #9B0656;
+  width: 19.8rem;
+}
+
+.takeaway-header {
+  display: flex;
+  flex-direction: row;
+  margin: 4rem auto;
+  width: 35rem;
+}
+
+.takeaway-header > div {
+  padding: 1rem;
+
 }
 
 /* navigation */
@@ -165,7 +177,6 @@ h4 {
   padding: 6rem 0;
   margin: 0 auto;
   align-items: center;
-  justify-content: center;
   width: 35rem;
 }
 
@@ -261,5 +272,183 @@ h4 {
   text-align: center;
   padding-bottom: 1rem;
   margin-top: 1.8em;
+}
+
+
+.research-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 35rem;
+}
+
+.research-container > p {
+  margin: 3rem 0 6rem 0;
+}
+
+.survey-findings > h3 {
+  text-align: center;
+  color: #98B6CC;
+}
+
+.survey-container {
+  display: grid;
+  width: 35rem;
+  margin: 4rem auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  grid-template-areas:
+  "box1" "box2"
+  "box3" "box4"
+  "box5" "box6"
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+  border: 0.5rem solid #02547B;
+  border-radius: 5rem;
+  width: 17rem;
+  height: 17rem;
+}
+
+.data > h1 {
+  color: #02547B;
+  text-align: center;
+}
+
+.data-descrp > p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: normal;
+  width: 13rem;
+  margin: 0 auto;
+}
+
+.box-content1 {
+  padding: 1.1rem 2rem;
+}
+
+.box-content2 {
+  padding: 1rem 2rem;
+}
+
+.box-content3 {
+  padding: 1rem;
+}
+
+.box-content4 {
+  padding: 2.2rem;
+}
+
+.box-content5 {
+  padding: 1rem 0 0 1.1rem;
+}
+
+.box-content6 {
+  padding: 3.5rem 0.5rem;
+}
+
+.audience {
+  margin: 0 auto;
+  width: 35rem;
+  text-align: center;
+}
+
+.audience > p {
+  line-height: normal;
+}
+
+.main-cs-button {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5rem 4rem 0;
+}
+
+.cs-button {
+  background-color: #F9F9F9;
+  border: 3px solid #9B0656;
+  border-radius: 5rem;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  cursor: pointer;
+
+}
+
+.cs-button > .survey-btn-text {
+  padding: 0 3rem;
+}
+
+/* User Research Takeways */
+
+.takeaway-container {
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+  margin: 3rem auto;
+}
+
+.bullet-list > li {
+  list-style-type: disc;
+  color: #9B0656;
+  font-size: 3.5rem;
+  margin: 2rem 0;
+}
+
+.takeaway-list {
+  margin: 0 0 5rem 3rem;
+}
+
+/* Competitive Analysis */
+
+.comp-analysis {
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+  margin: 0 auto;
+}
+.comp-analysis > h2 {
+  text-align: center;
+}
+
+.comp-analysis > p {
+  margin: 4rem auto;
+}
+
+.comp-container {
+  display: grid;
+  width: 35rem;
+  margin: 0 auto 5rem auto;
+  grid-template-rows: 1fr;
+  grid-gap: 2.5rem;
+  grid-template-areas:
+  "comp-logo1"
+  "comp-list1"
+  "comp-divider1"
+  "comp-logo2"
+  "comp-list2"
+  "comp-divider2"
+  "comp-logo3"
+  "comp-list3"
+}
+
+.comp-list1, .comp-list2, .comp-list3 {
+  list-style-type: disc;
+  color: #9B0656;
+  font-size: 3.5rem;
+}
+
+.comp-list-container {
+  margin-left: 3rem;
+}
+
+.comp-logo1, .comp-logo2, .comp-logo3 {
+  text-align: center;
+}
+
+.cl2 {
+  margin: 1.5rem 0;
 }
 
