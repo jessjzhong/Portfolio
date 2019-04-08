@@ -1,8 +1,6 @@
 /* structure */
 *, *:before, *:after{
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   scroll-behavior: smooth;
 }
 
@@ -156,13 +154,9 @@ p {
    
 }
 
-.btn:hover {
-    opacity: 0.7;
-}
-
 .casestudybutton {
     background-color: #9B0656;
-    border: none;
+    border: 3px solid #9B0656;
     border-radius: 5rem;
     text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -170,14 +164,26 @@ p {
     cursor: pointer;
 }
 
-.button-text {
+.btn-text {
     color: #F9F9F9;
-    /* font-size: 1.4rem; */
+    font-size: 1.6rem;
     padding: 0 4.5rem 0 4.5rem;
+    font-family: 'open sans', sans-serif;
    
 }
+.casestudybutton:hover {
+    background-color: transparent;
+    color: #9B0656;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
 
+/* .casestudybutton .btn-text:hover {
+    color: #9B0656;
+} */
 
+/* Footer */
 footer {
     background-color: #1F3948;
     margin-top: 9rem;
@@ -201,11 +207,6 @@ footer {
     font-size: 3rem;
     justify-content: space-evenly;
     list-style-type: none;
-}
-
-.fa-envelope, .fa-linkedin, .fa-github, .fa-dribbble {
-    color: #F9F9F9;
-   
 }
 
 .creator-name {
@@ -294,7 +295,7 @@ footer {
 /* Rotate on hover when checked */
 /* .menu-wrap .toggler:checked:hover + .hamburger > div {
     transform: rotate(225deg);
-} */ */
+} */
 
 /* Show menu */
 /* 

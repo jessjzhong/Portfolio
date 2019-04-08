@@ -14,63 +14,88 @@
    <body>
 
     <!---Navagation-->
-    <header>
-        <nav class="navbar">
+    <header class="navbar">
+        <div id="logo">
             <a href="index.html"><img src="images/logo.svg" alt="Jessica Zhong logo"></a>
-            <div class="fixed">
-                <div id="navbar-hamburger"><i class="fas fa-bars"></i>
-                    <ul class="main-nav">
-                        <li>
-                            <a href="index.html" class="nav-links">WORK</a>
-                        </li>
-                        <li>
-                            <a href="about.html" class="nav-links">ABOUT</a>
-                        </li>
-                        <li>
-                            <a href="resume.html" class="nav-links">RESUME</a>
-                        </li>
-                        <li>
-                            <a href="contact.html" class="nav-links">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        </div>
+    
+        <!-- Pure CSS Hamburger -->
+        <!-- <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="#">WORK</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">RESUME</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                 </div>
+            </div> -->
+        <div id="navbar-hamburger"><img src="images/menu.svg" alt="hamburger">
+            <!-- <ul>
+                    <li><a href="#">WORK</a></li>
+                    <li><a href="#" >ABOUT</a></li>
+                    <li><a href="#" >RESUME</a></li>
+                    <li><a href="#" >CONTACT</a></li>
+                </ul> -->
+        </div>
     </header>
-    <main>
+   
     <!--Hero HealthPoint Section-->
     <section class="hero-hp">
         <div class="hp-header">
-            <img src="images/case-study/hp logo.svg">
-            <p>A new and improved way to experience HEALTH!</p>
+            <div class="hp-logo">
+                <img src="images/case-study/hp logo.svg">
+            </div>
+            <div class="slogan">
+                <p>A new and improved way to experience HEALTH!</p>
+            </div>
         </div>
-        <div class="hero-cs-images">
-            <img class= "cs-image" src="images/case-study/cs-header-image.svg" alt="hp case study image">
+        <div class="hero-cs-image">
+            <img src="images/case-study/cs-header-image.svg" alt="hp case study image">
+        </div>
+        <div class= "dots-bg"> 
             <img src="images/case-study/1440 Dots.svg">
         </div>
-            <a href="https://www.figma.com/proto/Ld9I0Bt4OET40LYXI68b9jAK/Marketing-Landing-Page---UX-Intensive?node-id=16%3A622&viewport=1885%2C-1719%2C0.25&scaling=scale-down"><button class="prototypebutton"><h4 class="button-text">VIEW PROTOTYPE</h4></button></a>
+        <div class="cs-btn">
+            <a href="https://www.figma.com/proto/Ld9I0Bt4OET40LYXI68b9jAK/Marketing-Landing-Page---UX-Intensive?node-id=16%3A622&viewport=1885%2C-1719%2C0.25&scaling=scale-down"><button class="proto-button"><span class="btn-text">VIEW PROTOTYPE</span></button></a>
+        </div>
     </section>
 
 <!--Design Prcoess-->
+    <main>
     <section class="overview">
-        <div class="overview-content">
-            <h1>OVERVIEW</h1>
-            <hr class="title-sections">
-            <p>HealthPoint is an all-in-one cloud-based platform that provides health enthusiasts an improved way to collect and store data. As digital health partner, we pride in our creation of a modern and encompassing way to support the user by giving the ability to analyze, connect and organize in the palm your hand.</p>
+        <div class="overview-container">
+            <div class="title-overview">
+                <h1>OVERVIEW</h1>
+            </div>
+            <div class="overview-line">
+                <hr class="title-sections">
+            </div>
+            <div class="overview-descrp">
+                <p>HealthPoint is an all-in-one cloud-based platform that provides health enthusiasts an improved way to collect and store data. As digital health partner, we pride in our creation of a modern and encompassing way to support the user by giving the ability to analyze, connect and organize in the palm of your hand.</p>
+            </div>
         </div>
-    <section class="project-info">
-        <div class="design-role">
+    <section class="project-info-container">
+        <div class="roles">
             <h3>ROLES</h3>
-            <ul>
+        </div>
+            <ul class="roles-descrp">
                 <li>UX Design</li>
                 <li>Visual Design</li>
                 <li>Brand Identity</li>
             </ul>
+        <div class="line-1">
             <hr class="project-info-divider"> 
         </div>
         <div class="deliverables">
             <h3>DELIVERABLES</h3>
-            <ul>
+        </div>
+            <ul class="deliverables-descrp">
                 <li>User Surveys</li>
                 <li>User Stories & Flows</li>
                 <li>Competitive Analysis</li>
@@ -82,34 +107,47 @@
                 <li>High Fidelity Mockups</li>
                 <li>Style Guide</li>
             </ul>
+        <div class="line2">
             <hr class="project-info-divider">
         </div>
-        <div class="design-tools">
+        <div class="tools">
             <h3>TOOLS</h3>
-            <ul>
+        </div>
+            <ul class="design-tools">
                 <li>Figma</li>
                 <li>Sketch</li>
                 <li>Usability Hub</li>
                 <li>Draw.io</li>
             </ul>
-        </div>
     </section>
 
     <!--Problem and Solution-->
-    <section class="challenge-solution">
-        <div class="challenge">
-            <h3>THE CHALLENGE</h3>
-            <p>There is a rising number of fitness and health apps out in the market that specializes in niche areas within this space. Users often use multiple apps and services for varying health needs, increasing the chance of lost information. They lack in analytics and a simple user interface, when users are now more than ever data driven, and constantly seeking for a solution that’s quick, efficient and effective.</p>
+    <section class="ps-section">
+        <div class="ps-container">
+            <div class="challenge">
+                <h3>THE CHALLENGE</h3>
+            </div>
+            <div class="c-descrp">
+                <p>There is a rising number of fitness and health apps out in the market that specializes in niche areas within this space. Users often use multiple apps and services for varying health needs, increasing the chance of lost information. They lack in analytics and a simple user interface, when users are now more than ever data driven, and constantly seeking for a solution that’s quick, efficient and effective.</p>
+            </div>
+            <div class="solution">
+                <h3>THE SOLUTION</h3>
+            </div>
+            <div class="s-descrp">
+                <p>HealthPoint aims to design a simple and intuitive user experience for users to have tools to view aggregated analytics towards their daily, monthly and yearly goals for a variety of data points. The users has the ability to consolidate all their health information and content pulled from different avenues into one convenient location.</p>
+            </div>
         </div>
-        <div class="solution">
-            <h3>THE SOLUTION</h3>
-            <p>HealthPoint aims to design a simple and intuitive user experience for users to have tools to view aggregated analytics towards their daily, monthly and yearly goals for a variety of data points. The users has the ability to consolidate all their health information and content pulled from different avenues into one convenient location.</p>
-        </div>
+    </section>
+    <section class="solution-container">
         <div class="solution-image">
             <img src="images/case-study/hp-solution-image.svg">
         </div>
-            <a href="https://www.figma.com/proto/Ld9I0Bt4OET40LYXI68b9jAK/Marketing-Landing-Page---UX-Intensive?node-id=16%3A622&viewport=1885%2C-1719%2C0.25&scaling=scale-down"><button class="prototypebutton"><h4 class="button-text">VIEW PROTOTYPE</h4></button></a>
-        </section>
+        <span class="background-color-bg"></span>
+    </section>
+        <div class="cs-btn">
+            <a href="https://www.figma.com/proto/Ld9I0Bt4OET40LYXI68b9jAK/Marketing-Landing-Page---UX-Intensive?node-id=16%3A622&viewport=1885%2C-1719%2C0.25&scaling=scale-down"><button
+                    class="proto-button"><span class="btn-text">VIEW PROTOTYPE</span></button></a>
+        </div>
     </section>
 
     <!--Discovery Section-->
@@ -181,7 +219,7 @@
             <a href="https://docs.google.com/document/d/1Qd5Zqm3bYKW253y6Mu0PbBIow5-NqhKpubJmy69WJy0/edit?usp=sharing"><button class="cs-button"><h4 class="button-text">VIEW SURVEY QUESTIONS</h4></button></a>
         <div class="takeways">
             <div class="takeaway-header">
-                <h2>Takeaways</h2>
+                <h2>Takeaways</h2><span><hr class="ta-border"></span>
             </div>
                 <p>More than half of users track their health and fitness in some sort of manner and majority want to have a simple and easy navigation. Through this survey, I was able to focus on the top 3 features to include in the mobile app. Therefore we need to include:</p>
             <ul class="bullet-list">
@@ -220,7 +258,7 @@
             <a href="https://docs.google.com/document/d/1hxjA3DvlCkrrpUY9XGVq4VCWfwkxB2d5bTLK6da1Dts/edit?usp=sharing"><button class="cs-button"><h4 class="button-text">VIEW SWOT ANALYSIS</h4></button></a>
         <div class="takeways">
             <div class="takeaway-header">
-                <h2>Takeaways</h2>
+                <h2>Takeaways</h2><span><hr class="ta-border"></span>
             </div>
             <p>With these findings, I was inspired to incorporate my designs with:</p>
                 <ul class="bullet-list">
@@ -520,20 +558,24 @@
         </div>
     </main>
 
-    <!--Footer-->
-    <footer class="footer-section">
-        <div class=container>
-            <h2>LET'S CONNECT</h2>
-            <h5>Thanks for checking out my work! Want to work together or have any questions? Let’s sync up.</h5>
-            <ul class="contact-links">
-                <li><a href="#" i class="far fa-envelope"></i></a></li>
-                <li><a href="#" i class="fab fa-linkedin"></i></a></li>
-                <li><a href="#" i class="fab fa-github"></i></a><li>
-                <li><a href="#" i class="fab fa-dribbble"></i></a></li>
-            </ul>
-            <p class="mini-text">© Jessica Zhong 2019</p>
+    <!-- Footer -->
+    <footer>
+        <div class="connect-text">
+            <h3>LET'S CONNECT</h3>
         </div>
+        <div class="sync-up">
+            <p>Thanks for checking out my work! Want to work together or have any questions? Let’s sync up.</p>
+        </div>
+        <div class="social-icons">
+            <ul class="social-flex-container">
+                <li><a href="#"><img src="images/mail.svg" alt="email"></a></li>
+                <li><a href="#"><img src="images/linked.svg" alt="linkedin"></a></li>
+                <li><a href="#"><img src="images/github.svg" alt="github"></a></li>
+                <li><a href="#"><img src="images/dribbble.svg" alt="dribbble"></a></li>
+            </ul>
+        </div>
+        <p class="creator-name">© Jessica Zhong 2019</p>
     </footer>
-</body>
-</html>
-
+    </body>
+    
+    </html>
