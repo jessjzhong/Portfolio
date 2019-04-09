@@ -142,6 +142,7 @@ h4 {
   padding: 35rem 0 9.6rem 0;
 }
 
+/* View Prototype Btn */
 .cs-btn {
   padding: 0 7.5rem 4rem 7.5rem;
   display: block;
@@ -358,6 +359,8 @@ h4 {
   margin-bottom: 4rem;
 }
 
+/* Case Study Buttons */
+
 .main-cs-button {
   display: block;
   text-align: center;
@@ -522,6 +525,97 @@ h4 {
 
 /* Branding and Identity */
 
+.branding-descrp {
+  margin: 0 auto;
+  width: 35rem;
+}
 
+.branding-descrp > .b-p-2 {
+  margin: 2rem auto 4rem auto;
+}
 
+/* Logo */
 
+.logo-design-header, .color-header {
+  margin: 6rem auto 2rem auto;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+}
+.logo-sketch-bg {
+  position: absolute;
+  z-index: 1;
+}
+
+.hp-dark-bg {
+  position: relative;
+  margin-top: 21rem;
+  text-align: center;
+  z-index: 2;
+}
+
+.hp-light-bg {
+  text-align: center;
+}
+
+.logo-caption {
+  text-align: center;
+  margin: 1.5rem auto 2rem;
+}
+
+/* Color Palette */
+
+.color-palette {
+  width: 35rem;
+  justify-items: center;
+  align-items: center;
+  margin: 1.5rem auto 2rem auto;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  grid-template-areas:
+  "color1 color2"
+  "color3 color4"
+  "color5 color6"
+  "color7 color7"
+}
+
+.color1, .color2, .color3, .color4, .color5, .color6, .color7 {
+  border-radius: 5rem;
+  width: 14rem;
+  height: 14rem;
+}
+
+.color1 {
+  background-color: #E63C34;
+}
+
+.color2 {
+  background-color: #E8E016;
+}
+
+.color3 {
+  background-color: #277177;
+}
+
+.color4 {
+  background-color: #333333;
+}
+
+.color5 {
+  background-color: #050921;
+}
+
+.color6 {
+  background-color: #B0B5AE;
+}
+
+.color7 {
+  border: 0.3rem solid #1F3948;
+  background-color: #FFFFFF;
+  justify-content: center;
+}
