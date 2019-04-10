@@ -11,28 +11,28 @@ html {
 /* Hero Section */
 
 body {
-    width: 41.1rem;
     margin: auto;
+    width: 41.1rem;
 }
 .showcase {
-    overflow: hidden;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .showcase .inner {
-    margin-top: 12rem;
-    padding: 5rem 5rem 5rem 3rem;
     background-color: #1F3948;
     color: #F9F9F9;
+    margin-top: 12rem;
+    padding: 5rem 5rem 5rem 3rem;
     position: relative;
     width: 100%;
     z-index: 2;
 }
 
 .container-showcase-bg {
-    top: 41rem;
     position: absolute;
+    top: 41rem;
     z-index: 1;
 }
 
@@ -112,34 +112,33 @@ h1 > .announce {
 }
 
 h2 {
-    font-family: 'rubik', sans-serif;
-    font-size: 4.8rem;
     color: #02547B;
-    font-weight: 500;
+    font-family: 'rubik', sans-serif;
     font-kerning: auto;
+    font-size: 4.8rem;
+    font-weight: 500;
 }
 
 h3 {
     font-family: 'rubik', sans-serif;
     font-size: 3.4em;
-    padding-top: 3rem;
     line-height: 130%;
+    padding-top: 3rem;
 }
 
 h4 {
+    color: #1F3948;
     font-family: 'open sans', sans-serif;
     font-size: 1.4rem;
-    color: #1F3948;
     font-weight: bold;
-    text-align: center;
     line-height: 190%;
+    text-align: center; 
 }
 
-
 p {
+    color: #1F3948;
     font-family: 'open sans', sans-serif;
     font-size: 1.8rem;
-    color: #1F3948;
     font-weight: 600;
     line-height: 170%;
 }
@@ -152,14 +151,13 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 30rem auto 0 auto;
-
 }
 
 .project-image1 {
    height: 100%;
    padding: 5rem 3rem 5rem 3rem;
-   width: auto;
    margin: 0 auto;
+   width: auto;
 }
 
 
@@ -174,36 +172,36 @@ p {
 }
 
 .btn { 
+    cursor: pointer;
     position: relative;
     width: 41.1rem;
-    cursor: pointer;
 }
 
 .csbutton {
-    display: block;
-    width: 26rem;
-    height: 5rem;
-    text-align: center;
-    text-decoration: none;
     background-color: #9B0656;
-    margin: 0 auto 5rem auto;
+    display: block;
     font-family: 'open sans', sans-serif;
     font-weight: 600;
     font-size: 1.6rem;
+    height: 5rem;
+    margin: 0 auto 5rem auto;
     padding: 1.4rem 0;
+    text-align: center;
+    text-decoration: none;
+    width: 26rem;
 }
 
 .btn-white { 
-    color:#F9F9F9; 
     border: 3px solid #9B0656; 
     border-radius: 5rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color:#F9F9F9; 
 }
 
 .btn-white:hover, .btn-white:active, .btn-white:focus  {
-    color: #9B0656;
     background-color: transparent;
     border: 3px solid #9B0656;
+    color: #9B0656;
     -webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
@@ -213,8 +211,8 @@ p {
 
 footer {
     background-color: #1F3948;
-    margin-top: 9rem;
     color: #F9F9F9;
+    margin-top: 9rem;
 }
 
 .connect-text {
@@ -223,9 +221,9 @@ footer {
 
 .sync-up > h4 {
     color: #F9F9F9;
-    padding: 1.7rem 3rem 3.4rem 3rem;
     font-weight: 400;
     line-height: normal;
+    padding: 1.7rem 3rem 3.4rem 3rem;
 }
 
 .social-flex-container {
@@ -248,81 +246,80 @@ footer {
 .navbar {
     background-color: #1F3948;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    height: 7rem;
+    margin: 0;
     position: fixed;
     width: 41.1rem;
-    margin: 0;
     z-index: 5;
-    height: 7rem;
 }
 
 #logo {
+    display: inline-block;
+    padding-left: 3rem;
+    padding-top: 1rem;
     height: 5rem;
     width: auto;
     z-index: 3;
-    padding-left: 3rem;
-    padding-top: 1rem;
-    display: inline-block;
 }
 
 /* Hamburger-Menu */
 
 .menu-wrap {
-  position: fixed;
-  width: 41.1rem;
-    /* top: 0;
-    right: 0; */
-  display: inline-block;
-  margin-left: -7.8rem; 
-  z-index: 1;
+    display: inline-block;
+    margin-left: -7.8rem; 
+    position: fixed;
+    width: 41.1rem;
+    z-index: 1;
 }
+
 .menu-wrap .toggler {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
     cursor: pointer;
-    width: 5rem;
     height: 5rem;
     opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5rem;
+    z-index: 2;
 } 
 
 .menu-wrap .hamburger {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    width: 5rem;
-    height: 7rem;
-    padding: 1rem;
+    align-items: center;
     background: #1F3948;
     display: flex;
-    align-items: center;
+    height: 7rem;
     justify-content: center;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5rem;
+    z-index: 1; 
 } 
 
 /* hamburger line */
 
 .menu-wrap .hamburger > div {
-    position: relative;
-    width: 100%;
-    height: 0.3rem;
+    align-items: center;
     background-color: #F9F9F9;
     display: flex;
-    align-items: center;
+    height: 0.3rem;
     justify-content: center;
+    position: relative;
     transition: all 0.4s ease;
+    width: 100%;
 }
 /* Hamburger lines - Top and Bottom */
 
  .menu-wrap .hamburger > div:before,
 .menu-wrap .hamburger > div:after {
+    background: inherit;
     content: '';
+    height: 0.3rem;
     position: absolute;
-    z-index: 1;
     top: -1rem;
     width: 100%;
-    height: 0.3rem;
-    background: inherit;
+    z-index: 1;
 } 
 
 /* Moves line down */
@@ -370,43 +367,46 @@ footer {
     transition: opacity 0.4s ease;
 }
 .menu-wrap .menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    overflow: hidden;
-    display: flex;
     align-items: center;
-    justify-content: center;
-}
-.menu-wrap .menu > div {
-    background: #1F3948;
-    opacity: 0.9;
-    /* border-radius: 50%; */
-    width: 41.1rem;
+    display: flex;
     height: 100%;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+}
+
+.menu-wrap .menu > div {
+    align-items: center;
+    background: #1F3948;
     display: flex;
     flex: none;
-    align-items: center;
+    height: 100%;
     justify-content: center;
+    opacity: 0.9;
     transform: scale(0);
     transition: all 0.4s ease;
+    width: 41.1rem;
 }
+
 .menu-wrap .menu > div > div {
-    text-align: center;
     max-width: 41.1rem;
     max-height: 100vh;
     opacity: 0;
+    text-align: center;
     transition: opacity 0.4s ease;
 }
+
 .menu-wrap .menu > div > div > ul > li {
-    list-style: none;
     color: #F9F9F9;
     font-size: 1.5rem;
+    list-style: none;
     padding: 1rem;
 }
+
 .menu-wrap .menu > div > div > ul > li > a {
     color: inherit;
     text-decoration: none;
