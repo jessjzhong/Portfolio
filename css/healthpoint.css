@@ -78,34 +78,6 @@ h4 {
   padding: 1rem;
 }
 
-/* navigation */
-
-.navbar {
-  background:#1F3948;
-  position: fixed;
-  width: 41.1rem;
-  margin: 0;
-  z-index: 5;
-  height: 7rem;
-}
-
-#logo {
-  height: 5rem;
-  width: auto;
-  padding-left: 3rem;
-  padding-top: 1rem;
-  display: inline-block;
-}
-
-#navbar-hamburger {
-  color: #F9F9F9;
-  float: right;
-  font-size: 3rem;
-  padding-right: 3rem;
-  padding-top: 2rem;
-  width: auto;
-}
-
 /* Header */
 
 .hero-hp .hp-header {
@@ -142,28 +114,72 @@ h4 {
 }
 
 /* View Prototype Btn */
-.cs-btn {
-  padding: 0 7.5rem 4rem 7.5rem;
-  display: block;
-  margin: 0 auto;
+.btn { 
+    position: relative;
+    width: 41.1rem;
+    cursor: pointer;
 }
 
-.proto-button {
-  background-color: #9B0656;
-  border: 3px solid #9B0656;
-  border-radius: 5rem;
-  text-align: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 1rem;
-  cursor: pointer;
+.ptbutton {
+    display: block;
+    width: 26rem;
+    height: 5rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #9B0656;
+    margin: 0 auto 5rem auto;
+    font-family: 'open sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    padding: 1.4rem 0;
 }
 
-.btn-text {
-  color: #F9F9F9;
-  font-size: 1.6rem;
-  font-weight: 600;
-  padding: 0 4.5rem 0 4.5rem;
-  font-family: 'open sans', sans-serif;
+.btn-white { 
+    color:#F9F9F9; 
+    border: 3px solid #9B0656; 
+    border-radius: 5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-white:hover, .btn-white:active, .btn-white:focus  {
+    color: #9B0656;
+    background-color: transparent;
+    border: 3px solid #9B0656;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+/* Case Study Buttons */
+
+.csbutton {
+    display: block;
+    width: 26rem;
+    height: 5rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #F9F9F9;
+    margin: 0 auto 5rem auto;
+    font-family: 'open sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    padding: 1.4rem 0;
+}
+
+.btn-magenta { 
+    color:#9B0656; 
+    border: 3px solid #9B0656; 
+    border-radius: 5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-magenta:hover, .btn-magenta:active, .btn-magenta:focus  {
+    color: #F9F9F9;
+    background-color: #9B0656;
+    border: 3px solid #9B0656;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 /* Overview */
@@ -363,27 +379,6 @@ h4 {
   margin-bottom: 4rem;
 }
 
-/* Case Study Buttons */
-
-.main-cs-button {
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.cs-button {
-  background-color: #F9F9F9;
-  border: 3px solid #9B0656;
-  border-radius: 5rem;
-  text-align: center;
-  padding: 1rem;
-  cursor: pointer;
-}
-
-.cs-button > .survey-btn-text {
-  padding: 0 3rem;
-}
-
 /* User Research Takeways */
 
 .takeaway-container {
@@ -448,15 +443,11 @@ h4 {
   border-radius: 5rem;
   width: 35rem;
   margin: 4rem auto;
-
 }
 
 .persona {
   width: 30rem;
   margin: 0 auto 5rem auto;
-}
-
-.user-persona-container {
   text-align: center;
 }
 
@@ -541,7 +532,7 @@ h4 {
 /* Logo Design*/
 
 .logo-header > h2 {
-  margin-top: 7rem;
+  margin-top: 3.5rem;
 }
 
 .logo-container {
@@ -584,7 +575,6 @@ h4 {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 6rem;
-  grid-column-gap: .5rem;
   grid-template-areas:
   "color1 color2"
   "color3 color4"
@@ -728,7 +718,7 @@ h4 {
   display: grid;
   grid-template-columns: 1fr;
   background-color: #02547B;
-  margin: 0 auto 4rem auto;
+  margin: 0 auto 3rem auto;
   padding: 4.5rem 0;
   text-align: center;
   grid-template-areas:
@@ -748,6 +738,7 @@ h4 {
   font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 1.8rem;
+  padding-top: 0.4rem;
 }
 
 /* Usability Testing: Round 1 */
@@ -776,7 +767,9 @@ h4 {
 
 .usability1-photos > .caption {
   width: 35rem;
-  margin: 1.8rem auto 4rem auto;
+  margin: 1.3rem auto 4rem auto;
+  line-height: normal;
+  font-weight: 500;
 }
 
 /* Preference Testing */
@@ -825,12 +818,12 @@ h4 {
   background-color: #02547B;
   justify-content: center;
   padding-top: 4rem;
-  margin-bottom: 2rem
+  margin-bottom: 1rem;
 }
 
 .testing-2-images > p {
   width: 35rem;
-  margin: 1.8rem auto 4rem auto;
+  margin: 1rem auto 4rem auto;
   text-align: center;
 }
 
@@ -913,4 +906,173 @@ footer {
   font-size: 1.2rem;
   font-weight: 400;
   padding: 3rem 14.2rem 4rem 14.2rem;
+}
+
+/* Navigation */
+
+/* Navigation */
+
+.navbar {
+    background-color: #1F3948;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 41.1rem;
+    margin: 0;
+    z-index: 5;
+    height: 7rem;
+}
+
+#logo {
+    height: 5rem;
+    width: auto;
+    z-index: 3;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    display: inline-block;
+}
+
+/* Hamburger-Menu */
+
+.menu-wrap {
+  position: fixed;
+  width: 41.1rem;
+  display: inline-block;
+  margin-left: -7.8rem; 
+  z-index: 1;
+}
+.menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+    opacity: 0;
+} 
+
+.menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 5rem;
+    height: 7rem;
+    padding: 1rem;
+    background: #1F3948;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+/* hamburger line */
+
+.menu-wrap .hamburger > div {
+    position: relative;
+    width: 100%;
+    height: 0.3rem;
+    background-color: #F9F9F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+/* Hamburger lines - Top and Bottom */
+
+ .menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -1rem;
+    width: 100%;
+    height: 0.3rem;
+    background: inherit;
+} 
+
+/* Moves line down */
+.menu-wrap .hamburger > div:after {
+    top: 1rem;
+} 
+
+/* Toggler animate */
+.menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+}
+/* Turns lines into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+} 
+
+/* Rotate on hover when checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+} 
+
+/* Show menu */
+
+.menu-font {
+  color: #F9F9F9;
+  font-size: 2.8rem;
+}
+
+.menu-font:hover {
+  color: #E7AFB8;
+}
+
+.menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+}
+.menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: 0.75x;
+} 
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+.menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-wrap .menu > div {
+    background: #1F3948;
+    opacity: 0.9;
+    width: 41.1rem;
+    height: 100%;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+}
+.menu-wrap .menu > div > div {
+    text-align: center;
+    max-width: 41.1rem;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.menu-wrap .menu > div > div > ul > li {
+    list-style: none;
+    color: #F9F9F9;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.menu-wrap .menu > div > div > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4 ease;
 }
