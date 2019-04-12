@@ -11,8 +11,8 @@ html {
 /* Hero Section */
 
 body {
-    margin: auto;
-    width: 41.1rem;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .showcase {
@@ -34,7 +34,13 @@ body {
 .container-showcase-bg {
     position: absolute;
     top: 41rem;
+    width: 100%;
     z-index: 1;
+
+}
+
+.background-large {
+    display: none;
 }
 
 .container-arrow {
@@ -148,26 +154,37 @@ p {
 
 .projects-container {
     background-color: #91B7CF;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
     margin: 30rem auto 0 auto;
+    width: 100%;
+    grid-template-areas: 
+    "project-image1"
+    "project-title"
+    "project-descrp"
+    "csbutton"
 }
 
 .project-image1 {
-   height: 100%;
-   padding: 5rem 3rem 5rem 3rem;
-   margin: 0 auto;
-   width: auto;
+    grid-area: project-image1;
+    height: 100%;
+    padding: 5rem 3rem 5rem 3rem;
+    margin: 0 auto;
+    width: auto;
 }
 
+.solution-large {
+    display: none;
+}
 
 .project-title {
+    grid-area: project-title;
     height: 100%;
     padding: 0 4.8rem 1.2rem 3rem;
 }
 
 .project-descrp {
+    grid-area: project-descrp;
     height: 100%;
     padding: 1rem 3rem 4.3rem 3rem;
 }
@@ -175,11 +192,12 @@ p {
 .btn { 
     cursor: pointer;
     position: relative;
-    width: 41.1rem;
+    width: 100%;
 }
 
 .csbutton {
     background-color: #9B0656;
+    grid-area: csbutton;
     display: block;
     font-family: 'open sans', sans-serif;
     font-weight: 600;
@@ -213,24 +231,36 @@ p {
 footer {
     background-color: #1F3948;
     color: #F9F9F9;
+    display: grid;
     margin-top: 9rem;
+    text-align: center;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "connect-text"
+    "sync-up"
+    "social-icons"
+    "creator-name"
 }
 
 .connect-text {
+    grid-area: connect-text;
     text-align: center;
 }
 
 .sync-up > h4 {
     color: #F9F9F9;
     font-weight: 400;
+    grid-area: sync-up;
     line-height: normal;
-    padding: 1.7rem 3rem 3.4rem 3rem;
+    margin: 1.5rem auto 2.5rem auto;
 }
 
 .social-flex-container {
     display: flex;
     flex-direction: row;
     font-size: 3rem;
+    grid-area: social-flex-container;
     justify-content: space-evenly;
     list-style-type: none;
 }
@@ -239,7 +269,8 @@ footer {
     color: #F9F9F9;
     font-size: 1.2rem;
     font-weight: 400;
-    padding: 3rem 14.2rem 4rem 14.2rem;
+    grid-area: creator-name;
+    padding: 3rem 14.2rem;
 }
 
 /* Navigation */
@@ -250,7 +281,7 @@ footer {
     height: 7rem;
     margin: 0;
     position: fixed;
-    width: 41.1rem;
+    width: 100%;
     z-index: 5;
 }
 
@@ -261,6 +292,10 @@ footer {
     height: 5rem;
     width: auto;
     z-index: 3;
+}
+
+.desktop-menu {
+    display: none;
 }
 
 /* Hamburger-Menu */
@@ -390,11 +425,11 @@ footer {
     opacity: 0.9;
     transform: scale(0);
     transition: all 0.4s ease;
-    width: 41.1rem;
+    width: 100%;
 }
 
 .menu-wrap .menu > div > div {
-    max-width: 41.1rem;
+    max-width: 100%;
     max-height: 100vh;
     opacity: 0;
     text-align: center;
@@ -412,5 +447,180 @@ footer {
     color: inherit;
     text-decoration: none;
     transition: color 0.4 ease;
+}
+
+/* Media Queries / Responsive Design */
+
+/* For Tablets */
+@media screen and (min-width: 600px) {
+.showcase .inner {
+    margin-top: 16rem;
+    padding: 8rem 6rem 11rem 4rem;
+    width: 83%;
+    height: 43rem;
+}
+
+.mobile-bg {
+    display: none;
+}
+
+.background-large {
+    display: block;
+}
+
+.container-showcase-bg {
+    top: -10rem;
+}
+
+.container-arrow {
+    top: 10rem;
+}
+
+.smaller-solution {
+    display: none;
+} 
+
+.solution-large {
+    display: block;
+}
+
+.projects-container {
+    margin: 17rem auto 0 auto;
+}
+
+.project-title  {
+    margin-left: 8rem;
+} 
+
+.project-descrp {
+    margin-left: 8rem;
+    width: 70%;
+}
+
+.csbutton {
+    margin: 0 auto 6rem 11rem;
+} 
+
+/* Navigation */
+
+.navbar {
+    height: 8.5rem;
+}
+
+#logo {
+    padding: 2rem 0 2rem 4rem;
+}
+
+/* Footer */
+
+.social-flex-container {
+    width: 100%;
+    justify-content: center;
+}
+
+.social-flex-container > li > a > img {
+    padding: 0 2rem;
+}
+
+/* Hamburger Menu */
+
+.menu-wrap .hamburger {
+    display: none;
+}
+
+.menu-wrap .toggler {
+    display: none;
+}
+
+.menu-wrap .menu {
+    display: none;
+}
+
+.desktop-menu {
+    display: inline-block;
+    position: fixed;
+    width: 90%;
+    z-index: 1;
+}
+
+.desktop-menu > .menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 3rem 0;
+}
+
+.menu-font-desktop {
+    color: #F9F9F9;
+    font-size: 1.6rem;
+    padding: 0 2.5rem;
+}
+
+.menu-font-desktop:hover {
+    color: #E7AFB8;
+}
+}
+
+/* For Desktop */
+
+@media screen and (min-width: 991px) {
+.showcase .inner {
+    /* margin-top: 16rem; */
+    padding: 10rem 12rem 11rem 9rem;
+    width: 55%;
+    height: 45rem;
+}
+
+.background-large {
+    display: block;
+}
+
+.container-showcase-bg {
+    top: -10rem;
+
+}
+.container-arrow {
+    top: 10rem;
+}
+
+.smaller-solution {
+    display: none;
+}
+
+.solution-large {
+    display: block;
+}
+
+.projects-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 17rem auto 0 auto;
+    grid-template-areas: 
+    "project-title project-image1"
+    "project-descrp project-image1"
+    "csbutton project-image1"
+}
+
+.project-title  {
+    margin-top: 2rem;
+    padding: 10rem 0 0 9rem;
+}
+
+.project-descrp {
+    padding: 2rem 3rem 0 9rem;
+    width: 60rem;
+}
+
+.csbutton {
+    margin: 0 auto 11rem 17rem;
+}
+/* Navigation */
+
+.desktop-menu {
+    width: 90%;
+}
+#logo {
+    padding: 1.5rem 0 1.5em 6rem;
+}
 }
 

@@ -78,7 +78,7 @@ p {
 
 .mobile-dots  {
     position: absolute;
-    top: 118.5rem;
+    top: 115.5rem;
     z-index: 1;  
 }
 
@@ -90,10 +90,64 @@ p {
     margin: 3.5rem auto 7rem auto;
 }
 
-
 .arrow {
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
     text-align: center;
+}
+
+.bounce {
+    -moz-animation: bounce 3s infinite;
+	-webkit-animation: bounce 3s infinite;
+	animation: bounce 3s infinite;    
+}
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
 }
 
 /* About Me */
@@ -178,7 +232,7 @@ footer {
   color: #F9F9F9;
   font-size: 1.2rem;
   font-weight: 400;
-  padding: 3rem 14.2rem 4rem 14.2rem;
+  padding: 3rem 14.2rem;
 }
 
 /* Navigation */

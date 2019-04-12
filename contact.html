@@ -18,7 +18,7 @@
         <div id="logo">
             <a href="index.html"><img src="images/logo.svg" alt="Jessica Zhong logo"></a>
         </div>
-        <!-- Hamburger -->
+        
         <div class="menu-wrap">
             <input type="checkbox" class="toggler">
             <div class="hamburger">
@@ -28,17 +28,17 @@
                 <div>
                     <div>
                         <ul>
-                            <li><a href="#">
+                            <li><a href="project1.html">
                                     <p class="menu-font">WORK</p>
                                 </a></li>
-                            <li><a href="#">
+                            <li><a href="about.html">
                                     <p class="menu-font">ABOUT</p>
                                 </a></li>
                             <li><a
-                                    href="https://drive.google.com/file/d/1taI85vJrwT7yf00FxCrO198nCkgO-V_a/view?usp=sharing">
+                                    href="https://drive.google.com/file/d/1taI85vJrwT7yf00FxCrO198nCkgO-V_a/view?usp=sharing" target="_blank">
                                     <p class="menu-font">RESUME</p>
                                 </a></li>
-                            <li><a href="#">
+                            <li><a href="contact.html">
                                     <p class="menu-font">CONTACT</p>
                                 </a></li>
                         </ul>
@@ -46,44 +46,65 @@
                 </div>
             </div>
         </div>
+    <!-- Desktop Menu -->
+    <div class="desktop-menu">
+        <ul class="menu-list">
+            <li><a href="#project">
+                    <p class="menu-font-desktop">WORK</p>
+                </a></li>
+            <li><a href="about.html">
+                    <p class="menu-font-desktop">ABOUT</p>
+                </a></li>
+            <li><a href="https://drive.google.com/file/d/1taI85vJrwT7yf00FxCrO198nCkgO-V_a/view?usp=sharing"
+                    target="_blank">
+                    <p class="menu-font-desktop">RESUME</p>
+                </a></li>
+            <li><a href="contact.html">
+                    <p class="menu-font-desktop">CONTACT</p>
+                </a></li>
+        </ul>
+    </div>
     </nav>
 <!-- Header -->
-<header>
-    <h1>Say HELLO!</h1>
-    <p>Want to collaborate or have any questions? Let’s sync up!</p>
+<section class="contact">
+<header class="header-bg">
+    <div class="header container">
+        <h1>Say HELLO!</h1>
+        <h2>Want to collaborate or have any questions? Let’s sync up!</h2>
+    </div>
 </header>
 <!-- Contact Form -->
-<div class="container">
-    <form action="action_page.php">
+<div class="form container">
+    <form action="https://formspree.io/jesssicazhong@gmail.com" method="POST">
 
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name..">
+        <label for="name">NAME</label>
+        <input type="text" id="name" name="name" placeholder="Your name" >
 
         <label for="email">EMAIL</label>
-        <input type="text" id="email" name="email" placeholder="Your Email..">
+        <input type="text" id="email" name="email" placeholder="Your email">
 
         <label for="message">MESSAGE</label>
-        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+        <textarea id="message" name="message" placeholder="Message" ></textarea>
 
-        <input type="submit" value="Submit">
+        <input class="btn" name="submit" type="submit" value="SUBMIT">
 
     </form>
 </div>
-
+</section>
         <!--Footer-->
-        <footer>
+<footer>
             <div class="connect-text">
-                <h3>LET'S CONNECT</h3>
+                <h2>LET'S CONNECT</h2>
             </div>
             <div class="sync-up">
-                <h4>Thanks for checking out my work! Want to work together or have any questions? Let’s sync up.</h4>
+                <p>Thanks for checking out my work! Want to work together or have any questions? Let’s sync up.</p>
             </div>
             <div class="social-icons">
                 <ul class="social-flex-container">
-                    <li><a href="#"><img src="images/mail.svg" alt="email"></a></li>
-                    <li><a href="#"><img src="images/linked.svg" alt="linkedin"></a></li>
-                    <li><a href="#"><img src="images/github.svg" alt="github"></a></li>
-                    <li><a href="#"><img src="images/dribbble.svg" alt="dribbble"></a></li>
+                    <li><a href="jesssicazhong@gmail.com"><img src="images/mail.svg" alt="email"></a></li>
+                    <li><a href="inkedin.com/in/jessicazhong/"><img src="images/linked.svg" alt="linkedin"></a></li>
+                    <li><a href="github.com/jessjzhong"><img src="images/github.svg" alt="github"></a></li>
+                    <li><a href="dribbble.com/jesszhong"><img src="images/dribbble.svg" alt="dribbble"></a></li>
                 </ul>
             </div>
             <p class="creator-name">© Jessica Zhong 2019</p>
