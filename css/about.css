@@ -9,8 +9,8 @@ html {
 }
 
 body {
-    width: 41.1rem;
-    margin: auto;
+    margin: 0 auto;
+    width: 100%;
 }
 
 /* General */
@@ -96,7 +96,7 @@ p {
 }
 
 .bounce {
-    -moz-animation: bounce 3s infinite;
+  -moz-animation: bounce 3s infinite;
 	-webkit-animation: bounce 3s infinite;
 	animation: bounce 3s infinite;    
 }
@@ -232,7 +232,8 @@ footer {
   color: #F9F9F9;
   font-size: 1.2rem;
   font-weight: 400;
-  padding: 3rem 14.2rem;
+  padding: 3rem 0;
+  text-align: center;
 }
 
 /* Navigation */
@@ -243,7 +244,7 @@ footer {
   height: 7rem;
   margin: 0;
   position: fixed;
-  width: 41.1rem;
+  width: 100%;
   z-index: 5;
 }
 
@@ -254,6 +255,10 @@ footer {
   padding-top: 1rem;
   width: auto;
   z-index: 3;
+}
+
+.desktop-menu {
+    display: none;
 }
 
 /* Hamburger-Menu */
@@ -409,3 +414,104 @@ footer {
   transition: color 0.4 ease;
 }
 
+/* Media Queries / Responsive Design */
+
+/* For Tablets */
+@media screen and (min-width: 600px) {
+
+.bio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "bio essay"
+}
+
+.container {
+  width: 75%;
+}
+
+.hero-wrap {
+  margin-top: 17.5rem;
+}
+
+.arrow {
+  display: none;
+}
+
+.aboutme {
+  padding-top: 3.5rem;
+}
+
+
+  /* Navigation */
+
+.navbar {
+    height: 8.5rem;
+}
+
+#logo {
+    padding: 2rem 0 2rem 4rem;
+}
+
+/* Footer */
+
+.social-flex-container {
+    width: 100%;
+    justify-content: center;
+}
+
+.social-flex-container > li > a > img {
+    padding: 0 2rem;
+}
+
+/* Hamburger Menu */
+
+.menu-wrap .hamburger {
+    display: none;
+}
+
+.menu-wrap .toggler {
+    display: none;
+}
+
+.menu-wrap .menu {
+    display: none;
+}
+
+.desktop-menu {
+    display: inline-block;
+    position: fixed;
+    width: 90%;
+    z-index: 1;
+}
+
+.desktop-menu > .menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 3rem 0;
+}
+
+.menu-font-desktop {
+    color: #F9F9F9;
+    font-size: 1.6rem;
+    padding: 0 2.5rem;
+}
+
+.menu-font-desktop:hover {
+    color: #E7AFB8;
+}
+}
+
+/* For Desktop */
+
+@media screen and (min-width: 991px) {
+  /* Navigation */
+
+.desktop-menu {
+    width: 90%;
+}
+#logo {
+    padding: 1.5rem 0 1.5em 6rem;
+}
+}

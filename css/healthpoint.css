@@ -909,7 +909,7 @@ footer {
   height: 7rem;
   margin: 0;
   position: fixed;
-  width: 41.1rem;
+  width: 100%;
   z-index: 5;
 }
 
@@ -920,6 +920,10 @@ footer {
   padding-top: 1rem;
   width: auto;
   z-index: 3;
+}
+
+.desktop-menu {
+    display: none;
 }
 
 /* Hamburger-Menu */
