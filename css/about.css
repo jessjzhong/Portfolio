@@ -63,6 +63,7 @@ p {
 
 .box {
     background-color: #1F3948;
+    margin-bottom: 4rem;
 }
 
 /* Hero Section */
@@ -78,7 +79,7 @@ p {
 
 .mobile-dots  {
     position: absolute;
-    top: 115.5rem;
+    top: 90rem;
     z-index: 1;  
 }
 
@@ -88,6 +89,10 @@ p {
 
 .hero > img {
     margin: 3.5rem auto 7rem auto;
+}
+
+.desktop-me {
+  display: none;
 }
 
 .arrow {
@@ -155,7 +160,7 @@ p {
 .essay {
     display: flex;
     flex-direction: column;
-    margin-top: 12.5rem;
+    margin-top: 5rem;
 }
 
 .aboutme {
@@ -267,7 +272,7 @@ footer {
   display: inline-block;
   margin-left: -7.8rem; 
   position: fixed;
-  width: 41.1rem;
+  width: 100%;
   z-index: 1;
 }
 
@@ -390,11 +395,11 @@ footer {
   opacity: 0.9;
   transform: scale(0);
   transition: all 0.4s ease;
-  width: 41.1rem;
+  width: 100%;
 }
 
 .menu-wrap .menu > div > div {
-  max-width: 41.1rem;
+  max-width: 100%;
   max-height: 100vh;
   opacity: 0;
   text-align: center;
@@ -426,6 +431,10 @@ footer {
   "bio essay"
 }
 
+.mobile-dots {
+  display: none;
+}
+
 .container {
   width: 75%;
 }
@@ -438,8 +447,12 @@ footer {
   display: none;
 }
 
+.essay > div {
+  margin-top: 12.5rem;
+}
+
 .aboutme {
-  padding-top: 3.5rem;
+  padding-top: 3rem;
 }
 
 
@@ -501,6 +514,10 @@ footer {
 .menu-font-desktop:hover {
     color: #E7AFB8;
 }
+
+.desktop-menu > ul > li > a {
+    text-decoration: none;
+}
 }
 
 /* For Desktop */
@@ -512,6 +529,26 @@ footer {
     width: 90%;
 }
 #logo {
-    padding: 1.5rem 0 1.5em 6rem;
+    padding: 1.5rem 0 1.5em 8rem;
 }
+.container {
+  width: 85%;
+}
+.me {
+  display: none;
+}
+
+.desktop-me {
+  display: inline;
+}
+
+.hero {
+  padding-left: 5rem;
+}
+
+.aboutme {
+  padding-right: 5rem;
+  padding-bottom: 3rem;
+}
+.
 }

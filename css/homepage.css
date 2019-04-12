@@ -18,7 +18,7 @@ body {
 .showcase {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .showcase .inner {
@@ -31,16 +31,13 @@ body {
     z-index: 2;
 }
 
-.container-showcase-bg {
+.container-showcase-bg > img {
     position: absolute;
-    top: 41rem;
-    width: 100%;
+    top: 0.8rem;
+    margin: 0 auto;
+    /* width: 100%; */
     z-index: 1;
 
-}
-
-.background-large {
-    display: none;
 }
 
 .container-arrow {
@@ -157,7 +154,7 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     margin: 30rem auto 0 auto;
-    width: 100%;
+    /* width: 100%; */
     grid-template-areas: 
     "project-image1"
     "project-title"
@@ -170,7 +167,7 @@ p {
     height: 100%;
     padding: 5rem 3rem 5rem 3rem;
     margin: 0 auto;
-    width: auto;
+    width: 100%;
 }
 
 .solution-large {
@@ -179,13 +176,15 @@ p {
 
 .project-title {
     grid-area: project-title;
-    height: 100%;
+    height: auto;
     padding: 0 4.8rem 1.2rem 3rem;
+    width: auto;
 }
 
 .project-descrp {
     grid-area: project-descrp;
-    height: 100%;
+    height: auto;
+    width: auto;
     padding: 1rem 3rem 4.3rem 3rem;
 }
 
@@ -304,7 +303,7 @@ footer {
     display: inline-block;
     margin-left: -7.8rem; 
     position: fixed;
-    width: 41.1rem;
+    width: 100%;
     z-index: 1;
 }
 
@@ -452,6 +451,7 @@ footer {
 /* Media Queries / Responsive Design */
 
 /* For Tablets */
+
 @media screen and (min-width: 600px) {
 .showcase .inner {
     margin-top: 16rem;
@@ -468,7 +468,7 @@ footer {
     display: block;
 }
 
-.container-showcase-bg {
+.container-showcase-bg > img {
     top: -10rem;
 }
 
@@ -485,7 +485,7 @@ footer {
 }
 
 .projects-container {
-    margin: 17rem auto 0 auto;
+    margin: 17rem auto 15rem auto;
 }
 
 .project-title  {
@@ -495,6 +495,10 @@ footer {
 .project-descrp {
     margin-left: 8rem;
     width: 70%;
+}
+
+.project-image1 {
+    margin-left: 8rem;
 }
 
 .csbutton {
@@ -548,6 +552,7 @@ footer {
     flex-direction: row;
     justify-content: flex-end;
     padding: 3rem 0;
+    
 }
 
 .menu-font-desktop {
@@ -559,15 +564,19 @@ footer {
 .menu-font-desktop:hover {
     color: #E7AFB8;
 }
+
+.desktop-menu > ul > li > a {
+    text-decoration: none;
+}
 }
 
 /* For Desktop */
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 900px) {
 .showcase .inner {
     /* margin-top: 16rem; */
     padding: 10rem 12rem 11rem 9rem;
-    width: 55%;
+    width: 57%;
     height: 45rem;
 }
 
@@ -575,8 +584,9 @@ footer {
     display: block;
 }
 
-.container-showcase-bg {
-    top: -10rem;
+.container-showcase-bg > img {
+    top: -9rem;
+    width: 100%;
 
 }
 .container-arrow {
@@ -594,7 +604,7 @@ footer {
 .projects-container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin: 17rem auto 0 auto;
+    margin: 17rem auto 15rem auto;
     grid-template-areas: 
     "project-title project-image1"
     "project-descrp project-image1"
@@ -603,17 +613,18 @@ footer {
 
 .project-title  {
     margin-top: 2rem;
-    padding: 10rem 0 0 9rem;
+    padding: 10rem 0 0 0;
 }
 
 .project-descrp {
-    padding: 2rem 3rem 0 9rem;
+    padding: 2rem 3rem 0 0;
     width: 60rem;
 }
 
 .csbutton {
-    margin: 0 auto 11rem 17rem;
+    margin: 0 auto 11rem 8rem;
 }
+
 /* Navigation */
 
 .desktop-menu {
@@ -624,3 +635,77 @@ footer {
 }
 }
 
+@media screen and (min-width: 1441px) {
+  .showcase .inner {
+    /* margin-top: 16rem; */
+    padding: 10rem 12rem 11rem 9rem;
+    width: 57%;
+    height: 45rem;
+}
+
+.container-showcase-bg > img {
+    top: -13rem;
+
+}
+.container-arrow {
+    top: 14rem;
+}
+
+.projects-container {
+    margin-top: 20rem;
+}
+}  
+
+
+/* Very Large Desktop */
+
+ @media screen and (min-width: 1750px) {
+
+.inner > h1 {
+    font-size: 9.6rem;
+}
+
+h2 {
+    font-size: 7.2rem;
+}
+
+
+.showcase .inner {
+    margin-top: 25rem;
+    padding: 12rem 12rem 43rem 9rem;
+    width: 50%;
+}
+
+.inner > h3 {
+    font-size: 4.2rem;
+    padding-bottom: 30rem;
+}
+
+.container-showcase-bg > img {
+    top: -11rem;
+}
+
+.container-arrow {
+    top: 14rem;
+}
+
+.projects-container {
+    margin-top: 25rem;
+}
+
+.project-image1 > img {
+    margin-left: 20rem;
+}
+
+.csbutton {
+    margin: -4rem auto 11rem 8rem;
+}
+
+.desktop-menu {
+    width: 93%;
+}
+#logo {
+    padding: 1.5rem 0 1.5em 6rem;
+}
+
+} 
