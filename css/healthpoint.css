@@ -471,20 +471,19 @@ h4 {
   grid-template-columns: 1fr;
   grid-template-areas:
   "persona-outer1"
-  "persona-outer2"
 }
 
 .persona-outer1, .persona-outer2 {
   border: 0.5rem solid #02547B;
   border-radius: 5rem;
-  margin: 4rem auto;
+  margin: 3rem auto;
   width: 35rem;
 }
 
 .persona {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 0.5rem;
+  grid-gap: 0.2rem;
   text-align: center;
   grid-template-areas: 
   "persona-image"
@@ -779,26 +778,10 @@ h4 {
 }
 
 .wireframes-images {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
   text-align: center;
-  grid-template-areas:
-  "activity-lofi-wireframe"
-  "welcomepage-lofi-wireframe"
-  "dashboard-lofi"
-}
-
-.activity-lofi-wireframe {
-  grid-area: activity-lofi-wireframe;
-}
-
-.welcomepage-lofi-wireframe {
-  grid-area: welcomepage-lofi-wireframe;
-}
-
-.dashboard-lofi {
-  grid-area: dashboard-lofi;
 }
 
 .caption {
@@ -839,7 +822,6 @@ h4 {
 }
 
 .caption {
-  font-weight: 500;
   line-height: normal;
   margin: 1.3rem auto 4rem auto;
   width: 35rem;
@@ -1335,10 +1317,10 @@ footer {
 .persona-grid {
   grid-gap: 1rem;
 }
-
+/* 
 .persona-outer1, .persona-outer2 {
   margin: 3rem auto;
-}
+} */
 
 .persona {
   display: grid;
@@ -1352,7 +1334,7 @@ footer {
 
 .image-border > img {
   border-radius: 6.5rem;
-  margin: 4.1rem auto -2rem 3.5rem;
+  margin: 4.1rem auto -2rem 2rem;
 }
 
 .persona-name {
@@ -1368,8 +1350,12 @@ footer {
   grid-area: image-border;
 }
 
-.intro-persona {
-  margin: 4.5rem 7rem 0 0;
+.intro-persona1 {
+  margin: 7rem 7rem 0 0;
+}
+
+.intro-persona2 {
+  margin: 7rem 10rem 0 0;
 }
 
 .persona-list {
@@ -1381,6 +1367,10 @@ footer {
   margin-top: -3rem;
   margin-bottom: -3rem;
   padding: 6rem;
+}
+
+.persona-outer2 {
+  margin-top: 2rem;
 }
 
   /* User Stories */
@@ -1421,7 +1411,7 @@ footer {
   margin: 3.5rem auto 2rem auto;
   grid-row-gap: 6rem;
   grid-column-gap: -20rem;
-  width: 45rem;
+  width: 40rem;
 }
 
 .color1, .color2, .color3, .color4, .color5, .color6, .color7 {
@@ -1450,30 +1440,24 @@ footer {
 /* Wireframes */
 
 .wireframesketches {
-  width: 55rem;
-  height: 30rem;
+  width: 53.5rem;
+  height: 28.5rem;
 }
 
 .wireframes-images {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  margin: 0 auto 3rem auto;
-  max-width: 50rem;
-  grid-template-areas:
-  "activity-lofi-wireframe welcomepage-lofi-wireframe dashboard-lofi"
-}
-
-.activity-lofi-wireframe {
-  grid-area: activity-lofi-wireframe;
 }
 
 .welcomepage-lofi-wireframe {
-  grid-area: welcomepage-lofi-wireframe;
+  margin: 0 -17.2rem;
 }
 
-.dashboard-lofi {
-  grid-area: dashboard-lofi;
+.lofi-activity-dash, .lofi-signup, .lofi-dashboard {
+  width: 16.5rem;
+  height: 27.4rem;
 }
-
 /* Preference */
 
 .pref1image, .pref2image {
@@ -1481,6 +1465,17 @@ footer {
   height: 27.7rem;
 }
 
+.final-maindashboard {
+  margin-top: 3rem;
+}
+
+.reflections-descrp {
+  margin-top: 5rem;
+}
+
+.back-to-top {
+  margin-top: 6rem;
+}
 }
 
 /* For Desktop */
