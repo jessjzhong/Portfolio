@@ -11,9 +11,10 @@ html {
 }
 
 body {
-  width: 41.1rem;
-  margin: auto;
+    margin: 0 auto;
+    width: 100%;
 }
+
 
 p {
   color: #1F3948;
@@ -72,7 +73,7 @@ h4 {
 .takeaway-header {
   display: flex;
   flex-direction: row;
-  margin: 4rem auto 1.8rem auto;
+  margin: 4rem auto;
   width: 35rem;
 }
 
@@ -92,6 +93,10 @@ h4 {
   z-index: 2;
 }
 
+.desktop-hp {
+  display: none;
+}
+
 .hp-logo {
   padding-bottom: 3.5rem;
   text-align: center;
@@ -102,6 +107,10 @@ h4 {
   text-align: center;
 }
 
+.desktop-solution {
+  display: none;
+}
+
 .hero-cs-image {
   padding-bottom: 6.1rem;
   position: relative;
@@ -110,8 +119,9 @@ h4 {
 }
 
 .dots-bg {
-  padding: 35rem 0 9.6rem 0;
+  padding: 36rem 0 9.6rem 0;
   position: absolute;
+  width: 100%;
   z-index: 2;
 }
 
@@ -119,7 +129,6 @@ h4 {
 .btn { 
   cursor: pointer;
   position: relative;
-  width: 41.1rem;
     
 }
 
@@ -273,12 +282,16 @@ h4 {
   z-index: 2;
 }
 
+.solution-image-desktop {
+  display: none;
+}
+
 .background-color-bg {
   background-color: #E7AFB8;
   height: 23.3rem;
   margin-top: 1.7rem;
   position: absolute;
-  width: 41.1rem;
+  width: 100%;
   z-index: 1;
 }
 
@@ -291,15 +304,23 @@ h4 {
 }
 
 
-.deliverables {
+.deliverables, .deliverables1 {
   align-items: center;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
 
+.deliverables1 > h2 {
+  margin-top: 4rem;
+}
+
+.deliverables1 > p {
+  margin: 2.5rem 0 4rem 0;
+}
+
 .deliverables > h2 {
-  margin-top: 2rem;
+  margin-top: 10rem;
 }
 
 .deliverables > p {
@@ -317,10 +338,10 @@ h4 {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
-  /* grid-template-areas:
+  grid-template-areas:
   "box1" "box2"
   "box3" "box4"
-  "box5" "box6" */
+  "box5" "box6"
 }
 
 .box1, .box2, .box3, .box4, .box5, .box6 {
@@ -380,6 +401,10 @@ h4 {
   flex-direction: column;
 }
 
+.takeaway > div > p {
+  margin-top: 2rem;
+}
+
 .bullet-list > li {
   color: #9B0656;
   font-size: 3.5rem;
@@ -429,18 +454,44 @@ h4 {
 
 /* User Personas */
 
-.persona-outer {
+.persona-grid {
+  display: grid;
+  margin: 0 auto 5rem auto;
+  grid-template-columns: 1fr;
+  grid-gap: 2.5rem;
+  grid-template-areas:
+  "persona-outer1"
+  "persona-outer2"
+}
+
+.persona-outer1, .persona-outer2 {
   border: 0.5rem solid #02547B;
   border-radius: 5rem;
   margin: 4rem auto;
   width: 35rem;
 }
 
+.eliza {
+  display:none;
+}
+
+.large-sam {
+  display: none;
+}
+
 .persona {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+  grid-template-areas: 
+  ""
+}
+/* .persona {
   margin: 0 auto 5rem auto;
   text-align: center;
   width: 30rem;
-}
+} */
 
 .image-border > img {
   border: 0.5rem solid #02547B;
@@ -484,14 +535,14 @@ h4 {
   margin: 4.4rem auto 2.5rem auto;
   grid-template-rows: 1fr;
   grid-gap: 2rem;
-  /* grid-template-areas:
+  grid-template-areas:
   "story1"
   "story2"
   "story3"
   "story4"
   "story5"
   "story6"
-  "story7" */
+  "story7"
 }
 
 .stories > p {
@@ -509,8 +560,13 @@ h4 {
   text-align: center;
 }
 
-/* Branding and Identity */
+/* User Flows */
 
+.user-flow {
+  display: none;
+}
+
+/* Branding and Identity */
 
 .branding-descrp > .b-p-2 {
   margin: 2rem auto 4rem auto;
@@ -530,6 +586,7 @@ h4 {
 
 .logo-sketch-bg {
   position: absolute;
+  width: 100%;
   z-index: 1;
 }
 
@@ -635,7 +692,7 @@ h4 {
   margin: 2rem auto;
   padding-bottom: 17rem;
   position: absolute;
-  width: 41.1rem;
+  width: 100%;
   z-index: 3;
 }
 
@@ -738,21 +795,33 @@ h4 {
   margin: 1.5rem 0;
 }
 
-.usability1-photos {
+.usability1-bg {
   background-color: #1F3948;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 2rem;
-  padding-top: 4rem;
-  width: 41.1rem;
+  width: 100%;
 }
 
-.usability1-photos > .caption {
+.usability1-photos {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  margin: 0 3rem 2rem 3rem;
+  padding-top: 4rem;
+  grid-template-areas: 
+  "usability1photo"
+  "caption"
+  "usability2photo"
+  "caption"
+}
+
+.caption {
   font-weight: 500;
   line-height: normal;
   margin: 1.3rem auto 4rem auto;
-  width: 35rem;
+  /* width: 35rem; */
+}
+
+.usability1-photos > img {
+  text-align: center;
 }
 
 /* Preference Testing */
@@ -899,6 +968,7 @@ footer {
   font-size: 1.2rem;
   font-weight: 400;
   padding: 3rem 14.2rem;
+  text-align: center;
 }
 
 /* Navigation */
@@ -1079,3 +1149,144 @@ footer {
   transition: color 0.4 ease;
 }
 
+/* Media Queries / Responsive Design */
+
+/* For Tablets */
+
+@media screen and (min-width: 600px) {
+.hp-logo {
+  margin-top: 2rem;
+}
+.hero-cs-image {
+  margin-top: -2rem;
+  /* margin-bottom: 3rem; */
+}
+
+.container {
+  margin: 0 auto;
+  width: 60rem;
+}
+
+.navbar {
+    height: 8.5rem;
+}
+
+#logo {
+    padding: 2rem 0 2rem 4rem;
+}
+
+/* Footer */
+
+.social-flex-container {
+    width: 100%;
+    justify-content: center;
+}
+
+.social-flex-container > li > a > img {
+    padding: 0 2rem;
+}
+
+/* Hamburger Menu */
+
+.menu-wrap .hamburger {
+    display: none;
+}
+
+.menu-wrap .toggler {
+    display: none;
+}
+
+.menu-wrap .menu {
+    display: none;
+}
+
+.desktop-menu {
+    display: inline-block;
+    position: fixed;
+    width: 90%;
+    z-index: 1;
+}
+
+.desktop-menu > .menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 3rem 0;
+    
+}
+
+.menu-font-desktop {
+    color: #F9F9F9;
+    font-size: 1.6rem;
+    padding: 0 2.5rem;
+}
+
+.menu-font-desktop:hover {
+    color: #E7AFB8;
+}
+
+.desktop-menu > ul > li > a {
+    text-decoration: none;
+}
+
+/* Survey Results */
+.survey {
+  margin: 5rem auto 1rem auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2.5rem;
+  grid-template-areas:
+  "box1 box2 box3"
+  "box4 box5 box6" 
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+  height: 20rem;
+  width: 20rem;
+}
+
+.data > h1 {
+  font-size: 4.2rem;
+}
+
+.data-descrp > p {
+  font-size: 1.6rem;
+  width: 15rem;
+}
+
+.box-content1 {
+  padding: 2rem 2rem;
+}
+
+.box-content4 {
+  padding: 3rem;
+}
+
+.box-content5 {
+  padding: 1.4rem 0 0 1.1rem;
+}
+
+.box-content6 {
+  padding: 3rem 0.5rem;
+}
+
+.audience > p {
+  margin-top: -20rem;
+  padding-bottom: 2rem;
+}
+
+.ta-border {
+  width: 45em;
+}
+
+.project-info-divider {
+  width: 60rem;
+}
+
+.comp {
+  margin: 0 auto 7rem auto;
+}
+
+/* For Desktop */
+
+@media screen and (min-width: 900px) {

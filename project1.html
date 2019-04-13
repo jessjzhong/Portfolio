@@ -62,14 +62,16 @@
     <section class="hero-hp">
         <div class="hp-header">
             <div class="hp-logo">
-                <img src="images/case-study/hp logo.svg">
+                <img src="images/case-study/hp logo.svg" class="mobile-hp" alt="smaller logo">
+                <img src="images/case-study/HP-Desktop.svg" class="desktop-hp" alt="large logo">
             </div>
             <div class="slogan">
-                <p>A new and improved way to experience HEALTH!</p>
+                <p>A new and improved way to <br>experience HEALTH!</p>
             </div>
         </div>
         <div class="hero-cs-image">
-            <img src="images/case-study/cs-header-image.svg" alt="hp case study image">
+            <img src="images/case-study/cs-header-image.svg" class="mobile-cs-image" alt="hp case study image">
+            <img src="images/case-study/healthpointmaindesktopimage.svg" class="desktop-solution" alt="desktop-cs">
         </div>
         <div class= "dots-bg"> 
             <img src="images/case-study/1440 Dots.svg">
@@ -152,6 +154,7 @@
     <section class="solution-container">
         <div class="solution-image">
             <img src="images/case-study/hp-solution-image.svg">
+            <img src="images/HealthPoint Image-large.svg" class="solution-image-desktop" alt="desktop-image">
         </div>
         <span class="background-color-bg"></span>
     </section>
@@ -169,7 +172,7 @@
         </div>
 
     <!--User Research-->
-        <section class="deliverables container">
+        <section class="deliverables1 container">
                 <h2>User Research</h2>
                 <p>After reviewing the stakeholders’ business criteria, I wanted to better understand what are the user’s needs, habits and frustrations of the current fitness and health cloud applications. I continued my research with a creation of a user survey to gather essential information that will aid the direction to a better solution. After a little over 24 hrs of the survey going live, I collected 35 responses.</p>
         </section>
@@ -244,7 +247,7 @@
         <div class="btn">
             <a href="https://docs.google.com/document/d/1Qd5Zqm3bYKW253y6Mu0PbBIow5-NqhKpubJmy69WJy0/edit?usp=sharing" target="_blank" class="csbutton btn-magenta">VIEW SURVEY QUESTIONS</a>
         </div>
-            <div class="takeaway-header">
+            <div class="takeaway-header container">
                 <h2>Takeaways</h2>
                 <div class="ta"><hr class="ta-border"></div>
             </div>
@@ -307,7 +310,7 @@
             <a href="https://docs.google.com/document/d/1hxjA3DvlCkrrpUY9XGVq4VCWfwkxB2d5bTLK6da1Dts/edit?usp=sharing"
                 target="_blank" class="csbutton btn-magenta">VIEW SWOT ANALYSIS</a>
         </div>
-            <div class="takeaway-header">
+            <div class="takeaway-header container">
                 <h2>Takeaways</h2>
                 <div class="ta">
                     <hr class="ta-border">
@@ -337,11 +340,14 @@
             <a href="https://sketch.cloud/s/Mxgm3"
                 target="_blank" class="csbutton btn-magenta">VIEW USER PERSONAS</a>
         </div>
-            <div class="persona-outer container">
+        <div class="persona-grid">
+            <div class="persona-outer1 container">
             <div class="persona">
                     <div class="image-border">
-                        <img src="images/case-study/Eliza Photo.svg" alt="Eliza Persona Image">
+                        <img src="images/case-study/Eliza Photo.svg" class="smalleliza" alt="Eliza Persona Image">
+                        <img src="images/case-study/Eliza-large.svg" class="eliza" alt="Large Eliza Photo">
                     </div>
+                    <div class="intro-persona">
                     <h1>ELIZA</h1>
                         <ul class="persona-list">
                             <li><p class="info">The Social Striver</p></li>
@@ -350,6 +356,7 @@
                             <li><p class="info">Director - Product</p></li>
                             <li><p class="info">San Francisco, CA</p></li>
                         </ul>
+                    </div>
                         <ul class="persona-descrp">
                             <li><p><span class="p-headings">Goals: </span>She is constantly striving for a healthier lifestyle, assessing and analyzing her fitness and progress for marathon training, and likes to organize her goals.</p></li>
                             <li class="descrp2"><p><span class="p-headings">Frustrations: </span>She uses way too many applications, cannot access apps when offline, and due to the abundance of features cause apps to slow down and become less user-friendly.</p></li>
@@ -357,11 +364,13 @@
                     <p class="quote">“By analyzing my fitness and progress training for marathons, I can make data-driven decisions for my workouts.”</p>
                 </div>
             </div>
-            <div class="persona-outer container">
+            <div class="persona-outer2 container">
             <div class="persona">
                     <div class="image-border">
-                        <img src="images/case-study/Sam Photo.svg" alt="Sam Persona Image">
+                        <img src="images/case-study/Sam Photo.svg" class="small-sam" alt="Sam Persona Image">
+                        <img src="images/case-study/sam-large.svg" class="large-sam" alt="Large Sam Photo">
                     </div>
+                    <div class="intro-persona">
                     <h1>SAM</h1>
                         <ul class="persona-list">
                             <li><p class="info">The Motivator</p></li>
@@ -370,6 +379,7 @@
                             <li><p class="info">IT Specialist</p></li>
                             <li><p >Phoenix, AZ</p></li>
                         </ul>
+                        </div>
                         <ul class="persona-descrp">
                             <li><p><span class="p-headings">Goals: </span>Wants a healthier lifestyle to increase his self-confidence but needs motivation to start a routine going. He likes to socialize with friends by competition, which keeps him motivated to reach his goals.</p></li>
                             <li class="descrp2"><p><span class="p-headings">Frustrations: </span>There’s a high learning curve to complete a simple task, hard to keep track of achievements/goals, not able to track other exercises besides aerobic workouts.</p></li>
@@ -377,6 +387,7 @@
                     <p class="quote">“I just need that motivation to get back into a consistent rhythm of exercise.”</p>
             </div>
             </div>
+        </div>
     </section>
 
 <!--Information Architecture-->
@@ -386,7 +397,7 @@
             <hr class="title-sections">
         </div>
     <!--User Stories-->
-        <section class="deliverables container">
+        <section class="deliverables1 container">
             <h2>User Stories</h2>
             <p>Based on the information gathered from the user survey, competitive analysis and creation of user personas, I created
             user stories to help determine the tasks and needs of the users and prioritize the stories by the context of the
@@ -414,6 +425,10 @@
             <p>To create a well-rounded MVP, I converted all high, with some medium and low user stories into user flows to visually
             break down, how the user would interact with the product and complete certain tasks.</p>
         </section>
+        <div class="user-flow">
+            <h3 class="user-flow-title">Create Goals Checklist</h3>
+            <img src="images/case-study/User-Flow-Chart.svg" class="user-flow" alt="user flow">
+        </div>
         <div class="btn">
             <a href="https://drive.google.com/file/d/1JrZt-4nrC8GNsTmqZ6pSno0SOAZixvd6/view?usp=sharing"
                 target="_blank" class="csbutton btn-magenta">VIEW USER FLOWS</a>
@@ -511,7 +526,7 @@
                 <hr class="title-sections">
             </div>
     </section>
-    <section class="deliverables container">
+    <section class="deliverables1 container">
             <h2>Wireframes</h2>
         <div class="wire-descrp">
             <p>Using my user stories, flows and sitemap, it provided the building blocks to create the initial sketches of my
@@ -551,13 +566,16 @@
                 instructions.</p>
                 <p>Below is an example of the a design update based on the feedback I received for the first round of testing:</p>
             </div>
+        </section>
+            <div class="usability1-bg">
             <div class="usability1-photos">
-                <img src="images/case-study/usability dashboard wireframe.svg" alt="lofi dashboard">
+                <img src="images/case-study/usability dashboard wireframe.svg" class="usability1photo" alt="lofi dashboard">
                     <p class="caption">LoFi of Dashboard navigation bar non-distinctive and lack of breathing room between add button</p>
-                <img src="images/case-study/usability - dashboard hi-fi.svg" alt="hifi dashboard">
+                <img src="images/case-study/usability - dashboard hi-fi.svg" class="usability2photo" alt="hifi dashboard">
                     <p class="caption">HiFi of Dashboard navigation bar has distinctive icons and more space between add button</p>
             </div>
-                <div class="takeaway-header">
+        </div>
+                <div class="takeaway-header container">
                     <h2>Takeaways</h2>
                     <div class="ta">
                         <hr class="ta-border">
@@ -576,7 +594,7 @@
                 </div>
             </div>
             </div>
-        </section>
+
     <!--Preference Testing-->
             <section class="deliverables container">
                 <div class="preference-header">
@@ -614,7 +632,7 @@
                 <img src="images/case-study/V2AddActivityHiFi.svg" alt="version 2 of add activity">
                 <p class="caption">Final mockup of Activity Dashboard</p>
             </div>
-                <div class="takeaway-header">
+                <div class="takeaway-header container">
                     <h2>Takeaways</h2>
                     <div class="ta">
                         <hr class="ta-border">
@@ -712,7 +730,7 @@
             <h1>LET'S CONNECT</h1>
         </div>
         <div class="sync-up">
-            <p>Thanks for checking out my work! Want to work together or have any questions? Let’s sync up.</p>
+            <p>Thanks for checking out my work! Want to work <br>together or have any questions? Let’s sync up.</p>
         </div>
         <div class="social-icons">
             <ul class="social-flex-container">
