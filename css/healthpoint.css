@@ -764,26 +764,29 @@ h4 {
   margin: 3rem auto 2rem auto;
 }
 
+.wireframe-sketches {
+  text-align: center;
+  padding-top: 3rem;
+}
+
 .wireframesketches {
   width: 35rem;
   height: 22rem;
 }
-.wireframes-images {
+
+.wireframes-container {
   background-color: #02547B;
+}
+
+.wireframes-images {
   display: grid;
   grid-template-columns: 1fr;
   padding-top: 4rem;
   text-align: center;
   grid-template-areas:
-  "wireframe-sketches"
   "activity-lofi-wireframe"
   "welcomepage-lofi-wireframe"
   "dashboard-lofi"
-}
-
-.wireframe-sketches {
-  grid-area: wireframe-sketches;
-  margin-bottom: 2rem;
 }
 
 .activity-lofi-wireframe {
@@ -1451,16 +1454,11 @@ footer {
   height: 30rem;
 }
 
-.wireframes-container {
-  background-color: #02547B;
-}
-
 .wireframes-images {
   justify-content: center;
-  display: grid;
   margin: 0 auto 3rem auto;
+  max-width: 50rem;
   grid-template-areas:
-  "wireframe-sketches wireframe-sketches wireframe-sketches"
   "activity-lofi-wireframe welcomepage-lofi-wireframe dashboard-lofi"
 }
 
