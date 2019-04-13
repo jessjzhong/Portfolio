@@ -15,7 +15,6 @@ body {
     width: 100%;
 }
 
-
 p {
   color: #1F3948;
   font-family: 'Open Sans', sans-serif;
@@ -97,9 +96,14 @@ h4 {
   display: none;
 }
 
-.hp-logo {
+.hp-logo1 {
   padding-bottom: 3.5rem;
   text-align: center;
+}
+
+.hp-logo {
+  width: 34rem;
+  height: 4.2rem;
 }
 
 .slogan {
@@ -282,8 +286,9 @@ h4 {
   z-index: 2;
 }
 
-.solution-image-desktop {
-  display: none;
+.solution-screens {
+  width: 35rem;
+  height: 26.4rem;
 }
 
 .background-color-bg {
@@ -334,6 +339,8 @@ h4 {
 
 .survey {
   display: grid;
+  justify-content: center;
+  align-items: center;
   margin: 4rem auto;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
@@ -452,6 +459,11 @@ h4 {
   margin: 1.5rem 0;
 }
 
+.dropboxlogo {
+  width: 22rem;
+  height: 4.5rem;
+}
+
 /* User Personas */
 
 .persona-grid {
@@ -469,17 +481,13 @@ h4 {
   width: 35rem;
 }
 
-.eliza, .large-sam {
-  display: none;
-}
-
 .persona {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 0.5rem;
   text-align: center;
   grid-template-areas: 
-  "smalleliza"
+  "persona-image"
   "persona-name"
   "personal-list"
   "persona-descrp"
@@ -571,9 +579,6 @@ h4 {
 .logo-header > h2 {
   margin-top: 3.5rem;
 }
-.largesketchbg {
-  display: none;
-}
 
 .logo-container {
   display: flex;
@@ -581,27 +586,29 @@ h4 {
   margin-top: 4rem;
 }
 
-.logo-sketch-bg {
+.sketchbg {
   position: absolute;
   width: 100%;
+  height: 34rem;
   z-index: 1;
 }
 
-.large-darkbg, .large-lightbg {
-  display: none;
+.hp-dark-bg, .hp-light-bg {
+  text-align: center;
 }
 
-
-
-.hp-dark-bg {
+.darkbglogo {
   margin-top: 21rem;
   position: relative;
-  text-align: center;
+  width: 35rem;
+  height: 18rem;
   z-index: 2;
 }
 
-.hp-light-bg {
+.lightbglogo {
   text-align: center;
+  width: 35rem;
+  height: 18rem;
 }
 
 .logo-caption > p {
@@ -757,10 +764,10 @@ h4 {
   margin: 3rem auto 2rem auto;
 }
 
-.large-wireframesketches {
-  display: none;
+.wireframesketches {
+  width: 35rem;
+  height: 22rem;
 }
-
 .wireframes-images {
   background-color: #02547B;
   display: grid;
@@ -820,7 +827,8 @@ h4 {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
-  margin: 0 3rem 2rem 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
   padding-top: 4rem;
   grid-template-areas: 
   "usability1-photo"
@@ -831,7 +839,7 @@ h4 {
   font-weight: 500;
   line-height: normal;
   margin: 1.3rem auto 4rem auto;
-  /* width: 35rem; */
+  width: 35rem;
 }
 
 .usability1-photos > img {
@@ -852,10 +860,16 @@ h4 {
   text-align: center;
 }
 
+.pref1image, .pref2image {
+  width: 35rem;
+  height: 19.4rem;
+}
+
 .preference-images {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .preference-images > .caption {
@@ -864,6 +878,7 @@ h4 {
   font-weight: 600;
   line-height: normal;
   margin: 1rem auto 4rem auto;
+  text-align: center;
   width: 35rem;
 }
 
@@ -878,19 +893,26 @@ h4 {
   text-align: center;
 }
 
+
 .testing-2-images {
   background-color: #02547B;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 1rem;
+  align-items: center;
+  margin-bottom: 3rem;
   padding-top: 4rem;
+}
+
+.usabilityR2image1, .usabilityR2image2 {
+  width: 34rem;
+  height: 45rem;
 }
 
 .testing-2-images > p {
   margin: 1rem auto 4rem auto;
   text-align: center;
-  width: 35rem;
+  /* width: 35rem; */
 }
 
 /* Final Prototype */
@@ -1178,7 +1200,7 @@ footer {
 
 .container {
   margin: 0 auto;
-  width: 60rem;
+  width: 50rem;
 }
 
 .navbar {
@@ -1294,11 +1316,11 @@ footer {
 }
 
 .ta-border {
-  width: 45em;
+  width: 34em;
 }
 
 .project-info-divider {
-  width: 60rem;
+  width: 50rem;
 }
 
 .comp {
@@ -1315,16 +1337,10 @@ footer {
   margin: 3rem auto;
 }
 
-.smalleliza, .small-sam {
-  display: none;
-}
-
-.eliza, .large-sam {
-  display: block;
-}
-
 .persona {
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-areas: 
   "image-border persona-name"
   "image-border persona-list"
@@ -1333,7 +1349,7 @@ footer {
 
 .image-border > img {
   border-radius: 6.5rem;
-  margin: 4.1rem auto -2rem auto;
+  margin: 4.1rem auto -2rem 3.5rem;
 }
 
 .persona-name {
@@ -1350,7 +1366,7 @@ footer {
 }
 
 .intro-persona {
-  margin: 4.5rem 15rem 0 0;
+  margin: 4.5rem 7rem 0 0;
 }
 
 .persona-list {
@@ -1377,27 +1393,22 @@ footer {
 
 /* Logo */
 
-.smallsketch {
-  display: none;
-}
-
-.largesketchbg {
-  display: block;
-  width: 100%;
-  /* max-height: 100vh; */
-  justify-content: center;
-}
-
 .hp-dark-bg {
   margin-top: 15rem;
 }
 
-.large-darkbg, .large-lightbg {
-  display: inline;
+.darkbglogo {
+  margin-top: 5rem;
+  position: relative;
+  width: 47.5rem;
+  height: 25rem;
+  z-index: 2;
 }
 
-.small-darkbglogo, .smalllightbglogo {
-  display: none;
+.lightbglogo {
+  text-align: center;
+  width: 47.5rem;
+  height: 25rem;
 }
 
 /* Color Palette */
@@ -1435,13 +1446,9 @@ footer {
 
 /* Wireframes */
 
-.smallwireframesketches {
-  display: none;
-}
-
-.large-wireframesketches {
-  display: inline;
-  max-width: 80%;
+.wireframesketches {
+  width: 55rem;
+  height: 30rem;
 }
 
 .wireframes-container {
@@ -1450,12 +1457,8 @@ footer {
 
 .wireframes-images {
   justify-content: center;
-  align-items: center;
   display: grid;
-  width: 50rem;
   margin: 0 auto 3rem auto;
-  grid-gap: 1rem;
-  /* padding: 4rem 0; */
   grid-template-areas:
   "wireframe-sketches wireframe-sketches wireframe-sketches"
   "activity-lofi-wireframe welcomepage-lofi-wireframe dashboard-lofi"
@@ -1463,7 +1466,6 @@ footer {
 
 .activity-lofi-wireframe {
   grid-area: activity-lofi-wireframe;
-  max-width: 80%;
 }
 
 .welcomepage-lofi-wireframe {
@@ -1473,6 +1475,14 @@ footer {
 .dashboard-lofi {
   grid-area: dashboard-lofi;
 }
+
+/* Preference */
+
+.pref1image, .pref2image {
+  width: 50rem;
+  height: 27.7rem;
+}
+
 }
 
 /* For Desktop */
