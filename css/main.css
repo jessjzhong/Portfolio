@@ -1553,14 +1553,14 @@ h1 > .announce {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 3rem;
-  padding-top: 4rem; */
+  margin-bottom: 3rem;
+ 
 }
 
 .usabilityR2image1 {
     padding-top: 4rem;
-  width: 34rem;
-  height: 45rem;
+    width: 34rem;
+    height: 45rem;
 }
 
 .usabilityR2image2 {
@@ -1590,15 +1590,15 @@ h1 > .announce {
   text-align: center;
 }
 
-.final-descrp {
+.final-descrp1, .final-descrp2, .final-descrp3 {
   text-align: left;
 }
 
-.final-descrp > h4 {
+.final-descrp1 > h4, .final-descrp2 > h4, .final-descrp3 > h4 {
   margin: 4rem auto 2rem auto;
 }
 
-.final-descrp > p {
+.final-descrp1 > p, .final-descrp2 > p, .final-descrp3 > p {
   margin-bottom: 6rem;
 }
 
@@ -1647,7 +1647,7 @@ h1 > .announce {
 }
 
 #logo {
-    padding: 2rem 0 2rem 6.5rem;
+    padding: 2rem 0 2rem 4rem;
 }
 
 /* Footer */
@@ -1727,8 +1727,7 @@ h1 > .announce {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 32rem;
-    margin: 6rem 0 0 6rem;
+    margin: 6rem 0 0 1.5rem;
 }
 
 .projects-container {
@@ -1740,7 +1739,7 @@ h1 > .announce {
     font-size: 4.2rem;
 }
 .project-image1 {
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .project-info-wrap > .btn > .ptbutton {
@@ -1969,11 +1968,11 @@ h1 > .announce {
     "color3 color4";
 }
 .color-palette2 {
-  margin: 6rem auto 2rem auto;
-  grid-template-areas:
-  "color5 color6"
-  "color7 color7";
-}
+    margin: 6rem auto 2rem auto;
+    grid-template-areas:
+    "color5 color6"
+    "color7 color7";
+    }
 
 .color1, .color2, .color3, .color4, .color5, .color6, .color7 {
   height: 15rem;
@@ -2012,7 +2011,7 @@ h1 > .announce {
 }
 
 .welcomepage-lofi-wireframe {
-  margin: 0 -17.2rem;
+  margin: 0 -15rem;
 }
 
 .lofi-activity-dash, .lofi-signup, .lofi-dashboard {
@@ -2038,6 +2037,9 @@ h1 > .announce {
   margin-top: 6rem;
 }
 
+/* Usability Take 2 */
+
+
 }
 
 /*---------------------- For Desktop---------------------*/
@@ -2047,8 +2049,8 @@ h1 > .announce {
 @media screen and (min-width: 991px) {
 
 .showcase .inner {
-    padding: 10rem 12rem 11rem 9rem;
-    width: 80rem;
+    padding: 10rem 12rem 11rem 7rem;
+    width: 76rem;
 }
 
 .hp-solution {
@@ -2061,6 +2063,7 @@ h1 > .announce {
 }
 
 .project-info-wrap {
+    margin-left: 4rem;
     width: 60rem;
 }
 
@@ -2549,5 +2552,58 @@ h1 > .announce {
 }
 
 /* Final Prototype */
+
+
+.final-descrp1 > p, .final-descrp2 > p, .final-descrp3 > p {
+    width: 48rem;
+}
+
+.final-descrp1, .final-descrp2, .final-descrp3 {
+    border: 5px solid #02547B;
+    border-radius: 5rem;
+    margin-top: 17rem;
+}
+
+.maindashboard-image, .goals-image-phone, .analytics-final{
+    position: relative;
+    z-index: 4;
+}
+
+.final-descrp1, .final-descrp3 {
+    padding: 1rem 6.5rem 1rem 37.4rem;
+    position: absolute;
+    z-index: 3;
+}
+
+.final-descrp2 {
+    padding: 1rem 37.4rem 1rem 6.5rem;
+    position: absolute;
+    z-index: 3;
+}
+
+.final-maindashboard, .final-goals {
+    display: flex;
+    flex-direction: row;
+}
+
+.final-analytics {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* .final-images {
+    margin: 5rem 22rem;
+} */
+
+.final-images > .final-analytics {
+    margin: 8rem 0;
+}
+
+.final-images {
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+    width: 70vw;
+
+}
 
 }
