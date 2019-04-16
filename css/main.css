@@ -411,6 +411,7 @@ h1 > .announce {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     top: 18rem;
     position: relative;
     z-index: 2;
