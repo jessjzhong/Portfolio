@@ -5,18 +5,23 @@
   box-sizing: border-box;
 }
 
+
 html {
     font-size: 10px;
     scroll-behavior: smooth;
 }
 
 body {
-    margin: 0 auto;
+    margin: 0px;
+    padding: 0px;
     width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    /* width: 100%; */
 }
 
 .container {
-    width: 35rem;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -83,7 +88,7 @@ h5 {
   background-color: #1F3948;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   height: 7rem;
-  margin: 0;
+  margin: 0 auto;
   position: fixed;
   width: 100%;
   z-index: 5;
@@ -213,6 +218,7 @@ h5 {
   display: flex;
   height: 100%;
   justify-content: center;
+  margin: 0 auto;
   overflow: hidden;
   position: fixed;
   right: 0;
@@ -409,6 +415,7 @@ h1 > .announce {
     top: 55rem;
     margin: 0 auto;
     overflow: hidden;
+    width: 100%;
     z-index: 1;
 }
 
@@ -558,9 +565,10 @@ h1 > .announce {
 }
 
 .mobile-dots  {
-   overflow: hidden;
+    overflow: hidden;
     position: absolute;
     top: 108rem;
+    width: 95%;
     z-index: 1;  
 }
 
