@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
             integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,700i|Poppins:400,500,600|Rubik:400,500"
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,700i,800|Poppins:400,500,600|Rubik:400,500"
             rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
         <link rel="stylesheet" href="css/reset.css">
@@ -111,19 +111,19 @@
             <h5>DELIVERABLES</h5>
         </div>
             <div class="deliverables-descrp">
-                <div class="left-list">
-                    <p>User Surveys</p>
-                    <p>User Stories & Flows</p>
-                    <p>Competitive Analysis</dp>
-                    <p>User Personas</p>
-                    <p>Content Strategy</p>
-                </div>
+                <ul class="left-list">
+                    <li>User Surveys</li>
+                    <li>User Stories & Flows</li>
+                    <li>Competitive Analysis</li>
+                    <li>User Personas</li>
+                    <li>Content Strategy</li>
+                    </ul>
                 <div class="right-list">
-                    <p>Wireframes</p>
-                    <p>User Testing</p>
-                    <p>Visual Design</p>
-                    <p>Low and High Fidelity</p>
-                    <p>Style Guide</p>
+                    <li>Wireframes</li>
+                    <li>User Testing</li>
+                    <li>Visual Design</li>
+                    <li>Low and High Fidelity</li>
+                    <li>Style Guide</li>
                 </div>
             </div>
         </div>
@@ -428,7 +428,7 @@
             <p class="story4"><span class="emphasis1">As a user</span> I want to reset or change my password so I can access my account</p>
             <p class="story5"><span class="emphasis1">As a user</span> I want to integrate all my fitness/health apps so I do not have to opoen multple apps</p>
             <p class="story6"><span class="emphasis1">As a user</span> I want to delete an entry so my data is accurate</p>
-            <p class="story7"><span class="emphasis1">As a  user</span> I want to create a checklist of goals so I can see the progress I am making to achieve these goals</p>
+            <p class="story7"><span class="emphasis1">As a user</span> I want to create a checklist of goals so I can see the progress I am making to achieve these goals</p>
         </div>
         <div class="desktop-userstories">
             <div class="user-role">
@@ -478,7 +478,7 @@
                     <p>so I can access my account</p>
                     <p>so I do not have to open multiple apps</p>
                     <p>so my data is accurate</p>
-                    <p>so I can see my progress I am making to achieve these goals</p>
+                    <p>so I can see my progress I am making <br>to achieve these goals</p>
                 </div>
                 </div>
             </div>
@@ -491,15 +491,17 @@
         <section class="deliverables container">
             <h4>User Flows</h4>
             <p>To create a well-rounded MVP, I converted all high, with some medium and low user stories into user flows to visually
-            break down, how the user would interact with the product and complete certain tasks.</p>
+            break down how the user would interact with the product and complete certain tasks. <span class="user-story-example">The user flow below is the user story, <strong>I want to create a checklist of goals so I can see the progress I am making to achieve these goals.</strong></span></p>
         </section>
-        <div class="user-flow">
-            <h5 class="user-flow-title">Create Goals Checklist</h5>
-            <img src="images/case-study/User Flow Chart.png" class="user-flow" alt="user flow">
-        </div>
         <div class="btn">
             <a href="https://drive.google.com/file/d/1JrZt-4nrC8GNsTmqZ6pSno0SOAZixvd6/view?usp=sharing"
                 target="_blank" class="csbutton btn-magenta">VIEW USER FLOWS</a>
+        </div>
+        <div class="user-flow-wrap">
+            <div class="user-flow">
+                <h5 class="user-flow-title">Create Goals Checklist</h5>
+                <img src="images/case-study/User Flow Chart.png" class="user-flow-image" alt="user flow">
+            </div>
         </div>
         </section>
 
@@ -529,17 +531,16 @@
             <div class="logo-sketch-bg">
                 <img src="images/case-study/logodesign.png" class="sketchbg" alt="logo sketch small">
             </div>
-            <div class="hp-dark-bg">
-                <img src="images/case-study/hp-darkbg.png" class="darkbglogo" alt="hp dark bg">
+            <div class="logo-wrap">
+                <div class="hp-dark-bg">
+                    <img src="images/case-study/hp-darkbg.png" class="darkbglogo" alt="hp dark bg">
+                <span class="logo-caption">
+                <p>HealthPoint Logo on dark background</p></span></div>
+                <div class="hp-light-bg">
+                    <img src="images/case-study/hp-lightbg.png" class="lightbglogo" alt="hp light bg">
+                <span class="logo-caption">
+                    <p>HealthPoint Logo on light background</p></span></div>
             </div>
-            <span class="logo-caption">
-            <p>HealthPoint Logo on dark background</p></span>
-         
-            <div class="hp-light-bg">
-                <img src="images/case-study/hp-lightbg.png" class="lightbglogo" alt="hp light bg">
-            </div>
-            <span class="logo-caption">
-                <p>HealthPoint Logo on light background</p></span>
         </div>
     </div>
 
@@ -548,11 +549,13 @@
     <section class="deliverables container">
             <h4>Color Palette</h4>
     </section>
-        <ul class="color-palette container">
+        <ul class="color-palette1 container">
             <li class="color1"><div class="color-type"><p>#E63C34</p></div></li>
             <li class="color2"><div class="color-type"><p>#E8E016</p></div></li>
             <li class="color3"><div class="color-type"><p>#277177</p></div></li>
             <li class="color4"><div class="color-type"><p>#333333</p></div></li>
+        </ul>
+        <ul class="color-palette2 container">
             <li class="color5"><div class="color-type"><p>#050921</p></div></li>
             <li class="color6"><div class="color-type"><p>#B0B5AE</p></div></li>
             <li class="color7"><div class="color-type"><p>#FFFFFF</p></div></li>
@@ -567,18 +570,20 @@
     <section class="typography-main">
     <div class="typo-container">
             <h4>Typography</h4>
-        <div class="font-container">
-            <p class="font-type">BRAND</p>
-            <p class="archivo-black">Aa</p>
-            <p class="font-fam">ARCHIVO BLACK, REGULAR</p>
-            <p class="font-descrp">Archivo Black is a grotesque sans serif typeface, designed with technical and bold characteristics.</p>
-        </div>
-        <div class="font-container">
-            <p class="font-type">COMPLEMENTARY</p>
-            <p class="opensans-font">Aa</p>
-            <p class="font-fam">OPEN SANS, REGULAR</p>
-            <p class="font-descrp">Open Sans is a humanist sans serif typeface, designed with an upright stress, open forms and a neutral, yet friendly
-            appearance.</p>
+        <div class="font-wrap">
+            <div class="font-container1">
+                <p class="font-type">BRAND</p>
+                <p class="archivo-black">Aa</p>
+                <p class="font-fam">ARCHIVO BLACK, REGULAR</p>
+                <p class="font-descrp">Archivo Black is a grotesque sans serif typeface, designed with technical and bold characteristics.</p>
+            </div>
+            <div class="font-container2">
+                <p class="font-type">COMPLEMENTARY</p>
+                <p class="opensans-font">Aa</p>
+                <p class="font-fam">OPEN SANS, REGULAR</p>
+                <p class="font-descrp">Open Sans is a humanist sans serif typeface, designed with an upright stress, open forms and a neutral, yet friendly
+                appearance.</p>
+            </div>
         </div>
     </div>
         <div class="typo-explain container">
@@ -636,6 +641,7 @@
             </div>
         </section>
             <div class="usability1-bg">
+                <div class="usability-wrap">
             <div class="usability1-photo">
                 <img src="images/case-study/usability1photoR1.png" class="usability1photo" alt="lofi dashboard">
                     <p class="caption">LoFi of Dashboard navigation bar non-distinctive and lack of breathing room between add button</p>
@@ -643,6 +649,7 @@
             <div class="usability2-photo">      
                 <img src="images/case-study/usability2r1.png" class="usability2photo" alt="hifi dashboard">
                     <p class="caption">HiFi of Dashboard navigation bar has distinctive icons and more space between add button</p>
+            </div>
             </div>
         </div>
                 <div class="takeaway-header container">
@@ -679,13 +686,17 @@
                     </div>
                 </section>
             <div class="preference-images">
-                <img src="images/case-study/Desktop v1.png" class="pref1image" alt="version 1">
-                    <p class="caption">23% users preferred this hero image</p>
-                <img src="images/case-study/Desktop v2.png" class="pref2image" alt="version 2">
-                    <p class="caption">77% users preferred this hero image because of its clarity, composition and activity.</p>
+                <div class="pref1">
+                    <img src="images/case-study/Desktop v1.png" class="pref1image" alt="version 1">
+                        <p class="caption">23% users preferred this hero image</p>
+                </div>
+                <div class="pref2">
+                    <img src="images/case-study/Desktop v2.png" class="pref2image" alt="version 2">
+                        <p class="caption">77% users preferred this hero image because of its clarity, composition and activity.</p>
+                </div>
             </div>
 
-    <!--Usability Testing: Round 2-->
+    <!--Usability Testing: Take  2-->
             <section class="deliverables container">
                 <h4 class="usability2-header">Usability Testing: Take 2</h4>
                 <div class="usability2-descrp">
@@ -697,10 +708,14 @@
                 </div>
             </section>
             <div class="testing-2-images">
-                <img src="images/case-study/V1  Add Activity Dashboard- HiFi.png" class="usabilityR2image1" alt="version 1 of add activity">
-                <p class="caption">First Hi-Fi mockup of the activity dashboard</p>
-                <img src="images/case-study/Round2usability2.png" class="usabilityR2image2" alt="version 2 of add activity">
-                <p class="caption">Final mockup of Activity Dashboard</p>
+                <div class="Round2image1">
+                    <img src="images/case-study/V1  Add Activity Dashboard- HiFi.png" class="usabilityR2image1" alt="version 1 of add activity">
+                    <p class="caption">First Hi-Fi mockup of the activity dashboard</p>
+                </div>
+                <div class="Round2image2">
+                    <img src="images/case-study/Round2usability2.png" class="usabilityR2image2" alt="version 2 of add activity">
+                    <p class="caption">Final mockup of Activity Dashboard</p>
+                </div>
             </div>
                 <div class="takeaway-header container">
                     <h4>Takeaways</h4>
@@ -715,7 +730,7 @@
                     <div class="takeaway-list">
                   <ul class="bullet-list">
                     <li><p>A small marker indicating the date</p></li>
-                    <li><p>horizontal lines for better readability</p></li>
+                    <li><p>Horizontal lines for better readability</p></li>
                     <li><p>Rings that represented the percentage of completion for each categories goals</p></li>
                 </ul>
                 </div>

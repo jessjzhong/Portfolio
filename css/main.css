@@ -26,6 +26,10 @@ body {
 /* -------------GENERAL------------------ */
 /* -------------GENERAL------------------ */
 
+strong {
+    font-weight: 800;
+}
+
 p {
   color: #1F3948;
   font-family: 'Open Sans', sans-serif;
@@ -375,7 +379,7 @@ footer {
 .showcase {
     display: flex;
     flex-direction: column;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .showcase .inner {
@@ -525,7 +529,7 @@ h1 > .announce {
     grid-template-columns: 1fr;
     grid-template-areas:
     "bio"
-    "essay"
+    "essay";
 }
 
 .box {
@@ -585,6 +589,7 @@ h1 > .announce {
 .aboutme {
     display: grid;
     margin: 4.5rem auto;
+    padding: 4rem 0;
     grid-template-columns: 1fr;
     grid-row-gap: 3rem;
     grid-template-areas:
@@ -623,6 +628,11 @@ h1 > .announce {
 
 .aboutme > .section4 > h4 {
     margin-bottom: 1rem;
+}
+
+.container2 {
+    width: 35rem;
+    margin: 0 auto;
 }
 
 /* -------------CONTACT------------------ */
@@ -851,6 +861,10 @@ h1 > .announce {
   "deliverables-descrp"
   "line2"
   "tools"
+}
+
+.deliverables-descrp {
+     list-style-type: none;
 }
 
 .project-info-container > div {
@@ -1191,8 +1205,15 @@ h1 > .announce {
 
 /* User Flows */
 
-.user-flow {
+.user-story-example {
+    display: none;
+}
+.user-flow-wrap {
   display: none;
+}
+
+.user-flow {
+    display: none;
 }
 
 /* Branding and Identity */
@@ -1203,8 +1224,8 @@ h1 > .announce {
 
 /* Logo Design*/
 
-.logo-header > h2 {
-  margin-top: 3.5rem;
+.logo-header > h4 {
+  margin-top: 5rem;
 }
 
 .logo-container {
@@ -1240,26 +1261,33 @@ h1 > .announce {
 
 .logo-caption > p {
   font-size: 1.4rem;
-  margin: 1rem auto;
+  margin: 1rem auto 3rem auto;
   text-align: center;
 }
 
 /* Color Palette */
 
-.color-palette {
+.color-palette1, .color-palette2 {
   align-items: center;
   display: grid;
   justify-items: center;
-  margin: 3.5rem auto 2rem auto;
   text-align: center;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 6rem;
+}
+
+.color-palette1 {
+    margin: 3.5rem auto 2rem auto;
+    grid-template-areas:
+    "color1 color2"
+    "color3 color4";
+}
+.color-palette2 {
+  margin: 6rem auto 2rem auto;
   grid-template-areas:
-  "color1 color2"
-  "color3 color4"
   "color5 color6"
-  "color7 color7"
+  "color7 color7";
 }
 
 .color1, .color2, .color3, .color4, .color5, .color6, .color7 {
@@ -1324,13 +1352,16 @@ h1 > .announce {
 
 .typo-container {
   background-color: #1F3948;
-  display: flex;
-  flex-direction: column;
-  margin: 2rem auto;
-  padding-bottom: 17rem;
   position: absolute;
   width: 100%;
   z-index: 3;
+}
+
+.font-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    padding-bottom: 17rem;
 }
 
 .typo-explain {
@@ -1343,19 +1374,19 @@ h1 > .announce {
   z-index: 4;
 }
 
-.typo-container > h2 {
+.typo-container > h4 {
   color: #F9F9F9;
   margin: 3rem auto 0 auto;
   text-align: center;
 }
 
-.font-container {
+.font-container1, .font-container2 {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.font-container > p {
+.font-container1 > p, .font-container2 > p  {
   color: #F9F9F9;
 }
 
@@ -1423,7 +1454,7 @@ h1 > .announce {
   padding-top: 0.4rem;
 }
 
-/* Usability Testing: Round 1 */
+/* Usability Testing: Take 1 */
 .deliverables > .usability-header {
     margin-top: 7rem;
 }
@@ -1458,7 +1489,7 @@ h1 > .announce {
 .caption {
   line-height: normal;
   margin: 1.3rem auto 4rem auto;
-  width: 35rem;
+  width: 33rem;
 }
 
 .usability1-photos > img {
@@ -1491,7 +1522,7 @@ h1 > .announce {
   align-items: center;
 }
 
-.preference-images > .caption {
+.preference-images > .pref1 > .caption, .preference-images > .pref2 > .caption {
   color: #1F3948;
   font-size: 1.4rem;
   font-weight: 600;
@@ -1501,7 +1532,7 @@ h1 > .announce {
   width: 35rem;
 }
 
-/* Usability Testing: Round 2 */
+/* Usability Testing: Take 2 */
 
 .deliverables > .usability2-header {
   margin-top: 5rem;
@@ -1522,19 +1553,24 @@ h1 > .announce {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
-  padding-top: 4rem;
+  /* margin-bottom: 3rem;
+  padding-top: 4rem; */
 }
 
-.usabilityR2image1, .usabilityR2image2 {
+.usabilityR2image1 {
+    padding-top: 4rem;
   width: 34rem;
   height: 45rem;
 }
 
-.testing-2-images > p {
+.usabilityR2image2 {
+    width: 34rem;
+    height: 47.2rem;
+}
+
+.testing-2-images > div > p {
   margin: 1rem auto 4rem auto;
   text-align: center;
-  /* width: 35rem; */
 }
 
 /* Final Prototype */
@@ -1590,4 +1626,928 @@ h1 > .announce {
   font-weight: 700;
   margin-top: 0.5rem;
   text-align: center;
+}
+
+/* ----------------------Media Queries / Responsive Design -------------------------*/
+/* ----------------------Media Queries / Responsive Design -------------------------*/
+/* ----------------------Media Queries / Responsive Design -------------------------*/
+
+/*---------------------- For Tablets ---------------------*/
+/*---------------------- For Tablets ---------------------*/
+
+@media screen and (min-width: 600px) {
+.container {
+  margin: 0 auto;
+  width: 50rem;
+}
+    /* Navigation */
+
+.navbar {
+    height: 8.5rem;
+}
+
+#logo {
+    padding: 2rem 0 2rem 6.5rem;
+}
+
+/* Footer */
+
+.social-flex-container {
+    width: 100%;
+    justify-content: center;
+}
+
+.social-flex-container > li > a > img {
+    padding: 0 2rem;
+}
+
+/* Hamburger Menu */
+
+.menu-wrap .hamburger {
+    display: none;
+}
+
+.menu-wrap .toggler {
+    display: none;
+}
+
+.menu-wrap .menu {
+    display: none;
+}
+
+.desktop-menu {
+    display: inline-block;
+    position: fixed;
+    width: 90%;
+    z-index: 1;
+}
+
+.desktop-menu > .menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 3rem 0;
+    
+}
+
+.menu-font-desktop {
+    color: #F9F9F9;
+    font-size: 1.6rem;
+    padding: 0 2.5rem;
+}
+
+.menu-font-desktop:hover {
+    color: #E7AFB8;
+}
+
+.desktop-menu > ul > li > a {
+    text-decoration: none;
+}
+
+/* -----------------HOMEPAGE---------------- */
+/* -----------------HOMEPAGE---------------- */
+/* -----------------HOMEPAGE---------------- */
+
+.showcase .inner {
+    margin-top: 16rem;
+    padding: 8rem 6rem 11rem 4rem;
+    width: 83%;
+    height: 43rem;
+}
+
+.container-showcase-bg > img {
+    top: -10rem;
+}
+
+.container-arrow {
+    top: 10rem;
+}
+
+.project-info-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 32rem;
+    margin: 6rem 0 0 6rem;
+}
+
+.projects-container {
+    flex-direction: row-reverse;
+    margin-top: 15rem;
+}
+
+.project-title > h2 {
+    font-size: 4.2rem;
+}
+.project-image1 {
+    margin-top: 4rem;
+}
+
+.project-info-wrap > .btn > .ptbutton {
+    margin: -1.5rem 0 5rem 3rem;
+}
+
+/* -----------------------ABOUT------------------------- */
+/* -----------------------ABOUT------------------------- */
+/* -----------------------ABOUT------------------------- */
+
+.bio {
+  display: grid;
+  margin-bottom: 10rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "bio essay"
+}
+
+.mobile-dots {
+  display: none;
+}
+
+.hero-wrap {
+  margin-top: 17.5rem;
+}
+
+.arrow {
+  display: none;
+}
+
+.essay > div {
+  margin-top: 12.5rem;
+}
+
+.aboutme {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.container2 {
+    width: 75%;
+}
+
+/* -----------------------ABOUT------------------------- */
+/* -----------------------ABOUT------------------------- */
+/* -----------------------ABOUT------------------------- */
+.header1 > h1 {
+    margin-top: 15rem;
+}
+/* -----------------------HEALTHPOINT------------------------- */
+/* -----------------------HEALTHPOINT------------------------- */
+/* -----------------------HEALTHPOINT------------------------- */
+
+.hp-logo {
+  margin-top: 2rem;
+}
+.hero-cs-image {
+  margin-top: -2rem;
+  /* margin-bottom: 3rem; */
+}
+
+.solution {
+  margin-top: 6rem;
+}
+
+/* Survey Results */
+.survey {
+  margin: 5rem auto 1rem auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2.5rem;
+  grid-template-areas:
+  "box1 box2 box3"
+  "box4 box5 box6" 
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+  height: 20rem;
+  width: 20rem;
+}
+
+.data > h3 {
+  font-size: 4.2rem;
+}
+
+.data-descrp > p {
+  font-size: 1.6rem;
+  width: 15rem;
+}
+
+.box-content1 {
+  padding: 2rem 2rem;
+}
+
+.box-content4 {
+  padding: 3rem;
+}
+
+.box-content5 {
+  padding: 1.4rem 0 0 1.1rem;
+}
+
+.box-content6 {
+  padding: 3rem 0.5rem;
+}
+
+.audience > p {
+  margin-top: -20rem;
+  padding-bottom: 2rem;
+}
+
+.ta-border {
+  width: 34em;
+}
+
+.takeaway-p > p {
+    margin-top: 2rem;
+}
+
+.project-info-divider {
+  width: 50rem;
+}
+
+.comp {
+  margin: 0 auto 7rem auto;
+}
+
+/* Personas */
+
+.persona-grid {
+  grid-gap: 1rem;
+}
+
+.persona {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas: 
+  "image-border persona-name"
+  "image-border persona-list"
+  "persona-descrp persona-descrp"
+}
+
+.image-border > img {
+  border-radius: 6.5rem;
+  margin: 4.1rem auto -2rem 2rem;
+}
+
+.persona-name {
+  text-align: left;
+  grid-area: persona-name
+}
+
+.persona-descrp {
+  grid-area: persona-descrp;
+}
+
+.image-border {
+  grid-area: image-border;
+}
+
+.intro-persona1 {
+  margin: 7rem 7rem 0 0;
+}
+
+.intro-persona2 {
+  margin: 7rem 10rem 0 0;
+}
+
+.persona-list {
+  text-align: left;
+  margin: 1rem auto;
+}
+
+.persona-descrp {
+  margin-top: -3rem;
+  margin-bottom: -3rem;
+  padding: 6rem;
+}
+
+.persona-outer2 {
+  margin-top: 2rem;
+}
+
+/* User Stories */
+
+.type-of-stories > p {
+  margin: 3rem auto;
+}
+/* Branding */
+
+.branding-identity > div > .branding {
+  margin-top: 10rem;
+}
+
+/* Logo */
+
+.hp-dark-bg {
+  margin-top: 15rem;
+}
+
+.darkbglogo {
+  margin-top: 5rem;
+  position: relative;
+  width: 47.5rem;
+  height: 25rem;
+  z-index: 2;
+}
+
+.lightbglogo {
+  text-align: center;
+  width: 47.5rem;
+  height: 25rem;
+}
+
+/* Color Palette */
+
+.color-palette1, .color-palette2 {
+  width: 40rem;
+}
+
+.color-palette1 {
+    margin: 3.5rem auto 2rem auto;
+    grid-template-areas:
+    "color1 color2"
+    "color3 color4";
+}
+.color-palette2 {
+  margin: 6rem auto 2rem auto;
+  grid-template-areas:
+  "color5 color6"
+  "color7 color7";
+}
+
+.color1, .color2, .color3, .color4, .color5, .color6, .color7 {
+  height: 15rem;
+  width: 15rem;
+}
+
+.color-type {
+  margin-top: 15rem;
+}
+
+.color-descrp {
+  margin: 8rem auto 5.8rem auto;
+}
+
+/* Typography */
+
+.typo-explain {
+  margin: 65rem auto 0 auto;
+}
+
+.font-descrp {
+  width: 50%;
+}
+
+/* Wireframes */
+
+.wireframesketches {
+  width: 53.5rem;
+  height: 28.5rem;
+}
+
+.wireframes-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.welcomepage-lofi-wireframe {
+  margin: 0 -17.2rem;
+}
+
+.lofi-activity-dash, .lofi-signup, .lofi-dashboard {
+  width: 16.5rem;
+  height: 27.4rem;
+}
+/* Preference */
+
+.pref1image, .pref2image {
+  width: 50rem;
+  height: 27.7rem;
+}
+
+.final-maindashboard {
+  margin-top: 3rem;
+}
+
+.reflections-descrp {
+  margin-top: 5rem;
+}
+
+.back-to-top {
+  margin-top: 6rem;
+}
+
+}
+
+/*---------------------- For Desktop---------------------*/
+/*---------------------- For Desktop---------------------*/
+/*---------------------- For Desktop---------------------*/
+
+@media screen and (min-width: 991px) {
+
+.showcase .inner {
+    padding: 10rem 12rem 11rem 9rem;
+    width: 80rem;
+}
+
+.hp-solution {
+    width: 54rem;
+    height: 40.6rem;
+}
+
+.project-image1 {
+    margin-right: 4rem;
+}
+
+.project-info-wrap {
+    width: 60rem;
+}
+
+.project-title > h2 {
+    font-size: 4.8rem;
+}
+/* ------------------------ABOUT ME ---------------------*/
+/* ------------------------ABOUT ME ---------------------*/
+/* ------------------------ABOUT ME ---------------------*/
+
+.container2 {
+  width: 85%;
+}
+
+.me {
+  display: none;
+}
+
+.desktop-me {
+  display: inline;
+}
+
+.hero {
+  padding-left: 5rem;
+}
+
+.aboutme {
+  padding-bottom: 5rem;
+  padding-right: 4rem;
+}
+
+/* -----------------------HEALTHPOINT------------------------- */
+/* -----------------------HEALTHPOINT------------------------- */
+/* -----------------------HEALTHPOINT------------------------- */
+
+.slogan {
+  display: none;
+}
+.mobile-cs-image {
+  display:none;
+}
+
+.desktop-solution {
+  display: inline;
+}
+
+.hero-cs-image {
+  margin-top: 3.5rem;
+  position: relative;
+  text-align: center;
+  z-index: 3;
+}
+
+.hp-logo {
+  width: 51.2rem;
+  height: 6.5rem;
+}
+
+.dots-bg {
+  padding: 33rem 0 9.6rem 0;
+}
+
+.hero-hp .hp-header {
+  margin-top: 15rem;
+}
+
+.container {
+  width: 70rem;
+}
+
+/* Project Roles */
+
+.project-info-divider {
+  margin: 4rem -7rem 0 -7rem;
+  transform: rotate(90deg);
+  width: 25rem;
+}
+
+.roles-info, .tools-info, .deliverables-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.deliverables-descrp {
+  display: grid;
+  grid-auto-columns: 1fr 1fr;
+  grid-auto-rows: 1fr 1fr;
+  grid-column-gap: 5rem;
+  grid-template-areas: 
+  "left-list right-list";
+}
+
+.project-info-container {
+  display: grid;
+  margin: 0 auto 9rem auto;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas:
+  "roles-info line-1 deliverables-info line2 tools-info";
+}
+
+.roles {
+  grid-area: roles;
+}
+
+.roles-descrp {
+  grid-area: roles-descrp;
+}
+
+.line-1 {
+  grid-area: line-1;
+}
+
+.deliverables-info {
+  grid-area: deliverables-info;
+  margin-top: 3rem;
+}
+
+.line2 {
+  grid-area: line2;
+}
+
+.tools {
+  grid-area: tools;
+}
+
+.design-tools {
+  grid-area: design-tools;
+}
+
+.challenge > h3, .solution > h3 {
+  font-size: 2.8rem;
+}
+
+/* Solution */
+
+.solution-screens {
+  width: 58.3rem;
+  height: 44rem;
+}
+
+.background-color-bg {
+  height: 41rem;
+}
+
+.solution-image {
+  margin-bottom: 4.5rem;
+}
+
+/* Survey */
+.survey {
+  margin: 3rem auto 1rem auto;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+  height: 24rem;
+  width: 24rem;
+}
+
+.data > h1 {
+  font-size: 4.8rem;
+}
+
+.data-descrp > p {
+  font-size: 1.8rem;
+  text-align: center;
+  width: 19rem;
+}
+
+.box-content1, .box-content2, .box-content5, .box-content6  {
+  padding: 3.3rem 2rem;
+}
+
+.box-content3 {
+  padding: 2.5rem 2rem;
+}
+
+.box-content4 {
+  padding: 4rem 2rem;
+}
+
+.audience > p {
+  margin-top: -23rem;
+}
+
+.ta-border {
+  width: 52em;
+}
+
+/* Competitive Analysis */
+
+.comp-divider1 > .project-info-divider, .comp-divider2 > .project-info-divider {
+  margin: 4rem -15rem 0 -15rem;
+  width: 38rem;
+}
+
+.comp {
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    margin: -1rem auto 4rem auto;
+    grid-column-gap: 1rem;
+    grid-template-areas:
+    "google-fit comp-divider1 dropbox-wrap comp-divider2 jefit-wrap";
+}
+
+.google-fit, .dropbox-wrap, .jefit-wrap {
+  margin-top: 1rem;
+  width: 28rem;
+}
+
+.comp > .dropbox-wrap > .comp-logo2 > .dropboxlogo {
+  margin-top: 6rem;
+}
+
+.comp > .jefit-wrap > .comp-logo3 > img {
+  margin-top: 5rem;
+  margin-bottom: -1.5rem;
+}
+
+/* Personas */
+
+.persona-grid {
+  margin: 0 auto;
+  width: 120rem;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas:
+  "persona-outer1 persona-outer2";
+}
+
+.persona-outer1, .persona-outer2 {
+  border: 0.5rem solid #02547B;
+  border-radius: 5rem;
+  height: 75rem;
+  width: 55rem;
+}
+
+.persona-outer2 {
+  margin-top: -0.5rem;
+  margin-right: 3rem;
+}
+
+.image-border > img {
+  margin: 4.1rem auto -2rem 4rem;
+}
+
+.persona-list {
+  margin-top: 1rem;
+  margin-right: 3rem;
+}
+
+.persona-descrp {
+  margin-top: -3rem;
+  margin-bottom: -3rem;
+  padding: 6rem 8rem;
+}
+
+/* User Stories */
+.stories {
+  display: none;
+}
+
+.user-role > .new-users > p, .user-role > .reg-users > p, .user-task > div > p, .user-task > .reg-tasks > p, .user-benefits > div > p, .user-benefits > div > .reg-benefits > p {
+    line-height: 225%;
+}
+
+.desktop-userstories > div > h5 {
+  margin-bottom: 1.5rem;
+}
+
+.user-role {
+  grid-area: user-role
+}
+
+.user-task {
+  grid-area: user-task;
+}
+
+.user-benefits {
+  grid-area: user-benefits;
+}
+.user-divider1 {
+  grid-area: user-divider1;
+}
+
+.user-divider2 {
+  grid-area: user-divider2;
+}
+
+.desktop-userstories {
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    margin: 5rem auto 6rem auto;
+    width: 90%;
+    grid-template-areas:
+    "user-role user-divider1 user-task user-divider2 user-benefits";
+} 
+
+.user-divider1 > .project-info-divider, .user-divider2 > .project-info-divider {
+  width: 45rem;
+  margin: 3rem -20rem 0 -20rem;
+}
+
+.user-role > .reg-users, .user-task > .reg-tasks, .user-benefits > div > .reg-benefits {
+    margin-top: 2rem;
+}
+
+
+.user-task, .user-benefits {
+    padding: 0 1rem;
+}
+
+
+.desktop-userstories > div > div > p, .desktop-userstories > div > div > div > p {
+   font-weight: 400;
+}
+
+.user-benefits {
+   margin-top: 4rem;
+    
+}
+
+/* User Flows */
+
+.user-flow-wrap {
+    display: block;
+    background-color: #1F3948;
+    width: 100%;
+}
+
+.user-flow > h5 {
+    color: #F9F9F9;
+    font-weight: 400;
+    margin-left: 2.5rem;
+    padding-bottom: 5rem;
+    text-align: left;
+}
+.user-flow {
+    display: block;
+    padding: 5rem;
+    text-align: center;
+}
+
+.user-story-example {
+    display: inline;
+}
+
+/* Logo Design */
+
+
+.sketchbg {
+  height: 50rem;
+  z-index: 1;
+}
+
+.logo-wrap {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 12rem;
+    position: relative;
+    z-index: 2;
+}
+
+.darkbglogo, .lightbglogo {
+  width: 55rem;
+  height: 29.1rem;
+}
+
+.lightbglogo {
+    margin-top: 20rem;
+    padding-left: 3rem;
+}
+
+
+/* Color Palette */
+
+.color-palette1, .color-palette2 {
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: 1fr;
+   
+}
+
+.color-palette1 {
+    grid-template-areas: 
+    "color1 color2 color3 color4";
+    grid-gap: 6rem;
+    margin-top: 5rem;
+}
+.color6, .color5 {
+    margin-right: 6rem;
+}
+
+.color-palette2 {
+    grid-template-areas: 
+    "color5 color6 color7";
+    width: 55rem;
+}
+
+/* Typography */
+
+.font-wrap {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.typo-explain {
+  margin: 48rem auto 0 auto;
+  padding: 3rem;
+}
+
+.font-container2 {
+    margin-top: 2.3rem;
+    margin-left: 10rem;
+}
+
+.font-descrp {
+  width: 30rem;
+}
+
+/* Wireframes */
+
+.wireframesketches {
+  width: 78.6rem;
+  height: 49.9rem;
+}
+
+.lofi-activity-dash, .lofi-signup, .lofi-dashboard {
+  width: 25rem;
+  height: 41.7rem;
+}
+
+.welcomepage-lofi-wireframe {
+  margin: 0 -7rem;
+}
+
+/* Usability Take 1 */
+
+.usability-wrap {
+    display: grid;
+    justify-content: center;
+    grid-gap: 8rem;
+    grid-template-areas: 
+  "usability1-photo usability2-photo"
+
+}
+
+/* Preference Testing */
+
+.pref1image, .pref2image {
+  width: 60rem;
+  height: 31rem;
+}
+
+.pref2 {
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+.preference-images {
+  flex-direction: row;
+}
+
+/* Usability Take 2 */
+
+.testing-2-images {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.Round2image2 {
+    margin-left: 8rem;
+    padding-top: 4rem;
+}
+.Round2image1 {
+    margin-top: 6.1rem;
+}
+
+/* Final Prototype */
+
 }
