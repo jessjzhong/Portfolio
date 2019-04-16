@@ -402,9 +402,14 @@ h1 > .announce {
 
 .container-showcase-bg > img {
     position: absolute;
-    top: 0.2rem;
+    top: 55rem;
     margin: 0 auto;
+    overflow: hidden;
     z-index: 1;
+}
+
+.background-large {
+  display: none;
 }
 
 .container-arrow {
@@ -543,15 +548,20 @@ h1 > .announce {
     display: flex;
     flex-direction: column;
     margin-top: 12rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     z-index: 2;
 }
 
 .mobile-dots  {
+   overflow: hidden;
     position: absolute;
-    top: 87rem;
+    top: 108rem;
     z-index: 1;  
+}
+
+.background-mobile {
+  overflow: hidden;
 }
 
 .hero > h1 {
@@ -828,6 +838,7 @@ h1 > .announce {
 
 .dots-bg {
   padding: 36rem 0 9.6rem 0;
+  overflow: hidden;
   position: absolute;
   width: 100%;
   z-index: 2;

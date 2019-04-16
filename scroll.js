@@ -1,10 +1,10 @@
 
-$("a[href^='#']").click(function (e) {
-    e.preventDefault();
+// $("a[href^='#']").click(function (e) {
+//     e.preventDefault();
 
-    var position = $($(this).attr("href")).offset().top;
+//     var position = $($(this).attr("href")).offset().top;
 
-    $("body, html").animate({
-        scrollTop: position
-    } ,800);
-});
+//     $("body, html").animate({
+//         scrollTop: position
+//     } ,800);
+// });
