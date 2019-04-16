@@ -400,6 +400,10 @@ h1 > .announce {
     margin-top: 3rem;
 }
 
+.background-mobile {
+  overflow: hidden;
+}
+
 .container-showcase-bg > img {
     position: absolute;
     top: 55rem;
