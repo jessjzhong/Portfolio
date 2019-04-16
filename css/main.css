@@ -1729,7 +1729,7 @@ h1 > .announce {
     margin: 6rem 0 0 1.5rem;
 }
 
-.projects-container {
+#projects {
     flex-direction: row-reverse;
     margin-top: 15rem;
 }
