@@ -9,15 +9,14 @@
 html {
     font-size: 10px;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0 auto;
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    /* width: 100%; */
 }
 
 .container {
@@ -44,7 +43,7 @@ p {
 
 h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 7.2rem;
+    font-size: 6.4rem;
     font-weight: 500;
 }
 
@@ -52,7 +51,7 @@ h2 {
     color: #1F3948;
     font-family: 'rubik', sans-serif;
     font-kerning: auto;
-    font-size: 4.8rem;
+    font-size: 4.2rem;
     font-weight: 500;
 }
 
@@ -68,7 +67,7 @@ h4 {
     color: #1F3948;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     line-height: 120%; 
 }
 
@@ -273,7 +272,7 @@ footer {
 
 .connect-text > h2 {
   color: #F9F9F9;
-  font-size: 3.4rem;
+  font-size: 2.8rem;
   font-weight: 400;
   line-height: 130%;
   padding-top: 3rem;
@@ -397,6 +396,10 @@ footer {
     z-index: 2;
 }
 
+h1 {
+  width: 80%;
+}
+
 h1 > .announce {
     color: #E7AFB8;
     line-height: 130%;
@@ -406,21 +409,19 @@ h1 > .announce {
     margin-top: 3rem;
 }
 
-.background-mobile {
-  overflow: hidden;
-}
-
-.container-showcase-bg > img {
-    position: absolute;
-    top: 55rem;
+.container-showcase-bg {
     margin: 0 auto;
+    object-position: 100% 0;
     overflow: hidden;
+    position: absolute;
+    top: -4rem;
     width: 100%;
     z-index: 1;
 }
 
-.background-large {
-  display: none;
+.container-showcase-bg .background-large {
+   display: block;
+   object-fit: cover;
 }
 
 .container-arrow {
@@ -428,7 +429,7 @@ h1 > .announce {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    top: 18rem;
+    top: 15rem;
     position: relative;
     z-index: 2;
 }
@@ -443,7 +444,7 @@ h1 > .announce {
 }
 
 .bounce {
-    -moz-animation: bounce 3s infinite;
+  -moz-animation: bounce 3s infinite;
 	-webkit-animation: bounce 3s infinite;
 	animation: bounce 3s infinite;    
 }
@@ -503,7 +504,7 @@ h1 > .announce {
     background-color: #91B7CF;
     display: flex;
     flex-direction: column;
-    margin: 25rem auto 0 auto;
+    margin: 18rem auto 0 auto;
 }
 
 .project-image1 {
@@ -512,8 +513,8 @@ h1 > .announce {
 }
 
 .hp-solution {
-    width: 35rem;
-    height: 26.3rem;
+    width: 100%;
+    height: auto;
 }
 
 .project-title {
@@ -528,7 +529,7 @@ h1 > .announce {
 
 .project-descrp {
     height: auto;
-    width: auto;
+    width: 100%;
     padding: 1rem 3rem 4.3rem 3rem;
 }
 
@@ -559,7 +560,7 @@ h1 > .announce {
     display: flex;
     flex-direction: column;
     margin-top: 12rem;
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
     z-index: 2;
 }
@@ -567,8 +568,9 @@ h1 > .announce {
 .mobile-dots  {
     overflow: hidden;
     position: absolute;
-    top: 108rem;
-    width: 95%;
+    top: 85rem;
+    max-width: 100%;
+    max-height: auto;
     z-index: 1;  
 }
 
@@ -579,11 +581,14 @@ h1 > .announce {
 .hero > h1 {
     color: #E7AFB8;
     line-height: 120%;
-    margin: 5rem auto 3rem 0;
+    margin: 5rem 0 3rem 0;
+    text-align: left;
 
 }
 
-.hero > img {
+.me {
+    max-width: 100%;
+    max-height: auto;
     margin: 3.5rem auto 7rem auto;
 }
 
@@ -653,7 +658,7 @@ h1 > .announce {
 }
 
 .container2 {
-    width: 35rem;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -677,7 +682,7 @@ h1 > .announce {
 .header1 > h1 {
     color: #9B0656;
     font-size: 4.8rem;
-    margin: 12rem auto 2rem auto;
+    margin: 12rem auto 2rem 0rem;
 }
 
 .header1 > h5 {
@@ -744,9 +749,9 @@ h1 > .announce {
     transition: 0.5s ease-in-out;
 }
 
-/* -------------HEALTHPOINT------------------ */
-/* -------------HEALTHPOINT------------------ */
-/* -------------HEALTHPOINT------------------ */
+/* ---------------------------HEALTHPOINT---------------------------- */
+/* ---------------------------HEALTHPOINT---------------------------- */
+/* ---------------------------HEALTHPOINT---------------------------- */
 
 /* General */
 
@@ -757,24 +762,31 @@ h1 > .announce {
   width: 18rem;
 }
 
-.project-info-divider {
+.project-info-container .project-info-divider {
   border: 2px solid #02547B;
   text-align: center;
-  width: 35rem;
+  width: 85%;
 }
+
+.comp .project-info-divider {
+  border: 2px solid #02547B;
+  text-align: center;
+  width: 100%;
+}
+
 
 /* Takeaways */
 
 .ta-border {
   border: 2.5px solid #9B0656;
-  width: 19.8rem;
+  width: 21rem;
 }
 
 .takeaway-header {
   display: flex;
   flex-direction: row;
   margin: 4rem auto 2rem auto;
-  width: 35rem;
+  width: 85%;
 }
 
 .takeaway-header > div {
@@ -823,13 +835,14 @@ h1 > .announce {
 }
 
 .hp-logo {
-  width: 34rem;
-  height: 4.2rem;
+  width: 80%;
+  height: auto;
 }
 
 .slogan {
-  padding: 0 8.4rem 6.4rem 8.4rem;
+  margin: 0 auto;
   text-align: center;
+  width: 70%;
 }
 
 .desktop-solution {
@@ -837,6 +850,7 @@ h1 > .announce {
 }
 
 .hero-cs-image {
+  margin-top: 4rem;
   padding-bottom: 6.1rem;
   position: relative;
   text-align: center;
@@ -844,12 +858,13 @@ h1 > .announce {
 }
 
 .mobile-cs-image {
-  width: 22.5rem;
-  height: 46rem;
+  width: 55%;
+  height: auto;
 }
 
 .dots-bg {
-  padding: 36rem 0 9.6rem 0;
+  margin: 0 auto;
+  padding: 31rem 0 9.6rem 0;
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -887,7 +902,7 @@ h1 > .announce {
 }
 
 .deliverables-descrp {
-     list-style-type: none;
+  list-style-type: none;
 }
 
 .project-info-container > div {
@@ -944,13 +959,13 @@ h1 > .announce {
 }
 
 .solution-screens {
-  width: 35rem;
-  height: 26.4rem;
+  width: 85%;
+  height: auto;
 }
 
 .background-color-bg {
   background-color: #E7AFB8;
-  height: 23.3rem;
+  height: 32%;
   margin-top: 1.7rem;
   position: absolute;
   width: 100%;
@@ -1011,8 +1026,8 @@ h1 > .announce {
 .box1, .box2, .box3, .box4, .box5, .box6 {
   border: 0.5rem solid #02547B;
   border-radius: 5rem;
-  height: 17rem;
-  width: 17rem;
+  height: 16rem;
+  width: 16rem;
 }
 
 .data > h3 {
@@ -1023,11 +1038,11 @@ h1 > .announce {
 }
 
 .data-descrp > p {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 600;
   line-height: normal;
   margin: 0 auto;
-  width: 13rem;
+  width: 12rem;
 }
 
 .box-content1 {
@@ -1104,11 +1119,20 @@ h1 > .announce {
   margin: 1.5rem 0;
 }
 
+.googlefitlogo, .jefitlogo {
+  height: auto;
+  width: 80%;
+}
+
 .dropboxlogo {
-  width: 22rem;
-  height: 4.5rem;
+  width: 65%;
+  height: auto;
   margin-top: 1.5rem;
 }
+
+/* .comp > div > .project-info-divider {
+  width: 100%;
+} */
 
 /* User Personas */
 
@@ -1138,7 +1162,7 @@ h1 > .announce {
   border: 0.5rem solid #02547B;
   border-radius: 5rem;
   margin: 3rem auto 0.5rem auto;
-  width: 35rem;
+  
 }
 
 .persona {
@@ -1260,7 +1284,7 @@ h1 > .announce {
 .sketchbg {
   position: absolute;
   width: 100%;
-  height: 34rem;
+  height: 30%;
   z-index: 1;
 }
 
@@ -1269,17 +1293,17 @@ h1 > .announce {
 }
 
 .darkbglogo {
-  margin-top: 21rem;
+  margin-top: 15rem;
   position: relative;
-  width: 35rem;
-  height: 18rem;
+  width: 80%;
+  height: auto;
   z-index: 2;
 }
 
 .lightbglogo {
   text-align: center;
-  width: 35rem;
-  height: 18rem;
+  width: 80%;
+  height: auto;
 }
 
 .logo-caption > p {
@@ -1406,6 +1430,7 @@ h1 > .announce {
 .font-container1, .font-container2 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 
@@ -1438,7 +1463,7 @@ h1 > .announce {
   font-weight: 500;
   margin: 0 auto;
   text-align: left;
-  width: 35rem;
+  width: 80%;
   
 }
 
@@ -1454,8 +1479,8 @@ h1 > .announce {
 }
 
 .wireframesketches {
-  width: 35rem;
-  height: 22rem;
+  width: 85%;
+  height: auto;
 }
 
 .wireframes-container {
@@ -1496,28 +1521,26 @@ h1 > .announce {
 
 .usability1-bg {
   background-color: #1F3948;
-  align-items: center;
+  padding-top: 1rem;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
+}
+
+.usability-wrap {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-bottom: 3rem;
-  text-align: center;
-  padding-top: 4rem;
-  grid-template-areas: 
-  "usability1-photo"
-  "usability2-photo"
+  margin: 4rem auto;
+  width: 30%;
 }
 
 .caption {
   line-height: normal;
   margin: 1.3rem auto 4rem auto;
-  width: 33rem;
+  text-align: center;
+  width: 95%;
 }
 
-.usability1-photos > img {
-  text-align: center;
-}
 
 /* Preference Testing */
 
@@ -1529,13 +1552,14 @@ h1 > .announce {
 }
 
 .pref-descrp > .pref-question {
-  margin: 3rem auto 2rem auto;
+  margin: 3rem auto;
   text-align: center;
 }
 
 .pref1image, .pref2image {
-  width: 35rem;
-  height: 19.4rem;
+  height: auto; 
+  margin: 0 3rem;
+  width: 85%;
 }
 
 .preference-images {
@@ -1543,6 +1567,7 @@ h1 > .announce {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .preference-images > .pref1 > .caption, .preference-images > .pref2 > .caption {
@@ -1552,7 +1577,7 @@ h1 > .announce {
     line-height: normal;
     margin: 1rem auto 4rem auto;
     text-align: center;
-    width: 35rem;
+    width: 85%;
 }
 
 /* Usability Testing: Take 2 */
@@ -1580,20 +1605,21 @@ h1 > .announce {
  
 }
 
-.usabilityR2image1 {
-    padding-top: 4rem;
-    width: 34rem;
-    height: 45rem;
+.usabilityR2image1, .usabilityR2image2  {
+    height: auto;
+    margin: 0 3rem;
+    text-align: center;
+    width: 85%;
+   
 }
-
-.usabilityR2image2 {
-    width: 34rem;
-    height: 47.2rem;
+.usabilityR2image1 {
+  padding-top: 4rem;
 }
 
 .testing-2-images > div > p {
   margin: 1rem auto 4rem auto;
   text-align: center;
+  width: 80%
 }
 
 /* Final Prototype */
@@ -1613,6 +1639,10 @@ h1 > .announce {
   text-align: center;
 }
 
+.maindashboard-image, .analytics-final, .goals-image-phone {
+  width: 55%;
+  height: auto;
+}
 .final-descrp1, .final-descrp2, .final-descrp3 {
   text-align: left;
 }
@@ -1651,6 +1681,8 @@ h1 > .announce {
   text-align: center;
 }
 
+
+
 /* ----------------------Media Queries / Responsive Design -------------------------*/
 /* ----------------------Media Queries / Responsive Design -------------------------*/
 /* ----------------------Media Queries / Responsive Design -------------------------*/
@@ -1661,9 +1693,9 @@ h1 > .announce {
 @media screen and (min-width: 600px) {
 .container {
   margin: 0 auto;
-  width: 50rem;
+  width: 75%;
 }
-    /* Navigation */
+/* Navigation */
 
 .navbar {
     height: 8.5rem;
@@ -1678,6 +1710,11 @@ h1 > .announce {
 .social-flex-container {
     width: 100%;
     justify-content: center;
+}
+
+.sync-up > p {
+  margin: 0 auto;
+  max-width: 50%;
 }
 
 .social-flex-container > li > a > img {
@@ -1701,7 +1738,7 @@ h1 > .announce {
 .desktop-menu {
     display: inline-block;
     position: fixed;
-    width: 90%;
+    width: 85%;
     z-index: 1;
 }
 
@@ -1731,71 +1768,69 @@ h1 > .announce {
 /* -----------------HOMEPAGE---------------- */
 /* -----------------HOMEPAGE---------------- */
 
-.showcase .inner {
-    margin-top: 16rem;
-    padding: 8rem 6rem 11rem 4rem;
-    width: 83%;
-    height: 43rem;
+h1 {
+  width: 70%;
 }
 
-.container-showcase-bg > img {
-    top: -10rem;
+.showcase .inner {
+  height: auto;
+  padding-left: 4rem;
+  margin-top: 16rem;
+  width: 80%;
+}
+
+.container-showcase-bg {
+  top: -8rem;
 }
 
 .container-arrow {
-    top: 10rem;
+  top: 11rem;
 }
 
 .project-info-wrap {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 6rem 0 0 1.5rem;
+    margin: 2rem 0 0 1.5rem;
+} 
+
+.project-descrp {
+    width: 95%;
 }
 
-#projects {
-    flex-direction: row-reverse;
-    margin-top: 15rem;
-}
-
-.project-title > h2 {
-    font-size: 4.2rem;
-}
 .project-image1 {
-    margin-top: 2rem;
-}
+    padding: 5rem 3rem 2rem 3rem;
+    width: 80%;
+} 
 
-.project-info-wrap > .btn > .ptbutton {
-    margin: -1.5rem 0 5rem 3rem;
-}
 
 /* -----------------------ABOUT------------------------- */
 /* -----------------------ABOUT------------------------- */
 /* -----------------------ABOUT------------------------- */
 
-.bio {
-  display: grid;
-  margin-bottom: 10rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-  "bio essay"
-}
+.hero > h1 {
+/* text-align: left; */
+width: 100%;
 
-.mobile-dots {
+}
+/* .mobile-dots {
   display: none;
-}
+} */
 
 .hero-wrap {
-  margin-top: 17.5rem;
+  margin-top: 15rem;
 }
 
-.arrow {
+.mobile-dots  {
+    top: 74rem; 
+}
+/* .arrow {
   display: none;
-}
+} */
 
-.essay > div {
+/* .essay > div {
   margin-top: 12.5rem;
-}
+} */
 
 .aboutme {
   padding-top: 6rem;
@@ -1806,9 +1841,6 @@ h1 > .announce {
     width: 75%;
 }
 
-/* -----------------------ABOUT------------------------- */
-/* -----------------------ABOUT------------------------- */
-/* -----------------------ABOUT------------------------- */
 .header1 > h1 {
     margin-top: 15rem;
 }
@@ -1818,30 +1850,49 @@ h1 > .announce {
 
 .hp-logo {
   margin-top: 2rem;
-}
-.hero-cs-image {
-  margin-top: -2rem;
-  /* margin-bottom: 3rem; */
+  width: 50%;
 }
 
+.hero-cs-image {
+  margin-top: -2rem;
+}
+
+.mobile-cs-image {
+  margin-top: 5rem;
+  width: 40%;
+
+}
+.dots-bg {
+  padding: 36rem 0 9.6rem 0;
+}
 .solution {
   margin-top: 6rem;
 }
+
+.solution-screens {
+  width: 65%;
+}
+
+.background-color-bg {
+  height: 30.5%;
+ 
+}
+
 
 /* Survey Results */
 .survey {
   margin: 5rem auto 1rem auto;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2.5rem;
+  grid-gap: 2rem;
   grid-template-areas:
   "box1 box2 box3"
   "box4 box5 box6" 
 }
 
 .box1, .box2, .box3, .box4, .box5, .box6 {
-  height: 20rem;
-  width: 20rem;
+  height: 17rem;
+  width: 17rem;
 }
 
 .data > h3 {
@@ -1849,33 +1900,24 @@ h1 > .announce {
 }
 
 .data-descrp > p {
-  font-size: 1.6rem;
-  width: 15rem;
-}
-
-.box-content1 {
-  padding: 2rem 2rem;
+  font-size: 1.3rem;
 }
 
 .box-content4 {
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .box-content5 {
-  padding: 1.4rem 0 0 1.1rem;
+  padding: 1rem 0 0 1.1rem;
 }
 
-.box-content6 {
-  padding: 3rem 0.5rem;
-}
 
 .audience > p {
-  margin-top: -20rem;
-  padding-bottom: 2rem;
+  margin-top: -15rem;
 }
 
 .ta-border {
-  width: 34em;
+  width: 33em;
 }
 
 .takeaway-p > p {
@@ -1883,7 +1925,7 @@ h1 > .announce {
 }
 
 .project-info-divider {
-  width: 50rem;
+  width: 75%;
 }
 
 .comp {
@@ -1961,21 +2003,11 @@ h1 > .announce {
 /* Logo */
 
 .hp-dark-bg {
-  margin-top: 15rem;
-}
-
-.darkbglogo {
   margin-top: 5rem;
-  position: relative;
-  width: 47.5rem;
-  height: 25rem;
-  z-index: 2;
 }
 
-.lightbglogo {
-  text-align: center;
-  width: 47.5rem;
-  height: 25rem;
+.sketchbg {
+  height: 40%;
 }
 
 /* Color Palette */
@@ -2013,18 +2045,22 @@ h1 > .announce {
 /* Typography */
 
 .typo-explain {
-  margin: 65rem auto 0 auto;
+  margin: 70rem auto 0 auto;
 }
 
+
 .font-descrp {
-  width: 50%;
+  width: 60%;
 }
+
+/* .font-container2 .font-descrp {
+  width: 60%;
+} */
 
 /* Wireframes */
 
 .wireframesketches {
-  width: 53.5rem;
-  height: 28.5rem;
+  width: 75%;
 }
 
 .wireframes-images {
@@ -2034,18 +2070,38 @@ h1 > .announce {
 }
 
 .welcomepage-lofi-wireframe {
-  margin: 0 -15rem;
+  margin: 0 -10rem;
 }
 
 .lofi-activity-dash, .lofi-signup, .lofi-dashboard {
-  width: 16.5rem;
-  height: 27.4rem;
+  width: 55%;
+  height: auto;
 }
+
+
+.usability-wrap {
+  
+  margin: 4rem auto;
+  width: 60%;
+}
+/* 
+.caption {
+  line-height: normal;
+  margin: 1.3rem auto 4rem auto;
+  text-align: center;
+  width: 95%;
+} */
+
+
 /* Preference */
 
 .pref1image, .pref2image {
-  width: 50rem;
-  height: 27.7rem;
+   width: 80%;
+   margin: 0 6rem;
+}
+
+.preference-images > .pref1 > .caption, .preference-images > .pref2 > .caption {
+    width: 60%;
 }
 
 .final-maindashboard {
@@ -2060,55 +2116,232 @@ h1 > .announce {
   margin-top: 6rem;
 }
 
+.maindashboard-image, .analytics-final, .goals-image-phone {
+  width: 45%;
+  height: auto;
+}
 }
 
+/* IPAD */
+
+@media screen and (min-width: 700px) {
+.desktop-menu {
+    width: 90%;
+}
+
+
+h1 {
+  width: 100%;
+}
+
+.showcase .inner {
+  height: auto;
+  padding-left: 4rem;
+  margin-top: 16rem;
+  width: 81%;
+}
+
+.container-showcase-bg {
+  top: -19rem;
+}
+
+.container-arrow {
+  top: 11rem;
+}
+
+
+.hp-logo {
+  margin-top: 2rem;
+  width: 50%;
+}
+
+.hero-cs-image {
+  margin-top: -2rem;
+}
+
+.mobile-cs-image {
+  margin-top: 5rem;
+  width: 30%;
+
+}
+.dots-bg {
+  
+  padding: 33rem 0 9.6rem 0;
+}
+
+/* About Me */
+.mobile-dots  {
+    top: 70rem; 
+}
+
+/* HealthPoint */
+.solution {
+  margin-top: 6rem;
+}
+
+.solution-screens {
+  width: 60%;
+}
+
+.background-color-bg {
+  height: 30.5%;
+  margin-top: 2rem;
+ 
+}
+
+.ta-border {
+  width: 43rem;
+}
+
+.survey {
+  margin: 5rem auto 1rem auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2.5rem;
+  grid-template-areas:
+  "box1 box2 box3"
+  "box4 box5 box6" 
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+  height: 20rem;
+  width: 20rem;
+}
+
+.data > h3 {
+  font-size: 4.2rem;
+}
+
+.data-descrp > p {
+  font-size: 1.6rem;
+  width: 15rem;
+}
+
+.box-content1 {
+  padding: 2rem 2rem;
+}
+
+.box-content4 {
+  padding: 3rem;
+}
+
+.box-content5 {
+  padding: 1.4rem 0 0 1.1rem;
+}
+
+.box-content6 {
+  padding: 3rem 0.5rem;
+}
+
+.lofi-activity-dash, .lofi-signup, .lofi-dashboard {
+  width: 70%;
+
+}
+
+.welcomepage-lofi-wireframe {
+  margin: 0 -6rem;
+}
+
+
+/* Usability */
+.usability-wrap {
+  margin: 4rem auto;
+  width: 40%;
+}
+
+
+}
 /*---------------------- For Desktop---------------------*/
 /*---------------------- For Desktop---------------------*/
 /*---------------------- For Desktop---------------------*/
 
 @media screen and (min-width: 991px) {
 
+h1 {
+  font-size: 7.2rem;
+}
+
 .desktop-menu {
     width: 93%;
 }
 
+.container-showcase-bg {
+  top: -7rem;
+}
+
 .showcase .inner {
-    padding: 10rem 12rem 11rem 7rem;
-    width: 76rem;
+    padding: 10rem 10rem 11rem 7rem;
+    width: 56%;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 8rem 3rem 0;
+    width: 100%;
 }
 
 .hp-solution {
-    width: 54rem;
-    height: 40.6rem;
-}
-
-.project-image1 {
-    margin-right: 4rem;
+  width: 110%;
+  height: auto;
 }
 
 .project-info-wrap {
     margin-left: 4rem;
-    width: 60rem;
+} 
+
+.project-info-wrap .ptbutton {
+  margin: 0 3rem;
 }
+
 
 .project-title > h2 {
-    font-size: 4.8rem;
+    font-size: 5.8rem;
 }
+.project-descrp {
+    width: 70%;
+    padding: 1rem 3rem 4.3rem 3rem;
+}
+
+
+/* Footer */
+
+/* .sync-up > p {
+  max-width: 30%;
+} */
+
 /* ------------------------ABOUT ME ---------------------*/
 /* ------------------------ABOUT ME ---------------------*/
 /* ------------------------ABOUT ME ---------------------*/
 
+.bio {
+  display: grid;
+  margin-bottom: 10rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "bio essay"
+}
 .container2 {
-  width: 85%;
+  width: 90%;
 }
 
 .me {
+  margin-top: 5rem;
+  width: 90%;
+}
+
+.mobile-dots {
   display: none;
 }
 
-.desktop-me {
-  display: inline;
+.arrow {
+  display: none;
 }
+
+.essay > div {
+  margin-top: 10rem;
+}
+
 
 .hero {
   padding-left: 5rem;
@@ -2118,6 +2351,7 @@ h1 > .announce {
   padding-bottom: 5rem;
   padding-right: 4rem;
 }
+
 
 /* -----------------------HEALTHPOINT------------------------- */
 /* -----------------------HEALTHPOINT------------------------- */
@@ -2142,8 +2376,7 @@ h1 > .announce {
 }
 
 .hp-logo {
-  width: 51.2rem;
-  height: 6.5rem;
+  width: 35%;
 }
 
 .dots-bg {
@@ -2155,12 +2388,12 @@ h1 > .announce {
 }
 
 .container {
-  width: 70rem;
+  width: 45%;
 }
 
 /* Project Roles */
 
-.project-info-divider {
+.project-info-container .project-info-divider {
   margin: 4rem -7rem 0 -7rem;
   transform: rotate(90deg);
   width: 25rem;
@@ -2227,12 +2460,12 @@ h1 > .announce {
 /* Solution */
 
 .solution-screens {
-  width: 58.3rem;
-  height: 44rem;
+  width: 41%;
+  height: auto;
 }
 
 .background-color-bg {
-  height: 41rem;
+  height: 45%;
 }
 
 .solution-image {
@@ -2276,14 +2509,16 @@ h1 > .announce {
 }
 
 .ta-border {
-  width: 52em;
+  width: 49em;
 }
 
 /* Competitive Analysis */
 
-.comp-divider1 > .project-info-divider, .comp-divider2 > .project-info-divider {
+.comp .project-info-divider {
   margin: 4rem -15rem 0 -15rem;
-  width: 38rem;
+  transform: rotate(90deg);
+  width: 36rem;
+
 }
 
 .comp {
@@ -2298,7 +2533,7 @@ h1 > .announce {
 
 .google-fit, .dropbox-wrap, .jefit-wrap {
     margin-top: 1rem;
-    width: 28rem;
+    width: 30rem;
 }
 
 .comp > .dropbox-wrap > .comp-logo2 > .dropboxlogo {
@@ -2390,9 +2625,11 @@ h1 > .announce {
     "user-role user-divider1 user-task user-divider2 user-benefits";
 } 
 
-.user-divider1 > .project-info-divider, .user-divider2 > .project-info-divider {
-  width: 45rem;
+.desktop-userstories .project-info-divider {
+  border: 2px solid #02547B;
   margin: 3rem -20rem 0 -20rem;
+  width: 45rem;
+  transform: rotate(90deg);
 }
 
 .user-role > .reg-users, .user-task > .reg-tasks, .user-benefits > div > .reg-benefits {
@@ -2443,7 +2680,7 @@ h1 > .announce {
 
 
 .sketchbg {
-  height: 50rem;
+  height: 50%;
   z-index: 1;
 }
 
@@ -2458,8 +2695,8 @@ h1 > .announce {
 }
 
 .darkbglogo, .lightbglogo {
-  width: 55rem;
-  height: 29.1rem;
+  width: 80%;
+  height: auto;
 }
 
 .lightbglogo {
@@ -2499,65 +2736,84 @@ h1 > .announce {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
+    margin: 4rem auto 0 auto;
+    width: 50%;
 }
 
 .typo-explain {
   margin: 48rem auto 0 auto;
   padding: 3rem;
 }
-
+ 
 .font-container2 {
-    margin-top: 2.3rem;
-    margin-left: 10rem;
+    margin-right: -5rem;
 }
 
 .font-descrp {
-  width: 30rem;
+  width: 85%;
+}
+
+.font-container2 .font-descrp {
+  width: 70%;
+}
+
+.typo-explain {
+  width: 50%;
 }
 
 /* Wireframes */
 
 .wireframesketches {
-  width: 78.6rem;
-  height: 49.9rem;
+  width: 60%;
 }
 
 .lofi-activity-dash, .lofi-signup, .lofi-dashboard {
-  width: 25rem;
-  height: 41.7rem;
+  width: 100%;
 }
 
 .welcomepage-lofi-wireframe {
-  margin: 0 -7rem;
+  margin: 0 5rem;
 }
 
 /* Usability Take 1 */
 
-.usability-wrap {
-    display: grid;
-    justify-content: center;
-    grid-gap: 8rem;
-    grid-template-areas: 
-  "usability1-photo usability2-photo"
 
+.usability-wrap {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 4rem auto;
+  width: 52%;
+}
+
+.usability1-photo .caption {
+  margin: 1.3rem 0 4rem 0;
+  width: 90%;
 }
 
 /* Preference Testing */
 
-.pref1image, .pref2image {
-    height: 31rem;
-    width: 60rem;
-}
-
-.pref2 {
-    margin-top: 2rem;
-    margin-left: 3rem;
-}
 .preference-images {
   flex-direction: row;
 }
+.pref1image, .pref2image {
+    width: 100%;
+}
 
+.pref1 {
+  margin-right: 6rem;
+}
+.pref2 {
+    margin-top: 2rem;
+    margin-right: 12rem;
+}
+
+.preference-images > .pref1 > .caption, .preference-images > .pref2 > .caption {
+  margin-right: 6rem;
+
+
+}
 /* Usability Take 2 */
 
 .testing-2-images {
@@ -2568,8 +2824,7 @@ h1 > .announce {
 }
 
 .Round2image2 {
-    margin-left: 8rem;
-    padding-top: 4rem;
+    padding-top: 4.5em;
 }
 .Round2image1 {
     margin-top: 6.1rem;
@@ -2588,19 +2843,33 @@ h1 > .announce {
     margin-top: 17rem;
 }
 
+.maindashboard-image, .analytics-final, .goals-image-phone {
+  width: 47%;
+  height: auto;
+}
 .maindashboard-image, .goals-image-phone, .analytics-final{
     position: relative;
     z-index: 4;
 }
 
+.maindashboard-image, .goals-image-phone{
+  margin-left: -14rem;
+  margin-right: 4rem;
+}
+
+.analytics-final{
+  margin-right: -20rem;
+  margin-left: 4rem;
+}
+
 .final-descrp1, .final-descrp3 {
-    padding: 1rem 6.5rem 1rem 37.4rem;
+    padding: 1rem 8rem 1rem 25em;
     position: absolute;
     z-index: 3;
 }
 
 .final-descrp2 {
-    padding: 1rem 37.4rem 1rem 6.5rem;
+    padding: 1rem 23rem 1rem 6.5rem;
     position: absolute;
     z-index: 3;
 }
@@ -2619,11 +2888,148 @@ h1 > .announce {
     margin: 8rem 0;
 }
 
-.final-images {
+.goals-image-phone {
+  margin-bottom:10rem;
+}
+
+/* .final-images {
     margin-top: 8rem;
     margin-bottom: 10rem;
-    width: 70vw;
+    width: 70vw; */
 
 }
+
+
+
+/* Iphone X */
+@media screen and (max-width: 375px) {
+h1 {
+  width: 100%;
+}
+
+
+.container-showcase-bg {
+    top: -6rem;
+  
+}
+
+/* About */
+
+.mobile-dots  {
+    top: 84rem;
+}
+
+/* HEALTHPOINT */
+.background-color-bg {
+  height: 21rem;
+}
+
+.ta-border {
+  width: 18rem;
+}
+}
+
+
+/* Galaxy */
+@media screen and (max-width: 360px) {
+
+
+.container-showcase-bg {
+    top: -1rem;
+  
+}
+.mobile-dots  {
+    top: 88rem; 
+}
+
+}
+
+/* iPhone SE SIZE: */
+@media screen and (max-width: 320px) {
+
+.container {
+  max-width: 80%;
+}
+
+h1 {
+    font-size: 5.2rem;
+    font-weight: 500;
+}
+
+h2 {
+    color: #1F3948;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+
+h3 {
+    font-size: 2.8em; 
+}
+
+h4 {
+    color: #1F3948;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+h5 {
+    color: #1F3948;
+    font-size: 1.8rem;
+
+p {
+  font-size: 1.6rem;
+
+}
+
+/* ----------------------------HOMEPAGE---------------------------- */
+/* ----------------------------HOMEPAGE---------------------------- */
+/* ----------------------------HOMEPAGE---------------------------- */
+
+
+h1 {
+  width: 90%;
+}
+
+
+.container-showcase-bg {
+    top: -13.7rem;
+}
+
+.project-title > h2 {
+  font-size: 3.6rem;
+}
+
+/*----------------------------- ABOUT ME---------------------------- */
+/*----------------------------- ABOUT ME---------------------------- */
+/*----------------------------- ABOUT ME---------------------------- */
+
+.mobile-dots  {
+    top: 66rem;
+}
+
+
+/*----------------------------- CONTACT--------------------------- */
+/*----------------------------- CONTACT--------------------------- */
+/*----------------------------- CONTACT--------------------------- */
+
+h1{
+  width: 100%;
+}
+
+
+/*----------------------------- HEALTHPOINT---------------------------- */
+/*----------------------------- HEALTHPOINT---------------------------- */
+/*----------------------------- HEALTHPOINT---------------------------- */
+.color1, .color2, .color3, .color4, .color5, .color6, .color7 {
+  border-radius: 4rem;
+  height: 12rem;
+  width: 12rem;
+}
+
+
+
+
+
 
 }
