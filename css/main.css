@@ -568,7 +568,7 @@ h1 > .announce {
 .mobile-dots  {
     overflow: hidden;
     position: absolute;
-    top: 85rem;
+    top: 89rem;
     max-width: 100%;
     max-height: auto;
     z-index: 1;  
@@ -586,14 +586,10 @@ h1 > .announce {
 
 }
 
-.me {
+.desktop-me {
     max-width: 100%;
     max-height: auto;
     margin: 3.5rem auto 7rem auto;
-}
-
-.desktop-me {
-  display: none;
 }
 
 .arrow {
@@ -1813,16 +1809,14 @@ h1 {
 width: 100%;
 
 }
-/* .mobile-dots {
-  display: none;
-} */
+
 
 .hero-wrap {
   margin-top: 15rem;
 }
 
 .mobile-dots  {
-    top: 74rem; 
+    top: 93rem; 
 }
 /* .arrow {
   display: none;
@@ -2171,7 +2165,7 @@ h1 {
 
 /* About Me */
 .mobile-dots  {
-    top: 70rem; 
+    top: 94rem; 
 }
 
 /* HealthPoint */
@@ -2329,10 +2323,17 @@ h1 {
   width: 90%;
 }
 
+
 .me {
-  margin-top: 5rem;
-  width: 90%;
+  display: none;
 }
+
+.desktop-me {
+  display: inline-block;
+  padding-top:5rem;
+  width: 85%;
+}
+
 
 .mobile-dots {
   display: none;
@@ -2937,6 +2938,16 @@ h1 {
  
 }
 
+.me {
+  display: none;
+}
+
+.desktop-me {
+  display: inline-block;
+  padding-top:5rem;
+  width: 75%;
+}
+
 .hp-logo {
   width: 25%;
 }
@@ -3000,7 +3011,7 @@ h1 {
 /* About */
 
 .mobile-dots  {
-    top: 84rem;
+    top: 89rem;
 }
 
 /* HEALTHPOINT */
@@ -3091,7 +3102,7 @@ h1 {
 /*----------------------------- ABOUT ME---------------------------- */
 
 .mobile-dots  {
-    top: 66rem;
+    top: 92rem;
 }
 
 
