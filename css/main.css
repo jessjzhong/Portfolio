@@ -410,11 +410,10 @@ h1 > .announce {
 }
 
 .container-showcase-bg {
-    margin: 0 auto;
+    margin: -10rem auto;
     object-position: 100% 0;
     overflow: hidden;
     position: absolute;
-    top: -4rem;
     width: 100%;
     z-index: 1;
 }
@@ -429,7 +428,7 @@ h1 > .announce {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    top: 15rem;
+    /* top: 15rem; */
     position: relative;
     z-index: 2;
 }
@@ -831,8 +830,8 @@ h1 > .announce {
 }
 
 .hp-logo {
-  width: 80%;
-  height: auto;
+  max-width: 80%;
+  max-height: auto;
 }
 
 .slogan {
@@ -1842,10 +1841,10 @@ width: 100%;
 /* -----------------------HEALTHPOINT------------------------- */
 /* -----------------------HEALTHPOINT------------------------- */
 
-.hp-logo {
+/* .hp-logo {
   margin-top: 2rem;
   width: 50%;
-}
+} */
 
 .hero-cs-image {
   margin-top: -2rem;
@@ -2144,10 +2143,10 @@ h1 {
 }
 
 
-.hp-logo {
+/* .hp-logo {
   margin-top: 2rem;
   width: 50%;
-}
+} */
 
 .hero-cs-image {
   margin-top: -2rem;
@@ -2260,7 +2259,9 @@ h1 {
 }
 
 .container-showcase-bg {
-  top: -7rem;
+  background-attachment: fixed;
+  width: 100%;
+  top: -8rem;
 }
 
 .showcase .inner {
@@ -2380,9 +2381,9 @@ h1 {
   z-index: 3;
 }
 
-.hp-logo {
+/* .hp-logo {
   width: 35%;
-}
+} */
 
 .dots-bg {
   padding: 33rem 0 9.6rem 0;
@@ -2514,7 +2515,7 @@ h1 {
 }
 
 .ta-border {
-  width: 49em;
+  width: 35em;
 }
 
 /* Competitive Analysis */
@@ -2901,15 +2902,14 @@ h1 {
 
 /* -----------------VERY LARGE MONITORS---------------- */
 /* -----------------VERY LARGE MONITORS---------------- */
-/* -----------------VERY LARGE MONITORS---------------- */
-
-@media screen and (min-width: 1440px) {
+/* 
+@media screen and (min-width: 1440px) { */
 
 /* .container {
   width: 40%;
 } */
 
-.container-showcase-bg .background-large{
+/* .container-showcase-bg .background-large{
     width: 100%;
     height: 80%;
 }
@@ -2921,7 +2921,7 @@ h1 {
 }
 
 .container-showcase-bg {
-  top: -13rem;
+  top: -10rem;
 }
 
 .inner > .slogan-homepage {
@@ -2949,8 +2949,9 @@ h1 {
 }
 
 .hp-logo {
-  width: 25%;
+  max-width: 25%;
 }
+
 .sketchbg {
   height: 50%;
 }
@@ -2993,7 +2994,7 @@ h1 {
   width: 25%;
 }
 
-}
+} */
 
 
 /* Iphone X */
