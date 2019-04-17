@@ -2270,24 +2270,28 @@ h1 {
 }
 
 .showcase .inner {
-    padding: 10rem 10rem 11rem 7rem;
-    width: 56%;
+    padding: 10rem 8rem 10rem 14rem;
+    width: 59%;
 }
 
 .project-content {
     display: flex;
     flex-direction: row-reverse;
-    padding: 0 8rem 3rem 0;
+    padding: 1rem 8rem 3rem 0;
     width: 100%;
 }
 
 .hp-solution {
-  width: 110%;
+  width: 100%;
   height: auto;
 }
 
+.project-image1 {
+  margin-right: 10rem;
+}
+
 .project-info-wrap {
-    margin-left: 4rem;
+    margin-left: 12rem;
 } 
 
 .project-info-wrap .ptbutton {
@@ -2892,13 +2896,93 @@ h1 {
   margin-bottom:10rem;
 }
 
-/* .final-images {
-    margin-top: 8rem;
-    margin-bottom: 10rem;
-    width: 70vw; */
-
 }
 
+/* -----------------VERY LARGE MONITORS---------------- */
+/* -----------------VERY LARGE MONITORS---------------- */
+/* -----------------VERY LARGE MONITORS---------------- */
+
+@media screen and (min-width: 1440px) {
+
+/* .container {
+  width: 40%;
+} */
+
+.container-showcase-bg .background-large{
+    width: 100%;
+    height: 80%;
+}
+
+.showcase .inner {
+    padding: 12rem 8rem 12rem 14rem;
+    width: 54%;
+    margin-top: 19rem;
+}
+
+.container-showcase-bg {
+  top: -13rem;
+}
+
+.inner > .slogan-homepage {
+    margin-top: 3rem;
+    width: 80%;
+}
+
+.solution-screens {
+  width: 30%;
+}
+
+.background-color-bg {
+  height: 42%;
+ 
+}
+
+.hp-logo {
+  width: 25%;
+}
+.sketchbg {
+  height: 50%;
+}
+
+
+.ta-border {
+  width: 70rem;
+}
+
+.wireframesketches {
+  width: 49%;
+}
+
+.lofi-activity-dash, .lofi-signup, .lofi-dashboard {
+  width: 100%;
+}
+
+.welcomepage-lofi-wireframe {
+  margin: 0 3rem;
+}
+
+
+.usability1-photo .caption, .usability2-photo .caption {
+  margin-left: 0.75rem;
+  width: 85%;
+} 
+
+
+
+.usability-wrap {
+  width: 45%;
+}
+
+.maindashboard-image, .analytics-final, .goals-image-phone {
+  width: 35%;
+  height: auto;
+}
+
+.sync-up > p {
+  width: 25%;
+}
+
+}
 
 
 /* Iphone X */
@@ -2958,7 +3042,7 @@ h1 {
 
 h2 {
     color: #1F3948;
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     font-weight: 500;
 }
 
@@ -2970,12 +3054,14 @@ h3 {
 h4 {
     color: #1F3948;
     font-family: 'Open Sans', sans-serif;
+    font-size: 2.0rem;
 
 }
 
 h5 {
     color: #1F3948;
     font-size: 1.8rem;
+}
 
 p {
   font-size: 1.6rem;
@@ -3027,8 +3113,70 @@ h1{
   width: 12rem;
 }
 
+/* Survey */
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+  height: 18rem;
+  width: 14rem;
+}
+
+.data-descrp > p {
+  width: 11rem;
+}
+
+.box-content1, .box-content2, .box-content4, .box-content5{
+  padding: 2rem 1rem;
+}
+
+.ta-border {
+  width: 13.8em;
+}
+
+.sketchbg {
+  height: 40%;
+
+}
+
+.darkbglogo {
+  margin-top: 10rem;
+}
+
+.color-type {
+  margin-top: 13rem;
+}
+
+.lofi-activity-dash, .lofi-signup, .lofi-dashboard {
+  width: 55%;
+  height: auto;
+}
+
+.pref1image, .pref2image {
+    width: 90%;
+}
+
+.usability1photo, .usability2photo {
+  width: 25rem;
+}
+.pref1image, .pref2image {
+  margin: 0 2.7rem;
+  width: 84%;
+}
+
+.usabilityR2image1, .usabilityR2image2  {
+    width: 82%;
+   
+}
+.sync-up > p {
+  font-size: 1.2rem;
+  padding: 1.7rem 3rem 2rem 3rem;
+}
 
 
+.creator-name {
+  font-size: 1.0rem;
+  padding: 1.5rem 0;
+  text-align: center;
+}
 
 
 
