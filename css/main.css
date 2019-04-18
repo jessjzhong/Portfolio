@@ -1724,16 +1724,16 @@ h1 > .announce {
 
 .showcase {
   padding-top: 15rem;
-  background: url("../images/background5.png");
+  /* background: url("../images/background5.png"); */
   /* height: 85%; */
   width: 100%;
   /* background-attachment: fixed; */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-end; */
 }
 
 
