@@ -420,7 +420,7 @@ footer {
 
 .showcase {
   padding-top: 14rem;
-  background: url(/images/background5.png);
+  background-image: url(/images/background5.png);
   /* height: 85%; */
   width: 100%;
   /* background-attachment: fixed; */
@@ -878,7 +878,7 @@ h1 > .announce {
 
 
 .dots-bg {
-  background: url(/images/1440Dots.png) no-repeat center;
+  background-image: url(/images/1440Dots.png) no-repeat center;
   background-size: cover;
   display: flex;
   justify-content: center;
