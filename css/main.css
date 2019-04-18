@@ -1703,7 +1703,6 @@ h1 > .announce {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  text-decoration: none;
 }
 
 .back-link {
@@ -1711,7 +1710,6 @@ h1 > .announce {
   font-size: 1.4rem;
   font-weight: 700;
   margin-top: 0.75rem;
-  text-decoration: none;
 } 
 
 
@@ -2219,9 +2217,6 @@ width: 100%;
    /* margin: 0 6rem; */
 }
 
-.preference-images > .pref1 > .caption, .preference-images > .pref2 > .caption {
-    /* width: 60%; */
-}
 
 .final-maindashboard {
   margin-top: 3rem;
