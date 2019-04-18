@@ -1694,19 +1694,25 @@ h1 > .announce {
   margin: 2rem auto 1rem auto;
 }
 
+.break-lessons {
+  margin-top: 1.5rem;
+}
 .back-to-top {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
+  text-decoration: none;
 }
 
-.back-to-top > p {
+.back-link {
   color: #9B0656;
   font-size: 1.4rem;
   font-weight: 700;
-  margin-top: 0.5rem;
-  text-align: center;
-}
+  margin-top: 0.75rem;
+  text-decoration: none;
+} 
 
 
 
@@ -1718,7 +1724,7 @@ h1 > .announce {
 
 .showcase {
   padding-top: 15rem;
-  background: url(/images/background5.png);
+  background: url("../images/background5.png");
   /* height: 85%; */
   width: 100%;
   /* background-attachment: fixed; */
@@ -2938,9 +2944,6 @@ div.user-benefits {
     /* margin-left: 9rem; */
 }
 
-.pref1image, .pref2image {
-    max-width: 90%;
-}
 }
 
 /* .Round2image2 {
