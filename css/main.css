@@ -60,14 +60,14 @@ h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     font-size: 3.6rem;
-    line-height: 120%;   
+    line-height: 1.5em;   
 }
 
 h4 {
     color: #1F3948;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     line-height: 120%; 
 }
 
@@ -311,7 +311,7 @@ footer {
 .btn { 
     cursor: pointer;
     position: relative;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .ptbutton {
@@ -343,7 +343,6 @@ footer {
     -moz-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
 }
-
 /* Case Study Buttons */
 
 .csbutton {
@@ -376,60 +375,96 @@ footer {
   transition: 0.5s ease-in-out;
 }
 
+/* Back To Button */
+
+/* #backbtn {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#backbtn::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#backbtn:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#backbtn:active {
+  background-color: #555;
+}
+#backbtn.show {
+  opacity: 1;
+  visibility: visible;
+} */
+
 /* ----------------------HOMEPAGE--------------------------- */
 /* ----------------------HOMEPAGE--------------------------- */
 /* ----------------------HOMEPAGE--------------------------- */
 
 .showcase {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+  padding-top: 14rem;
+  background: url(/images/background5.png);
+  /* height: 85%; */
+  width: 100%;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
+
 
 .showcase .inner {
     background-color: #1F3948;
     color: #F9F9F9;
-    margin-top: 12rem;
-    padding: 5rem 5rem 5rem 3rem;
-    position: relative;
-    width: 100%;
+    margin-bottom: 5em;
     z-index: 2;
-}
-
-h1 {
-  width: 85%;
+    width: 100%;
+    height: 30%;
+    padding: 4rem 3rem;
 }
 
 h1 > .announce {
     color: #E7AFB8;
-    line-height: 130%;
+    line-height: 1.5em;
 }
 
-.inner > .slogan-homepage {
-    margin-top: 3rem;
-}
-
-.container-showcase-bg {
-    margin: -10rem auto;
-    object-position: 100% 0;
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-}
-
-.container-showcase-bg .background-large {
-   display: block;
-   object-fit: cover;
+.inner h3 {
+  color: #F9F9F9;
+  font-size: 2.8rem;
+  line-height: 140%;
+  margin-top: 3rem; 
+  margin-bottom: 1rem;
+  padding-right: 2rem;
 }
 
 .container-arrow {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    /* top: 15rem; */
-    position: relative;
+    align-items: center;
+    /* top: 12rem; */
+    padding-top: 7rem;
+    /* position: relative; */
     z-index: 2;
 }
 
@@ -503,39 +538,48 @@ h1 > .announce {
     background-color: #91B7CF;
     display: flex;
     flex-direction: column;
-    margin: 18rem auto 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    text-align: center;
 }
 
-.project-image1 {
-    padding: 5rem 3rem 5rem 3rem;
-    margin: 0 auto;
+.project-content {
+  margin: 3rem auto 0rem;
 }
+
 
 .hp-solution {
-    width: 100%;
+    margin-bottom: 2.5rem;
+    width: 85%;
     height: auto;
 }
 
-.project-title {
-    height: auto;
-    padding: 0 4.8rem 1.2rem 3rem;
-    width: auto;
-}
+
 
 .project-title > h2 {
     color: #02547B;
+    text-align: left;
+
+}
+.project-title {
+    padding: 0 3rem;
 }
 
 .project-descrp {
     height: auto;
     width: 100%;
-    padding: 1rem 3rem 4.3rem 3rem;
+    padding: 1rem 3rem 3rem 3rem;
 }
 
 .project-descrp > p {
     color: #1F3948;
+    text-align: left;
 }
 
+.project-info-wrap .ptbutton {
+  margin-left: 3rem;
+}
 /* -----------------------ABOUT------------------------- */
 /* -----------------------ABOUT------------------------- */
 /* -----------------------ABOUT------------------------- */
@@ -558,19 +602,10 @@ h1 > .announce {
     color: #F9F9F9;
     display: flex;
     flex-direction: column;
-    margin-top: 12rem;
+    margin-top: 14rem;
     overflow: hidden;
     position: relative;
     z-index: 2;
-}
-
-.mobile-dots  {
-    overflow: hidden;
-    position: absolute;
-    top: 89rem;
-    max-width: 100%;
-    max-height: auto;
-    z-index: 1;  
 }
 
 .background-mobile {
@@ -580,9 +615,12 @@ h1 > .announce {
 .hero > h1 {
     color: #E7AFB8;
     line-height: 120%;
-    margin: 5rem 0 3rem 0;
+    margin: 5rem 0 2rem 0;
     text-align: left;
+}
 
+.hero h3 {
+  font-size: 2.8rem;
 }
 
 .desktop-me {
@@ -591,14 +629,10 @@ h1 > .announce {
     margin: 3.5rem auto 7rem auto;
 }
 
-.arrow {
-    margin-bottom: 5rem;
-    text-align: center;
-}
-
 .emphasis, .aboutme > div > .aboutme-sub {
     color: #91B7CF;
 }
+
 
 /* About Me */
 
@@ -627,9 +661,6 @@ h1 > .announce {
 
 .aboutme > div > p {
     color: #F9F9F9;
-}
-.aboutme-wrap {
-    margin-top: 5rem;
 }
 
 .section3 > .sec3v2 {
@@ -825,52 +856,46 @@ h1 > .announce {
   z-index: 2;
 }
 
-.desktop-hp {
-  display: none;
-}
-
 .hp-logo1 {
   padding-bottom: 3.5rem;
   text-align: center;
 }
 
 .hp-logo {
-  max-width: 80%;
-  max-height: auto;
+  width: 70%;
+  height: auto;
 }
 
 .slogan {
   margin: 0 auto;
   text-align: center;
-  width: 70%;
+  width: 60%;
 }
 
 .desktop-solution {
   display: none;
 }
 
-.hero-cs-image {
-  margin: 5rem 0;
-  overflow: visible;
-  position: relative;
-  text-align: center;
-  transform: translate (-50%, -50%);
-  z-index: 3;
-}
-
 
 .dots-bg {
+  background: url(/images/1440Dots.png) no-repeat center;
   background-size: cover;
-  margin-top: -48rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
-  overflow: hidden;
-  position: absolute;
+  margin: 5rem 0;
+  position: relative;
   z-index: 2;
-}
+} 
+
+.hero-cs-image {
+ text-align: center;
+} 
 
 .mobile-cs-image {
-  width: 55%;
+  width: 60%;
   height: auto;
 }
 
@@ -1019,6 +1044,7 @@ h1 > .announce {
   justify-content: center;
   align-items: center;
   margin: 3rem auto 1rem auto;
+  width: 60%;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
@@ -1089,7 +1115,7 @@ h1 > .announce {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   margin-bottom: 4rem;
 }
 
@@ -1124,20 +1150,15 @@ h1 > .announce {
   margin: 1.5rem 0;
 }
 
-.googlefitlogo, .jefitlogo {
+.googlefitlogo, .jefitlogo, .dropboxlogo{
   height: auto;
-  width: 80%;
+  max-width: 55%;
 }
 
 .dropboxlogo {
-  width: 65%;
-  height: auto;
   margin-top: 1.5rem;
 }
 
-/* .comp > div > .project-info-divider {
-  width: 100%;
-} */
 
 /* User Personas */
 
@@ -1289,7 +1310,7 @@ h1 > .announce {
 .sketchbg {
   position: absolute;
   width: 100%;
-  height: 30%;
+  height: 35%;
   z-index: 1;
 }
 
@@ -1324,6 +1345,7 @@ h1 > .announce {
   display: grid;
   justify-items: center;
   text-align: center;
+  width: 35rem;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 6rem;
@@ -1527,6 +1549,7 @@ h1 > .announce {
 .usability1-bg {
   background-color: #1F3948;
   padding-top: 1rem;
+  text-align: center;
   width: 100%;
 }
 
@@ -1600,19 +1623,24 @@ h1 > .announce {
     text-align: left;
 }
 
+.usability2-wrap {
+  background-color: #02547B;
+  width: 100%;
+}
+
 .testing-2-images {
     align-items: center;
-    background-color: #02547B;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 3rem;
- 
+    text-align: center;
+    /* width: 55%; */
 }
 
-.usabilityR2image1, .usabilityR2image2  {
-    height: auto;
-    margin: 0 3rem;
+.Round2image1, .Round2image2 {
+    /* height: auto; */
+    margin: 0 auto;
     text-align: center;
     width: 85%;
    
@@ -1624,7 +1652,7 @@ h1 > .announce {
 .testing-2-images > div > p {
   margin: 1rem auto 4rem auto;
   text-align: center;
-  width: 80%
+  width: 90%
 }
 
 /* Final Prototype */
@@ -1645,7 +1673,7 @@ h1 > .announce {
 }
 
 .maindashboard-image, .analytics-final, .goals-image-phone {
-  width: 55%;
+  max-width: 55%;
   height: auto;
 }
 .final-descrp1, .final-descrp2, .final-descrp3 {
@@ -1691,11 +1719,60 @@ h1 > .announce {
 /* ----------------------Media Queries / Responsive Design -------------------------*/
 /* ----------------------Media Queries / Responsive Design -------------------------*/
 /* ----------------------Media Queries / Responsive Design -------------------------*/
+@media screen and (min-width: 555px) and (max-width: 686px) {
 
+
+.showcase {
+  padding-top: 15rem;
+  background: url(/images/background5.png);
+  /* height: 85%; */
+  width: 100%;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+
+.showcase .inner {
+    background-color: #1F3948;
+    color: #F9F9F9;
+    margin-bottom: 6em;
+    /* margin-top: 16rem; */
+    /* padding: 5rem 5rem 5rem 3rem; */
+    /* position: relative; */
+    
+  height: 48rem;
+  padding: 5rem;
+}
+
+.inner h3, .hero h3 {
+  font-size: 3.6rem;
+}
+
+
+.project-info-wrap {
+  margin: 2.5rem;
+}
+
+
+.hp-solution {
+    margin-bottom: 2.5rem;
+    width: 80%;
+    height: auto;
+}
+}
 /*---------------------- For Tablets ---------------------*/
 /*---------------------- For Tablets ---------------------*/
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 687px) {
+.inner h3, .hero h3 {
+  font-size: 3.6rem;
+}
+
 .container {
   margin: 0 auto;
   width: 75%;
@@ -1715,6 +1792,10 @@ h1 > .announce {
 .social-flex-container {
     width: 100%;
     justify-content: center;
+}
+
+br {
+  display: none;
 }
 
 .sync-up > p {
@@ -1743,7 +1824,7 @@ h1 > .announce {
 .desktop-menu {
     display: inline-block;
     position: fixed;
-    width: 85%;
+    width: 90%;
     z-index: 1;
 }
 
@@ -1772,41 +1853,66 @@ h1 > .announce {
 /* -----------------HOMEPAGE---------------- */
 /* -----------------HOMEPAGE---------------- */
 /* -----------------HOMEPAGE---------------- */
-
-h1 {
-  width: 70%;
+.showcase {
+  padding-top: 18rem;
+  background: url(/images/background5.png);
+  /* height: 85%; */
+  width: 100%;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
+
 
 .showcase .inner {
-  height: auto;
-  padding-left: 4rem;
-  margin-top: 16rem;
-  width: 80%;
+    background-color: #1F3948;
+    color: #F9F9F9;
+    margin-bottom: 6em;
+    /* margin-top: 16rem; */
+    /* padding: 5rem 5rem 5rem 3rem; */
+    /* position: relative; */
+    width: 100%;
+    z-index: 2;
+  width: 80rem;
+  height: 50rem;
+  padding: 10rem;
 }
 
-.container-showcase-bg {
-  top: -8rem;
-}
-
-.container-arrow {
-  top: 11rem;
-}
-
-.project-info-wrap {
+.project-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2rem 0 0 1.5rem;
-} 
-
-.project-descrp {
-    width: 95%;
+    align-items: center;
+    width: 90%;
 }
+.project-info-wrap {
+  /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-top: 1rem;
+} 
+.project-descrp {
+  width: 55rem;
+}
+/* .project-info-wrap {
+  margin: 0 auto;
+} */
 
-.project-image1 {
+
+.hp-solution {
+    width: 47.5rem;
+    height: 35.8rem;
+}
+/* .project-image1 {
     padding: 5rem 3rem 2rem 3rem;
     width: 80%;
-} 
+}  */
 
 
 /* -----------------------ABOUT------------------------- */
@@ -1851,23 +1957,37 @@ width: 100%;
 /* -----------------------HEALTHPOINT------------------------- */
 /* -----------------------HEALTHPOINT------------------------- */
 
-/* .hp-logo {
+.hp-logo {
   margin-top: 2rem;
   width: 50%;
-} */
-
-.hero-cs-image {
-  margin-top: -2rem;
 }
 
-.mobile-cs-image {
-  margin-top: 5rem;
-  width: 40%;
-
+.slogan {
+  max-width: 40%;
 }
 .dots-bg {
-  padding: 36rem 0 9.6rem 0;
+  background: url(/images/1440Dots.png) no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 5rem 0;
+  position: relative;
+  z-index: 2;
+} 
+
+.hero-cs-image {
+ text-align: center;
+} 
+
+
+.mobile-cs-image {
+  width: 75%;
+
 }
+
 .solution {
   margin-top: 6rem;
 }
@@ -2060,7 +2180,7 @@ width: 100%;
 /* Wireframes */
 
 .wireframesketches {
-  width: 75%;
+  max-width: 70%;
 }
 
 .wireframes-images {
@@ -2070,27 +2190,23 @@ width: 100%;
 }
 
 .welcomepage-lofi-wireframe {
-  margin: 0 -10rem;
+  margin: 0 -6rem;
 }
 
 .lofi-activity-dash, .lofi-signup, .lofi-dashboard {
-  width: 55%;
+  width: 70%;
   height: auto;
 }
 
 
 .usability-wrap {
-  
   margin: 4rem auto;
   width: 60%;
 }
-/* 
+
 .caption {
-  line-height: normal;
-  margin: 1.3rem auto 4rem auto;
-  text-align: center;
-  width: 95%;
-} */
+  width: 75%;
+}
 
 
 /* Preference */
@@ -2124,194 +2240,60 @@ width: 100%;
 
 /* IPAD */
 
-@media screen and (min-width: 700px) {
-.desktop-menu {
-    width: 90%;
-}
+@media screen and (min-width: 750px) {
 
 
 h1 {
-  width: 100%;
+  font-size: 7.2rem;
 }
 
-.showcase .inner {
-  height: auto;
-  padding-left: 4rem;
-  margin-top: 16rem;
-  width: 81%;
-}
-
-.container-showcase-bg {
-  top: -19rem;
-}
-
-.container-arrow {
-  top: 11rem;
 }
 
 
-/* .hp-logo {
-  margin-top: 2rem;
-  width: 50%;
-} */
 
-.hero-cs-image {
-  margin-top: -2rem;
-}
-
-.mobile-cs-image {
-  margin-top: 5rem;
-  width: 30%;
-
-}
-.dots-bg {
-  
-  padding: 33rem 0 9.6rem 0;
-}
-
-/* About Me */
-.mobile-dots  {
-    top: 94rem; 
-}
-
-/* HealthPoint */
-.solution {
-  margin-top: 6rem;
-}
-
-.solution-screens {
-  width: 60%;
-}
-
-.background-color-bg {
-  height: 30.5%;
-  margin-top: 2rem;
- 
-}
-
-
-.survey {
-  margin: 5rem auto 1rem auto;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2.5rem;
-  grid-template-areas:
-  "box1 box2 box3"
-  "box4 box5 box6" 
-}
-
-.box1, .box2, .box3, .box4, .box5, .box6 {
-  height: 20rem;
-  width: 20rem;
-}
-
-.data > h3 {
-  font-size: 4.2rem;
-}
-
-.data-descrp > p {
-  font-size: 1.6rem;
-  width: 15rem;
-}
-
-.box-content1 {
-  padding: 2rem 2rem;
-}
-
-.box-content4 {
-  padding: 3rem;
-}
-
-.box-content5 {
-  padding: 1.4rem 0 0 1.1rem;
-}
-
-.box-content6 {
-  padding: 3rem 0.5rem;
-}
-
-.lofi-activity-dash, .lofi-signup, .lofi-dashboard {
-  width: 70%;
-
-}
-
-.welcomepage-lofi-wireframe {
-  margin: 0 -6rem;
-}
-
-
-/* Usability */
-.usability-wrap {
-  margin: 4rem auto;
-  width: 40%;
-}
-
-
-}
 /*---------------------- For Desktop---------------------*/
 /*---------------------- For Desktop---------------------*/
 /*---------------------- For Desktop---------------------*/
 
 @media screen and (min-width: 991px) {
 
-h1 {
-  font-size: 7.2rem;
-}
 
 .desktop-menu {
     width: 93%;
 }
 
-.container-showcase-bg {
-  background-attachment: fixed;
-  width: 100%;
-  top: -8rem;
-}
-
-.showcase .inner {
-    padding: 10rem 8rem 10rem 14rem;
-    width: 59%;
-}
-
 .project-content {
     display: flex;
     flex-direction: row-reverse;
-    padding: 1rem 8rem 3rem 0;
-    width: 100%;
-}
-
-.hp-solution {
-  width: 100%;
-  height: auto;
-}
-
-.project-image1 {
-  margin-right: 10rem;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
 }
 
 .project-info-wrap {
-    margin-left: 12rem;
-} 
-
-.project-info-wrap .ptbutton {
-  margin: 0 3rem;
+    margin-left: -2rem;
 }
-
 
 .project-title > h2 {
-    font-size: 5.8rem;
+  padding-top: 1rem;
+    font-size: 5.2rem;
 }
 .project-descrp {
-    width: 70%;
-    padding: 1rem 3rem 4.3rem 3rem;
+    width: 50rem;
+    padding-top: 2rem;
+    margin-right: 4rem;
 }
 
 
+.hp-solution {
+    width: 48.5rem;
+    height: 36rem;
+}
 /* Footer */
 
-/* .sync-up > p {
-  max-width: 30%;
-} */
+.sync-up > p {
+  width: 30%;
+}
 
 /* ------------------------ABOUT ME ---------------------*/
 /* ------------------------ABOUT ME ---------------------*/
@@ -2319,7 +2301,7 @@ h1 {
 
 .bio {
   display: grid;
-  margin-bottom: 10rem;
+  margin-bottom: 7rem;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
   "bio essay"
@@ -2335,7 +2317,7 @@ h1 {
 
 .desktop-me {
   display: inline-block;
-  padding-top:5rem;
+  padding-top: 5rem;
   width: 85%;
 }
 
@@ -2377,20 +2359,8 @@ h1 {
 .desktop-solution {
   display: inline;
 }
-
-.hero-cs-image {
-  margin-top: 3.5rem;
-  position: relative;
-  text-align: center;
-  z-index: 3;
-}
-
-/* .hp-logo {
+.hp-logo {
   width: 35%;
-} */
-
-.dots-bg {
-  padding: 33rem 0 9.6rem 0;
 }
 
 .hero-hp .hp-header {
@@ -2550,6 +2520,10 @@ h1 {
   margin-bottom: -1.5rem;
 }
 
+.googlefitlogo, .jefitlogo, .dropboxlogo{
+  height: auto;
+  max-width: 65%;
+}
 /* Personas */
 
 .persona-grid {
@@ -2624,8 +2598,9 @@ h1 {
     align-items: center;
     display: grid;
     justify-content: center;
-    margin: 5rem auto 6rem auto;
-    width: 90%;
+    margin: 5rem auto 8rem auto;
+    /* text-align: center; */
+    width: 95%;
     grid-template-areas:
     "user-role user-divider1 user-task user-divider2 user-benefits";
 } 
@@ -2651,9 +2626,12 @@ h1 {
    font-weight: 400;
 }
 
-.user-benefits {
-   margin-top: 4rem;
-    
+.reg-benefits .break {
+  white-space: pre-line;
+}
+
+div.user-benefits {
+  margin-top: 3.5rem;
 }
 
 /* User Flows */
@@ -2685,7 +2663,7 @@ h1 {
 
 
 .sketchbg {
-  height: 50%;
+  height: 59%;
   z-index: 1;
 }
 
@@ -2792,8 +2770,8 @@ h1 {
   width: 52%;
 }
 
-.usability1-photo .caption {
-  margin: 1.3rem 0 4rem 0;
+.caption {
+  margin: 1.3rem 0 4rem 2rem;
   width: 90%;
 }
 
@@ -2826,13 +2804,16 @@ h1 {
     flex-direction: row;
     justify-content: center;
     margin-bottom: 3rem;
+    width: 100%;
 }
 
 .Round2image2 {
     padding-top: 4.5em;
+    margin-right: 33rem;
 }
 .Round2image1 {
     margin-top: 6.1rem;
+    margin-left: 33rem;
 }
 
 /* Final Prototype */
@@ -2849,8 +2830,8 @@ h1 {
 }
 
 .maindashboard-image, .analytics-final, .goals-image-phone {
-  width: 47%;
-  height: auto;
+ width: 30rem;
+  height: 61.4rem;
 }
 .maindashboard-image, .goals-image-phone, .analytics-final{
     position: relative;
@@ -2901,97 +2882,38 @@ h1 {
 
 /* -----------------VERY LARGE MONITORS---------------- */
 /* -----------------VERY LARGE MONITORS---------------- */
-/* 
-@media screen and (min-width: 1440px) { */
 
-/* .container {
-  width: 40%;
-} */
-
-/* .container-showcase-bg .background-large{
-    width: 100%;
-    height: 80%;
-}
-
-.showcase .inner {
-    padding: 12rem 8rem 12rem 14rem;
-    width: 54%;
-    margin-top: 19rem;
-}
-
-.container-showcase-bg {
-  top: -10rem;
-}
-
-.inner > .slogan-homepage {
-    margin-top: 3rem;
-    width: 80%;
-}
-
-.solution-screens {
-  width: 30%;
-}
-
-.background-color-bg {
-  height: 42%;
- 
-}
-
-.me {
-  display: none;
-}
-
-.desktop-me {
-  display: inline-block;
-  padding-top:5rem;
-  width: 75%;
-}
+@media screen and (min-width: 1440px) { 
 
 .hp-logo {
-  max-width: 25%;
+  max-width: 30%;
 }
 
-.sketchbg {
-  height: 50%;
-}
-
-
-
-
-.wireframesketches {
-  width: 49%;
-}
-
-.lofi-activity-dash, .lofi-signup, .lofi-dashboard {
-  width: 100%;
-}
-
-.welcomepage-lofi-wireframe {
-  margin: 0 3rem;
-}
-
-
-.usability1-photo .caption, .usability2-photo .caption {
-  margin-left: 0.75rem;
-  width: 85%;
-} 
-
-
-
-.usability-wrap {
-  width: 45%;
-}
-
-.maindashboard-image, .analytics-final, .goals-image-phone {
-  width: 35%;
+/* .maindashboard-image, .analytics-final, .goals-image-phone {
+  max-width: 100%;
   height: auto;
+}  */
+
+.testing-2-images {
+    width: 90%;
+    margin-left: 9rem;
 }
 
-.sync-up > p {
+}
+
+/* .Round2image2 {
+    padding-top: 4.5em;
+    margin-right: 55rem;
+}
+.Round2image1 {
+    margin-top: 6.1rem;
+    margin-left: 55rem;
+} */
+/* .sync-up > p {
   width: 25%;
 }
 
-} */
+
 
 
 /* Iphone X */
@@ -3008,9 +2930,7 @@ h1 {
 
 /* About */
 
-.mobile-dots  {
-    top: 89rem;
-}
+
 
 /* HEALTHPOINT */
 .background-color-bg {
@@ -3028,9 +2948,6 @@ h1 {
 .container-showcase-bg {
     top: -1rem;
   
-}
-.mobile-dots  {
-    top: 88rem; 
 }
 
 }
