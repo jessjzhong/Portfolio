@@ -305,6 +305,11 @@ footer {
   text-align: center;
 }
 
+/* li .social-icon-links a:hover {
+  color: #E7AFB8;
+  transition: 0.3s ease-in-out;
+} */
+
 /* -------------BUTTONS--------------- */
 /* -------------BUTTONS--------------- */
 /* -------------BUTTONS--------------- */
@@ -384,9 +389,7 @@ footer {
 .showcase {
   padding-top: 12rem;
   background: url("../images/background6.png");
-  /* height: 85%; */
   width: 100%;
-  /* background-attachment: fixed; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -558,9 +561,6 @@ h1 > .announce {
     "essay";
 }
 
-/* .box {
-    background-color: #1F3948;
-} */
 
 /* Hero Section */
 
