@@ -995,7 +995,7 @@ h1 > .announce {
 }
 
 .deliverables1 > p {
-  margin: 2.5rem 0 4rem 0;
+  margin: 2.5rem 0 2rem 0;
 }
 
 .deliverables > h4 {
@@ -1224,7 +1224,7 @@ h1 > .announce {
 
 .stories {
   display: grid;
-  margin: 4.4rem auto 2.5rem auto;
+  margin: 3rem auto 3rem auto;
   grid-template-rows: 1fr;
   grid-gap: 2rem;
   grid-template-areas:
@@ -1516,6 +1516,7 @@ h1 > .announce {
 
 .deliverables-container > .usability-header {
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .usability1-descrp {
@@ -1592,6 +1593,7 @@ h1 > .announce {
 
 .deliverables > .usability2-header {
     margin-top: 5rem;
+    text-align: center;
 }
 
 .usability2-descrp {
