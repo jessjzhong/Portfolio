@@ -995,7 +995,7 @@ h1 > .announce {
 }
 
 .deliverables1 > p {
-  margin: 2.5rem 0 2rem 0;
+  margin: 2.5rem 0 4rem 0;
 }
 
 .deliverables > h4 {
@@ -1512,11 +1512,12 @@ h1 > .announce {
 /* Usability Testing: Take 1 */
 .deliverables > .usability-header {
     margin-top: 7rem;
+    text-align: center;
 }
 
 .deliverables-container > .usability-header {
   margin-bottom: 3rem;
-  text-align: center;
+
 }
 
 .usability1-descrp {
