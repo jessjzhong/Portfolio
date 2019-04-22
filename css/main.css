@@ -528,7 +528,7 @@ h1 > .announce {
 
 .project-title > h2 {
     color: #02547B;
-    text-align: left;
+    text-align: center;
 
 }
 .project-title {
@@ -543,12 +543,12 @@ h1 > .announce {
 
 .project-descrp > p {
     color: #1F3948;
-    text-align: left;
+    text-align: center;
 }
 
-.project-info-wrap .ptbutton {
+/* .project-info-wrap .ptbutton {
   margin-left: 3rem;
-}
+} */
 /* -----------------------ABOUT------------------------- */
 /* -----------------------ABOUT------------------------- */
 /* -----------------------ABOUT------------------------- */
@@ -621,7 +621,7 @@ h1 > .announce {
 }
 
 .aboutme > div > .aboutme-sub, .aboutme > div > p > .emphasis {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
 }
 
 .aboutme > div > p {
@@ -837,7 +837,7 @@ h1 > .announce {
 .slogan {
   margin: 0 auto;
   text-align: center;
-  width: 60%;
+  width: 80%;
 }
 
 .desktop-intro {
@@ -1224,7 +1224,7 @@ h1 > .announce {
 
 .stories {
   display: grid;
-  margin: 3rem auto 3rem auto;
+  margin: 0 auto 5rem auto;
   grid-template-rows: 1fr;
   grid-gap: 2rem;
   grid-template-areas:
@@ -1486,7 +1486,7 @@ h1 > .announce {
 }
 
 .wireframesketches {
-  width: 85%;
+  width: 90%;
   height: auto;
 }
 
@@ -1562,7 +1562,8 @@ h1 > .announce {
 }
 
 .pref-descrp > .pref-question {
-  margin: 3rem auto;
+  color: #02547B;
+  margin: 3rem auto 0.5rem auto;
   text-align: center;
 }
 
@@ -1602,7 +1603,8 @@ h1 > .announce {
 }
 
 .usability2-descrp > .usability-changes {
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: -2rem;
     text-align: left;
 }
 
@@ -1681,7 +1683,7 @@ h1 > .announce {
 .reflections-subheader {
   color: #9B0656;
   font-weight: 700;
-  margin: 2rem auto 1rem auto;
+  margin: 2rem auto 0.5rem auto;
 }
 
 .break-lessons {
@@ -2283,6 +2285,13 @@ h1 {
     margin-right: 4rem;
 }
 
+.project-title > h2, .project-descrp > p  {
+    text-align: left;
+}
+
+.project-info-wrap .ptbutton {
+  margin-left: 3rem;
+}
 
 .hp-solution {
     width: 48.5rem;
@@ -2691,7 +2700,7 @@ div.user-benefits {
     padding: 5rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 }
 
@@ -2699,6 +2708,7 @@ div.user-benefits {
 .userflow-descrp {
   display: flex;
   flex-direction: column;
+  margin-left: 22rem;
 }
 
 .userflow-descrp > p {
@@ -2710,6 +2720,11 @@ div.user-benefits {
 .user-flow-image {
   width: 90rem;
   height: auto;
+  margin: 0 auto;
+}
+
+.user-flow-title {
+  margin-top: 1rem;
 }
 
 .user-story-example {
@@ -2805,7 +2820,7 @@ div.user-benefits {
 /* Wireframes */
 
 .wireframesketches {
-  max-width: 40%;
+  width: 85rem;
 }
 
 .lofi-activity-dash, .lofi-signup, .lofi-dashboard {
