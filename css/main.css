@@ -734,6 +734,34 @@ h1 > .announce {
   transition: 0.5s ease-in-out;
 }
 
+/* --------------------------THANK YOU ------------------------------*/
+/* --------------------------THANK YOU ------------------------------*/
+/* --------------------------THANK YOU ------------------------------*/
+
+.pic-maggie-sentence {
+  display: none;
+}
+.maggie {
+  display: none;
+}
+
+.thankyou {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.header2 > h1 {
+  color: #9B0656;
+  font-size: 4.8rem;
+  margin: 15rem auto 3rem 0rem;
+}
+
+.header2 > h5 {
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+
 /* ---------------------------HEALTHPOINT---------------------------- */
 /* ---------------------------HEALTHPOINT---------------------------- */
 /* ---------------------------HEALTHPOINT---------------------------- */
@@ -2350,6 +2378,31 @@ h1 {
   padding-right: 4rem;
 }
 
+
+/* --------------------------THANK YOU ------------------------------*/
+/* --------------------------THANK YOU ------------------------------*/
+/* --------------------------THANK YOU ------------------------------*/
+
+.pic-maggie-sentence {
+  display: inline;
+}
+
+.maggie {
+  border-radius: 2rem;
+  display: block;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.header2 > h1 {
+  color: #9B0656;
+  font-size: 4.8rem;
+  margin: 15rem auto 2rem 0rem;
+}
+
+.thankyou .btn {
+  margin-top: 3rem;
+}
 
 /* -----------------------HEALTHPOINT------------------------- */
 /* -----------------------HEALTHPOINT------------------------- */

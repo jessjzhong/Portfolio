@@ -7,27 +7,18 @@ $(document).ready(function () {
 
 // SCROLL TO HASH
 
-// var homePage = {
-//     smoothScroll: function () {
-//         $('a[href*="#"]:not([href="#"])').click(function () {
-//             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-//                 var target = $(this.hash);
+$(document).ready(function () {
+    $("#").on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
 
-//                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            var hash = this.hash;
 
-//                 if (target.length) {
-//                     $('html, body').animate({
-//                         scrollTop: target.offset().top - 100
-//                     }, 2000, 'easeInOutExpo');
-//                     return false;
-//                 }
-//             }
-//         });
-//     },
-
-//     ready: function () {
-//         homePage.smoothScroll();
-//     }
-// };
-
-// $(document).ready(homePage.ready);
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1000, function () {
+                window.location.hash = hash;
+            });
+        }
+    });
+});
