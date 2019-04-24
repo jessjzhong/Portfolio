@@ -579,8 +579,11 @@ h1 > .announce {
   margin: 3.5rem auto 0 auto;
 }
 
-.portugal-me, .patagonia-me{
-  display: block;
+.main-about-photo .location-caption {
+  display: none;
+}
+.desktop-portugal, .desktop-patagonia{
+  display: none;
 }
 
 .emphasis, .aboutme > div > .aboutme-sub {
@@ -2322,18 +2325,15 @@ h1 {
   top: 0;
 }
 
-.portugal-me, .patagonia-me{
+.main-about-photo .location-caption {
   display: block;
+}
+.desktop-portugal, .desktop-patagonia{
+  display: block;
+}
+.portugal-me, .patagonia-me{
   max-width: 45rem;
   margin-top: 8rem;
-}
-
-.mobile-dots {
-  display: none;
-}
-
-.arrow {
-  display: none;
 }
 
 .essay > div {
@@ -3138,14 +3138,6 @@ h1 {
 
 .project-title > h2 {
   font-size: 3.6rem;
-}
-
-/*----------------------------- ABOUT ME---------------------------- */
-/*----------------------------- ABOUT ME---------------------------- */
-/*----------------------------- ABOUT ME---------------------------- */
-
-.mobile-dots  {
-    top: 92rem;
 }
 
 
