@@ -579,6 +579,10 @@ h1 > .announce {
   margin: 3.5rem auto 0 auto;
 }
 
+.portugal-me, .patagonia-me{
+  display: block;
+}
+
 .emphasis, .aboutme > div > .aboutme-sub {
   color: #9B0656;
   font-weight: 700;
@@ -2319,6 +2323,7 @@ h1 {
 }
 
 .portugal-me, .patagonia-me{
+  display: block;
   max-width: 45rem;
   margin-top: 8rem;
 }
