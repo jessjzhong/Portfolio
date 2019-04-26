@@ -86,6 +86,7 @@ h5 {
 
 .navbar {
   background-color: #1F3948;
+  opacity: .9;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   height: 7rem;
   margin: 0 auto;
@@ -339,9 +340,7 @@ footer {
   background-color: transparent;
   border: 3px solid #9B0656;
   color: #9B0656;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  /* transition: 0.5s ease-in-out; */
 }
 /* Case Study Buttons */
 
@@ -369,9 +368,7 @@ footer {
   background-color: #9B0656;
   border: 3px solid #9B0656;
   color: #F9F9F9;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  /* transition: 0.5s ease-in-out; */
 }
 
 
@@ -395,8 +392,8 @@ footer {
 .showcase .inner {
   background-color: #1F3948;
   color: #F9F9F9;
-  height: 30%;
-  margin-bottom: 5em;
+  /* height: 45%; */
+  margin-bottom: 4em;
   padding: 4rem 3rem;
   width: 100%;
   z-index: 2;
@@ -405,6 +402,7 @@ footer {
 h1 > .announce {
   color:#E7AFB8;
   line-height: 1.5em;
+  /* font-weight: 300; */
 }
 
 .highlight-blue {
@@ -520,6 +518,7 @@ h1 > .announce {
 .project-title > h2 {
   color: #02547B;
   text-align: center;
+  /* font-weight: 600; */
 
 }
 .project-title {
@@ -687,7 +686,7 @@ h1 > .announce {
 }
 
 .contact form {
-    width: 100%;
+  width: 100%;
 }
 
 .contact textarea, .contact input {
@@ -699,8 +698,6 @@ h1 > .announce {
   height: 4.2rem;
   margin-top: 0.5rem;
   padding: 1rem;
-  -moz-border-radius:9px;
-  -webkit-border-radius:9px;
   width: 100%;
   
 }
@@ -729,8 +726,6 @@ h1 > .announce {
   background-color: transparent;
   border: 3px solid #9B0656;
   color: #9B0656;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
@@ -879,7 +874,7 @@ h1 > .announce {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 31rem;
+  height: 30rem;
   margin: 7rem 0;
   position: relative;
   z-index: 2;
@@ -1545,6 +1540,11 @@ h1 > .announce {
   text-align: center;
 }
 
+.lofi-activity-dash, .lofi-signup, .lofi-dashboard {
+  width: 65%;
+  height: auto;
+}
+
 .wireframe-btn {
   align-items: center;
   display: flex;
@@ -1607,6 +1607,9 @@ h1 > .announce {
   width: 33rem;
 }
 
+.usability1photo, .usability2photo {
+  width: 32.5rem;
+}
 
 /* Preference Testing */
 
@@ -1617,7 +1620,7 @@ h1 > .announce {
   margin: 1.5rem 0;
 }
 
-.pref-descrp > .pref-question {
+.pref-descrp > .pref-question { 
   color: #02547B;
   margin: 3rem auto 0.5rem auto;
   text-align: center;
@@ -1682,7 +1685,11 @@ h1 > .announce {
 .Round2image1, .Round2image2 {
   margin: 0 auto;
   text-align: center;
-  width: 85%;
+  /* width: 85%; */
+}
+
+.usabilityR2image1, .usabilityR2image2  {
+    width: 32.5rem;
 }
 .usabilityR2image1 {
   padding-top: 4rem;
@@ -1774,7 +1781,7 @@ h1 > .announce {
 .showcase .inner {
   background-color: #1F3948;
   color: #F9F9F9;
-  margin-bottom: 6em;
+  margin-bottom: 5em;
   height: 48rem;
   padding: 5rem;
 }
@@ -1804,6 +1811,9 @@ h1 > .announce {
   width: 55%;
 }
 
+.lofi-activity-dash, .lofi-signup, .lofi-dashboard {
+  width: 45%;
+}
 }
 /*---------------------- For Tablets ---------------------*/
 /*---------------------- For Tablets ---------------------*/
@@ -1905,7 +1915,7 @@ br {
   background-color: #1F3948;
   color: #F9F9F9;
   height: 45rem;
-  margin-bottom: 6em;
+  margin-bottom: 5em;
   padding: 10rem;
   z-index: 2;
   width: 80rem;
@@ -1918,6 +1928,7 @@ br {
   justify-content: center;
   width: 90%;
 }
+
 .project-info-wrap {
   display: flex;
   flex-direction: column;
@@ -1987,7 +1998,7 @@ width: 100%;
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-height: 35rem;
+  max-height: 33rem;
   margin: 8rem 0;
   position: relative;
   z-index: 2;
@@ -2212,18 +2223,18 @@ width: 100%;
 }
 
 .welcomepage-lofi-wireframe {
-  margin: 0 -6rem;
+  margin: 0 -4rem;
 }
 
 .lofi-activity-dash, .lofi-signup, .lofi-dashboard {
-  width: 70%;
+  width: 50%;
   height: auto;
 }
 
 
 .usability-wrap {
   margin: 4rem auto;
-  width: 60%;
+  width: 65%;
 }
 /* 
 .caption {
@@ -2235,6 +2246,8 @@ width: 100%;
 
 .pref1image, .pref2image {
   width: 85%;
+  justify-content: center;
+  margin: 0 6rem;
 }
 
 
@@ -2435,8 +2448,10 @@ h1 {
 }
 
 .desktop-solution {
-  display: inline;
+  display: block;
+  width: 84.5rem;
 }
+
 .hp-logo {
   width: 35%;
 }
@@ -2905,7 +2920,11 @@ div.user-benefits {
 }
 
 .lofi-activity-dash, .lofi-signup, .lofi-dashboard {
-  max-width: 100%;
+  width: 25rem;
+}
+
+.welcomepage-lofi-wireframe {
+  margin: 0 -rem;
 }
 
 .wireframe-btn {
@@ -2936,15 +2955,11 @@ div.user-benefits {
   width: 52%;
 }
 
-.caption {
-  margin: 1.3rem 0 4rem 2rem;
-  /* width: 90%; */
-}
-.usability1photo {
+.usability1-photo {
   padding-right: 2rem;
 }
 
-.usability2photo  {
+.usability2-photo  {
   padding-left: 2rem;
 }
 /* Preference Testing */
@@ -2957,11 +2972,12 @@ div.user-benefits {
 }
 .pref1image, .pref2image {
   width: 90%;
+  margin: 0 3rem;
 }
-
+/* 
 .pref1image {
   padding-left: 2rem;
-}
+} */
 
 .pref2image {
   margin-top: 2rem;
