@@ -924,6 +924,14 @@ h1 > .announce {
   "tools";
 }
 
+.duration p {
+  color: #02547B;
+  font-size: 1.6rem;
+  margin-top: -5rem;
+  margin-bottom: 10rem;
+  text-align: center;
+}
+
 .deliverables-descrp {
   list-style-type: none;
 }
