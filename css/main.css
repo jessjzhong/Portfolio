@@ -1143,7 +1143,8 @@ h1 > .announce {
 }
 
 .comp-list-container {
-  margin-left: 3rem;
+  /* margin-left: 3rem; */
+  margin: 0 auto;
 }
 
 .comp-logo1, .comp-logo2, .comp-logo3 {
@@ -2632,6 +2633,10 @@ h1 {
 
 }
 
+.comp-list-container {
+  margin-left: 3rem;
+  /* margin: 0 auto; */
+}
 .comp {
   align-items: center;
   display: grid;
