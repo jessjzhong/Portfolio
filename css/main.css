@@ -294,9 +294,20 @@ footer {
   display: flex;
   flex-direction: row;
   font-size: 3rem;
-  justify-content: space-evenly;
+  justify-content: center;
   list-style-type: none;
 }
+
+.social-flex-container .fab, .social-flex-container .far  {
+  color: #F9F9F9;
+  padding: 0 2rem;
+}
+
+.social-flex-container .fab:hover, .social-flex-container .far:hover  {
+  color: #E7AFB8;
+}
+
+
 
 .creator-name {
   color: #F9F9F9;
@@ -594,6 +605,11 @@ h1 > .announce {
 
 /* About Me */
 
+.emphasize-about {
+  font-style: italic;
+  /* font-weight: 700; */
+}
+
 .essay {
   display: flex;
   flex-direction: column;
@@ -885,7 +901,7 @@ h1 > .announce {
 } 
 
 .mobile-cs-image {
-  width: 60%;
+  width: 19rem;
   height: auto;
 }
 
@@ -1993,6 +2009,10 @@ width: 100%;
   width: 50%;
 }
 
+.mobile-cs-image {
+  width: 20rem;
+}
+
 .desktop-intro {
   display: none;
 }
@@ -2016,11 +2036,11 @@ width: 100%;
   text-align: center;
 } 
 
-
+/* 
 .mobile-cs-image {
-  max-width: 75%;
+  max-width: 35%;
 
-}
+} */
 
 .solution {
   margin-top: 6rem;
