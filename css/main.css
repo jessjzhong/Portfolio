@@ -2915,6 +2915,10 @@ div.user-benefits {
 
 /* Wireframes */
 
+.deliverables1 .wireframe-header {
+  margin-top: 8rem;
+}
+
 .wireframesketches {
   width: 85rem;
 }
