@@ -838,7 +838,7 @@ h1 > .announce {
 }
 
 .deliverables1 > h4 {
-  margin-top: 4rem;
+  margin-top: 8rem;
 }
 
 .takeaway-list {
@@ -1028,11 +1028,11 @@ h1 > .announce {
 }
 
 .deliverables1 > p {
-  margin: 2.5rem 0 4rem 0;
+  margin: 1rem 0 4rem 0;
 }
 
 .deliverables > h4 {
-  margin-top: 9rem;
+  margin-top: 5rem;
 }
 
 .deliverables > p {
@@ -2256,7 +2256,7 @@ width: 100%;
 }
 
 .welcomepage-lofi-wireframe {
-  margin: 0 -4rem;
+  margin: 0 -15rem;
 }
 
 .lofi-activity-dash, .lofi-signup, .lofi-dashboard {
@@ -2966,7 +2966,7 @@ div.user-benefits {
 }
 
 .welcomepage-lofi-wireframe {
-  margin: 0 -rem;
+  margin: 0 -5rem;
 }
 
 .wireframe-btn {
