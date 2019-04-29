@@ -940,7 +940,7 @@ h1 > .announce {
 }
 
 .duration p {
-  color: #02547B;
+  /* color: #02547B; */
   font-size: 1.6rem;
   margin-top: -5rem;
   margin-bottom: 10rem;
