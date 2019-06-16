@@ -157,7 +157,7 @@ h5 {
 }
 /* Hamburger lines - Top and Bottom */
 
- .menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:before,
 .menu-wrap .hamburger > div:after {
   background: inherit;
   content: '';
@@ -2582,7 +2582,7 @@ h1 {
 /* Solution */
 
 .solution-screens {
-  width: 41%;
+  width: 55rem;
   height: auto;
 }
 
