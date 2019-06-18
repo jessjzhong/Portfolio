@@ -864,7 +864,7 @@ h1 > .announce {
 /* Header */
 
 .hero-hp .hp-header {
-  margin-top: 12rem;
+  margin-top: 13rem;
 }
 
 .hero-hp {
@@ -875,6 +875,11 @@ h1 > .announce {
 
 .hp-logo1 {
   padding-bottom: 3.5rem;
+  text-align: center;
+}
+
+.tp-logo1 {
+  padding-bottom: 2rem;
   text-align: center;
 }
 
@@ -1375,8 +1380,8 @@ h1 > .announce {
 }
 
 .tp-persona-list {
-  text-align: left;
-  padding-left: 2rem;
+  text-align: center;
+  /* padding-left: 2rem; */
   margin-top: 2rem;
 }
 
@@ -1492,6 +1497,10 @@ h1 > .announce {
   margin: 2rem auto 4rem auto;
 }
 
+.branding-descrp > .b-p-1 {
+  margin-top: 7rem;
+}
+
 /* Logo Design*/
 
 .logo-header > h4 {
@@ -1512,7 +1521,7 @@ h1 > .announce {
 }
 
 .tp-logo-sketches {
-  height: 30rem;
+  height: auto;
   width: 100%;
 }
 
@@ -1522,6 +1531,16 @@ h1 > .announce {
 
 .hp-dark-bg, .hp-light-bg {
   text-align: center;
+}
+
+.tp-logobg1 {
+  background-color: #1F3948;
+  padding: 8rem;
+}
+
+.tp-logobg2 {
+  background-color: #F6F6F6;
+  padding: 8rem;
 }
 
 .tp-colorlogo1, .tp-colorlogo2 {
@@ -1649,22 +1668,28 @@ h1 > .announce {
   flex-direction: column;
 }
 
-.typo-container {
+.typo-container, .tp-typo-container {
   background-color: #1F3948;
-  position: absolute;
   width: 100%;
+}
+
+.typo-container {
+  position: absolute;
   z-index: 3;
 }
 
-.font-wrap {
+.font-wrap, .tp-font-wrap {
   display: flex;
   flex-direction: column;
   margin: 2rem auto;
+}
+
+.font-wrap {
   padding-bottom: 17rem;
 }
 
 .typo-explain {
-  background-color: #FFFFFF;
+  background-color: #E7E7E7;
   border: 0.5rem solid #02547B;
   border-radius: 5rem;
   margin: 91rem auto 0 auto;
@@ -1674,7 +1699,7 @@ h1 > .announce {
 }
 
 .typo-container > h4 {
-  color: #F9F9F9;
+  color: #E7E7E7;
   margin: 3rem auto 0 auto;
   text-align: center;
 }
@@ -1686,12 +1711,49 @@ h1 > .announce {
   text-align: center;
 }
 
-.font-container1 > p, .font-container2 > p  {
-  color: #F9F9F9;
+.tpfont-container1, .tpfont-container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+/* .tp-font-container2 > p,.tp-font-container1 > p {
+  padding-left: 2.5rem;
+} */
+
+.font-container1 > p, .font-container2 > p, .tp-font-container2 > p,.tp-font-container1 > p, .tp-typodescrp {
+  color: #E7E7E7;
 }
 
 .font-type {
+  font-family: 'rubik', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
   margin: 3.5rem auto 1rem auto;
+}
+
+.moonflower {
+  font-family: 'Moon Flower Bold', sans-serif;
+  font-size: 7.2rem;
+  font-weight: 300;
+}
+
+.robotoslab {
+  font-family: 'roboto slab', serif;
+  font-size: 3.6rem;
+  margin-top: 3rem;
+}
+
+.tpfont-descrp {
+  font-family: 'roboto slab', serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  /* padding-right: 2rem; */
+}
+
+.tp-fontexplain {
+  margin: 7rem auto;
 }
 
 .archivo-black {
@@ -1862,6 +1924,35 @@ h1 > .announce {
 .usability1photo, .usability2photo {
   width: 32.5rem;
 }
+/* TravelPak HiFi Mockups */
+.tp-lofitrip1, .tp-lofitrip2 {
+  height: auto;
+  width: 35rem;
+}
+
+.tp-hfcontainer {
+  background-color: #F0F0F0;
+  margin-bottom: 5rem;
+  padding: 5rem 0;
+  width: 100%;
+}
+
+.tp-hfminicontainer1, .tp-hfminicontainer2 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 4.5rem auto;
+  text-align: center;
+}
+
+.tp-hfdescrp {
+  margin: 2rem auto 4rem auto;
+  text-align: left;
+  width: 90%;
+}
+
+.tp-hfimage4 > .tp-hfdescrp {
+  margin-bottom: -3rem;
+}
 
 /* Preference Testing */
 
@@ -1874,7 +1965,7 @@ h1 > .announce {
 
 .pref-descrp > .pref-question { 
   color: #02547B;
-  margin: 3rem auto 0.5rem auto;
+  margin: 3rem auto 1.5rem auto;
   text-align: center;
 }
 
@@ -1892,6 +1983,11 @@ h1 > .announce {
   margin: 0 auto;
 }
 
+.tp-pref1image, .tp-pref2image, .tp-pref3image {
+  height: auto;
+  width: 99%;
+}
+
 .preference-images > .pref1 > .caption, .preference-images > .pref2 > .caption {
   color: #1F3948;
   font-size: 1.4rem;
@@ -1900,6 +1996,13 @@ h1 > .announce {
   margin: 1rem auto 4rem auto;
   text-align: center;
 }
+
+.tp-preference-images > .pref1 > .caption, .tp-preference-images > .pref2 > .caption, .tp-preference-images > .pref3 > .caption{
+  color: #1F3948;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
 
 /* Usability Testing: Take 2 */
 
@@ -1923,15 +2026,17 @@ h1 > .announce {
   width: 100%;
 }
 
-.testing-2-images {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    margin-bottom: 3rem;
-    text-align: center;
-    /* width: 55%; */
+.testing-2-images, .tp-testing-2-images {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tp-testing-2-images {
+  padding-top: 4rem;
 }
 
 .Round2image1, .Round2image2 {
@@ -1943,6 +2048,7 @@ h1 > .announce {
 .usabilityR2image1, .usabilityR2image2  {
     width: 32.5rem;
 }
+
 .usabilityR2image1 {
   padding-top: 4rem;
 }
@@ -1953,6 +2059,11 @@ h1 > .announce {
   width: 90%
 }
 
+.tp-annalist {
+  width: 35rem;
+  height: auto;
+}
+
 /* Final Prototype */
 
 .final-prototype {
@@ -1960,7 +2071,7 @@ h1 > .announce {
 }
 
 .final-prototype > div > .final-header {
-  margin-top: 5rem;
+  margin-top: 12rem;
 }
 
 .final-images {
@@ -1984,6 +2095,26 @@ h1 > .announce {
 
 .final-descrp1 > p, .final-descrp2 > p, .final-descrp3 > p {
   margin-bottom: 6rem;
+}
+
+/* TravelPak Final */
+
+.final1, .final2, .final3 {
+  width: 37rem;
+  height: auto;
+}
+
+.tp-final1 {
+  margin: 4rem auto 0 auto;
+  text-align: center;
+}
+
+.tp-final2, .tp-final3 {
+  text-align: center;
+}
+
+.final-descrp1 > .tp-finaltitle {
+  margin: 2rem auto 2rem auto;
 }
 
 /* Reflections */
@@ -2056,7 +2187,16 @@ h1 > .announce {
 }
 
 .persona-outer1, .persona-outer2 {
-  max-width:70%;
+  max-width: 70%;
+}
+
+.tp-colorlogo1, .tp-colorlogo2 {
+  width: 65%;
+  height: auto;
+}
+
+.tp-logobg1, .tp-logobg2 {
+  text-align: center;
 }
 
 
@@ -2229,9 +2369,9 @@ width: 100%;
 .header1 > h1 {
   margin-top: 15rem;
 }
-/* -----------------------HEALTHPOINT------------------------- */
-/* -----------------------HEALTHPOINT------------------------- */
-/* -----------------------HEALTHPOINT------------------------- */
+/* -----------------------PROJECTS------------------------- */
+/* -----------------------PROJECTS------------------------- */
+/* -----------------------PROJECTS------------------------- */
 
 .hp-logo {
   margin-top: 2rem;
@@ -2263,6 +2403,26 @@ width: 100%;
   text-align: center;
 } 
 
+.tp-prototype-buttons {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tp-mobilebtn {
+  padding-left: 2rem;
+  margin-top: 2.5rem;
+}
+
+.tp-logo {
+  width: 18.5rem;
+}
+
+.tp-header-image {
+  width: 47rem;
+  height: auto;
+}
 /* 
 .mobile-cs-image {
   max-width: 35%;
@@ -2298,7 +2458,7 @@ width: 100%;
   "box4 box5 box6" 
 }
 
-.box1, .box2, .box3, .box4, .box5, .box6 {
+.tp-mobilebox, .tp-box1, .tp-box3, .tp-box4, .tp-box5, .box1, .box2, .box3, .box4, .box5, .box6 {
   height: 17rem;
   width: 17rem;
 }
@@ -2690,7 +2850,7 @@ h1 {
 }
 
 .intro {
-  width: 61rem;
+  width: 45rem;
 }
 
 .location-caption {
@@ -2778,7 +2938,7 @@ h1 {
 
 .deliverables-info {
   grid-area: deliverables-info;
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 
 .line2 {
