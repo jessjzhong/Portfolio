@@ -80,6 +80,16 @@ h5 {
     line-height: 140%;
 }
 
+@font-face {
+  font-family: "Moon Flower Bold";
+  src: url("/fonts/MoonFlower/Moon\ Flower\ Bold.ttf")
+}
+
+@font-face {
+  font-family: "Moon Flower";
+  src: url("/fonts/MoonFlower/Moon\ Flower.ttf.ttf")
+}
+
 /* ---------UNIVERSAL NAVIGATION------------ */
 /* ---------UNIVERSAL NAVIGATION------------ */
 /* ---------UNIVERSAL NAVIGATION------------ */
@@ -340,6 +350,10 @@ footer {
   width: 22rem;
 }
 
+.tpmobile {
+  margin: 1rem auto 2.5rem auto;
+}
+
 .btn-white { 
   border: 3px solid #9B0656; 
   border-radius: 5rem;
@@ -351,7 +365,7 @@ footer {
   background-color: transparent;
   border: 3px solid #9B0656;
   color: #9B0656;
-  /* transition: 0.5s ease-in-out; */
+  transition: 0.3s ease-in-out;
 }
 /* Case Study Buttons */
 
@@ -379,7 +393,7 @@ footer {
   background-color: #9B0656;
   border: 3px solid #9B0656;
   color: #F9F9F9;
-  /* transition: 0.5s ease-in-out; */
+  transition: 0.3s ease-in-out;
 }
 
 
@@ -772,9 +786,9 @@ h1 > .announce {
   margin-bottom: 5rem;
 }
 
-/* ---------------------------HEALTHPOINT---------------------------- */
-/* ---------------------------HEALTHPOINT---------------------------- */
-/* ---------------------------HEALTHPOINT---------------------------- */
+/* ---------------------------PROJECTS---------------------------- */
+/* ---------------------------PROJECTS---------------------------- */
+/* ---------------------------PROJECTS---------------------------- */
 
 /* General */
 
@@ -834,7 +848,7 @@ h1 > .announce {
   color: #9B0656;
   font-size: 3.5rem;
   list-style-type: disc;
-  margin: 0.25rem 0;
+  margin: 0.75rem 0;
 }
 
 .deliverables1 > h4 {
@@ -845,6 +859,8 @@ h1 > .announce {
   margin: .5rem 0 3rem 3rem;
 }
 
+/* Header */
+/* Header */
 /* Header */
 
 .hero-hp .hp-header {
@@ -867,14 +883,16 @@ h1 > .announce {
   height: auto;
 }
 
-.slogan {
-  margin: 0 auto;
-  text-align: center;
+.intro {
   width: 80%;
-}
-
-.desktop-intro {
-  display:none;
+  color: #1F3948;
+  display: block;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 400;
+  font-family: 'rubik', sans-serif;
+  line-height: 150%;
+  margin: 1rem auto;
 }
 
 .desktop-solution {
@@ -895,6 +913,12 @@ h1 > .announce {
   z-index: 2;
 } 
 
+.tp-dots-bg {
+  background: url("../images/case-study/tp-dots.png") no-repeat center;
+  padding: 3rem 0 ;
+} 
+
+
 .hero-cs-image {
   text-align: center;
 } 
@@ -907,6 +931,16 @@ h1 > .announce {
 .desktop-btn {
   display: none;
 }
+
+/* TRAVELPAK */
+.tp-logo {
+  width: 15rem;
+}
+
+.tp-header-image {
+  width: 37.5rem;
+}
+
 
 /* Overview */
 
@@ -984,14 +1018,11 @@ h1 > .announce {
 }
 
 .solution {
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .solution-container {
   background-color: #f5f5f5;
-  /* display: flex;
-  flex-direction: column; */
-  /* margin: 3rem 0 2rem 0; */
 }
 
 .solution-image {
@@ -1007,12 +1038,31 @@ h1 > .announce {
   height: auto;
 } 
 
+.tp-solution {
+  padding: .5rem 0;
+}
+
+.tp-mobile-solution {
+  width: 95%;
+  height: auto;
+}
+
+.emphasize-bold {
+  /* color: #9B0656; */
+  font-weight: 800;
+}
+
+.tp-paragraph {
+  margin-top: 1.5rem;
+}
+
 /* Discovery */
 
 .section > h2 {
   margin: 12rem auto 0 auto;
   padding-bottom: 1rem;
   text-align: center;
+  line-height: 125%;
 }
 
 
@@ -1033,6 +1083,7 @@ h1 > .announce {
 
 .deliverables > h4 {
   margin-top: 5rem;
+  text-align: center;
 }
 
 .deliverables > p {
@@ -1060,11 +1111,87 @@ h1 > .announce {
   "box5" "box6"
 }
 
-.box1, .box2, .box3, .box4, .box5, .box6 {
+.tp-mobilebox, .tp-box1, .tp-box3, .tp-box4, .tp-box5, .box1, .box2, .box3, .box4, .box5, .box6 {
   border: 0.5rem solid #02547B;
   border-radius: 5rem;
   height: 16rem;
   width: 16rem;
+}
+
+.tp-box2 {
+  border: 0.5rem solid #02547B;
+  border-radius: 5rem;
+  height: 24rem;
+  width: 35rem;
+}
+
+.tp-survey {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin: 2rem auto 5rem auto;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  grid-template-areas:
+  "tp-box1"
+  "tp-box2"
+}
+
+.tp-survey2 {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin: 2rem auto 1rem auto;
+  width: 35rem;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  grid-template-areas:
+  "box3 box4"
+  "box5 box5"
+}
+
+.tp-box3 {
+  grid-area: box3;
+  padding: 1rem .5rem;
+}
+
+.tp-box4 {
+  grid-area: box4;
+  padding: .25rem;
+}
+
+.tp-box5 {
+  grid-area: box5;
+  padding: .5rem;
+}
+
+.tpbox-content2 {
+  text-align: center;
+}
+
+.tpbox-content2 > .tp-frustrations {
+  margin: 2.5rem 2rem 1rem 2rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.tp-frustrations2 > h2 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #02547B;
+  line-height: 140%;
+  padding: 0 3rem;
+}
+
+.tp-surveyques {
+  color: #9B0656;
+  margin-top: 5rem;
+}
+
+.tp-surveybtn {
+  margin-top: 4rem;
 }
 
 .data > h3 {
@@ -1133,7 +1260,7 @@ h1 > .announce {
 }
 
 .indent {
-  text-indent: 0.5rem;
+  text-indent: .5rem;
 }
 
 .comp-list1b, .comp-list2b, .comp-list3b{
@@ -1143,8 +1270,11 @@ h1 > .announce {
 }
 
 .comp-list-container {
-  /* margin: 0 5rem; */
   margin: 0 auto 0 4rem;
+}
+
+.tp-comp-list-container {
+  margin: 0 2rem 3rem 5rem;
 }
 
 .comp-logo1, .comp-logo2, .comp-logo3 {
@@ -1172,6 +1302,26 @@ h1 > .announce {
   height: 4.2rem;
 }
 
+.tp-comp-travefy {
+  height: auto;
+  width: 23rem;
+}
+
+.tp-googletrips {
+  height: auto;
+  margin-top: 1rem;
+  width: 28rem;
+}
+
+.tp-travelchime {
+  height: auto;
+  margin-top: 1rem;
+  width: 27rem;
+}
+
+.comp-analysis {
+  margin-top: 3.5rem;
+}
 
 /* User Personas */
 
@@ -1198,11 +1348,10 @@ h1 > .announce {
   grid-area: persona-outer2;
 }
 
-.persona-outer1, .persona-outer2 {
+.persona-outer1, .persona-outer2, .persona-outer3, .tp-persona-outer1, .tp-persona-outer2, .tp-persona-outer3 {
   border: 0.5rem solid #02547B;
   border-radius: 5rem;
   margin: 1rem auto 3rem auto;
-  
 }
 
 .persona {
@@ -1216,6 +1365,28 @@ h1 > .announce {
   "personal-list"
   "persona-descrp"
   "quote";
+}
+
+.emphasize-personadeet {
+  color: #02547B;
+  font-size: 2.4rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.tp-persona-list {
+  text-align: left;
+  padding-left: 2rem;
+  margin-top: 2rem;
+}
+
+.tp-personadeet {
+  margin-top: .5rem;
+}
+
+.tp-persona-image {
+  width: 17.5rem;
+  margin: 3rem auto;
 }
 
 .image-border > img {
@@ -1247,11 +1418,11 @@ h1 > .announce {
 }
 
 .persona-descrp {
-  padding: 2rem;
+  padding: 1rem 2rem 3rem 2rem;
 }
 
 .persona-descrp > .descrp2, .persona-descrp > .descrp1 {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
   
 .quote {
@@ -1340,8 +1511,22 @@ h1 > .announce {
   z-index: 1;
 }
 
+.tp-logo-sketches {
+  height: 30rem;
+  width: 100%;
+}
+
+.tp-logosketch-container {
+  margin: 0 auto;
+}
+
 .hp-dark-bg, .hp-light-bg {
   text-align: center;
+}
+
+.tp-colorlogo1, .tp-colorlogo2 {
+  width: 100%;
+  height: auto;
 }
 
 .darkbglogo {
@@ -1443,6 +1628,20 @@ h1 > .announce {
   margin: 8rem auto 5.8rem auto;
 }
 
+.tp-color-container {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem auto 0 auto;
+}
+
+.tp-lime {
+  margin-bottom: 3rem;
+}
+
+.tp-color-descrp {
+  margin: 3rem auto 6rem;
+}
+
 /* Typography */
 
 .typography-main {
@@ -1542,9 +1741,26 @@ h1 > .announce {
   margin: 3rem auto 2rem auto;
 }
 
+.deliverables > .tp-wf-descrp {
+  margin: 2.5rem 0 1rem 0;
+}
+
 .wireframe-sketches {
   text-align: center;
   padding-top: 3rem;
+}
+
+.tp-usability1-descrp {
+  margin: 0 auto 2rem auto;
+}
+
+.tp-usability1-descrp > p {
+  margin: 2rem auto;
+}
+
+.tp-wireframe-image, .tp-wireframe-image2 {
+  height: auto;
+  width: 35rem;
 }
 
 .wireframesketches {
@@ -1552,16 +1768,29 @@ h1 > .announce {
   height: auto;
 }
 
-.wireframes-container {
-  background-color: #02547B;
-  margin-bottom: 2rem;
-}
-
-.wireframes-images {
+.wireframes-images, .tp-wireframes-images {
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
   text-align: center;
+}
+
+.wireframes-container {
+  background-color: #02547B;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.tp-latripwf {
+  padding-top: 3rem;
+}
+
+.tp-mobilebox {
+  margin: 3rem auto;
+}
+
+.tp-box-contentmobile {
+  padding: 2rem 1rem;
 }
 
 .lofi-activity-dash, .lofi-signup, .lofi-dashboard {
@@ -1597,7 +1826,6 @@ h1 > .announce {
 
 .deliverables-container > .usability-header {
   margin-bottom: 3rem;
-
 }
 
 .usability1-descrp {
@@ -1773,6 +2001,7 @@ h1 > .announce {
 .break-lessons {
   margin-top: 1.5rem;
 }
+
 .back-to-top {
   align-items: center;
   display: flex;
@@ -2013,12 +2242,10 @@ width: 100%;
   width: 20rem;
 }
 
-.desktop-intro {
-  display: none;
+.intro {
+  width: 40rem;
 }
-.slogan {
-  max-width: 40%;
-}
+
 .dots-bg {
   background: url("../images/1440Dots.png") no-repeat center;
   background-size: cover;
@@ -2192,7 +2419,7 @@ width: 100%;
 /* Branding */
 
 .branding-identity > div > .branding {
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 
 /* Logo */
@@ -2450,12 +2677,10 @@ h1 {
   margin-top: 3rem;
 }
 
-/* -----------------------HEALTHPOINT------------------------- */
-/* -----------------------HEALTHPOINT------------------------- */
-/* -----------------------HEALTHPOINT------------------------- */
-.slogan {
-  display: none;
-}
+/* -----------------------PROJECTS------------------------- */
+/* -----------------------PROJECTS------------------------- */
+/* -----------------------PROJECTS------------------------- */
+
 .mobile-cs-image {
   display:none;
 }
@@ -2463,16 +2688,9 @@ h1 {
 .dots-bg {
   height: 36rem;
 }
-.desktop-intro {
-  color: #1F3948;
-  display: block;
-  font-size: 2.4rem;
-  text-align: center;
-  font-weight: 400;
-  font-family: 'rubik', sans-serif;
-  line-height: 150%;
-  margin: 1rem auto;
-  width: 50rem;
+
+.intro {
+  width: 61rem;
 }
 
 .location-caption {
