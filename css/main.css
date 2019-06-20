@@ -437,6 +437,7 @@ footer {
 
 .content-intro {
   margin-top: 9rem;
+
 }
 
 .homepage-dots {
@@ -2335,8 +2336,13 @@ br {
 }
 
 .content-intro {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%; */
   padding: 3.75rem;
   margin-top: 7rem;
+  width: 72rem;
 }
 
 .container {
@@ -2970,12 +2976,13 @@ h1 {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
-  width: 0%;
+  width: 60%;
 }
 
 .content-intro {
-  width: 75rem;
-  margin: 7rem auto 0;
+  width: 72rem;
+  margin: 8rem auto 1rem;
+  align-items: left;
 }
 
 .tp-homepagesolution {
