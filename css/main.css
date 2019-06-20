@@ -1615,7 +1615,7 @@ h1 > .announce {
 }
 
 .tp-colorlogo1, .tp-colorlogo2 {
-  max-width: 80%;
+  max-width: 50%;
   height: auto;
   
 }
@@ -2756,7 +2756,7 @@ width: 100%;
 }
 
 .tp-colorlogo1, .tp-colorlogo2 {
-  max-width: 45%;
+  max-width: 35%;
   height: auto;
 }
 
@@ -3629,7 +3629,7 @@ div.user-benefits {
 }
 
 .tp-colorlogo1, .tp-colorlogo2 {
-  width: 45rem;
+  max-width: 48%;
   margin: 3rem;
 }
 
