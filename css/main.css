@@ -401,7 +401,7 @@ footer {
 /* ----------------------HOMEPAGE--------------------------- */
 /* ----------------------HOMEPAGE--------------------------- */
 
-.showcase {
+/* .showcase {
   padding-top: 12rem;
   background: url("../images/background6.png");
   width: 100%;
@@ -411,17 +411,38 @@ footer {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-}
+} */
 
+/* .showcase {
+  background: url("../images/redesigndots.png") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10rem;
+  position: relative;
+  z-index: 2;
+} */
 
 .showcase .inner {
   background-color: #1F3948;
   color: #F9F9F9;
-  /* height: 45%; */
-  margin-bottom: 4em;
+  /* margin-top: 12rem;
+  margin-bottom: 4em; */
   padding: 4rem 3rem;
   width: 100%;
   z-index: 2;
+}
+
+.content-intro {
+  margin-top: 9rem;
+}
+
+.homepage-dots {
+  background: url("../images/redesigndots.png") no-repeat center;
+  width: 100%;
+  height: 5rem;
 }
 
 h1 > .announce {
@@ -517,9 +538,8 @@ h1 > .announce {
 
 /* Projects */
 
-.projects {
+.projects, .tp-projects {
   align-items: center;
-  background-color: #91B7CF;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -527,12 +547,16 @@ h1 > .announce {
   text-align: center;
 }
 
+.tp-projects {
+  background-color: #F3F3F3;
+}
+
 .project-content {
   margin: 3rem auto 0rem;
 }
 
 
-.hp-solution {
+.hp-solution, .tp-homepagesolution {
   height: auto;
   margin-bottom: 2.5rem;
   width: 85%;
@@ -2231,29 +2255,36 @@ h1 > .announce {
 @media screen and (min-width: 555px) and (max-width: 686px) {
 
 
-.showcase {
+/* .showcase {
   padding-top: 13rem;
   width: 100%;
-}
+} */
 
 
-.showcase .inner {
+/* .showcase .inner {
   background-color: #1F3948;
   color: #F9F9F9;
   margin-bottom: 5em;
   height: 48rem;
   padding: 5rem;
-}
+} */
 
-.inner h3, .hero h3 {
+/* .inner h3, .hero h3 {
   font-size: 3.6rem;
-}
+} */
 
+br {
+  display: none;
+}
 
 .project-info-wrap {
   margin: 2.5rem;
 }
 
+.content-intro {
+  padding: 1.5rem;
+  margin-top: 7rem;
+}
 
 .hp-solution {
   height: auto;
@@ -2286,12 +2317,26 @@ h1 > .announce {
 /*---------------------- For Tablets ---------------------*/
 
 @media screen and (min-width: 687px) {
-.inner h3, .hero h3 {
+/* .inner h3, .hero h3 {
   font-size: 3.6rem;
+} */
+
+/* .showcase {
+  padding-top: 13rem;
+} */
+
+
+br {
+  display: none;
 }
 
-.showcase {
-  padding-top: 13rem;
+.project-info-wrap {
+  margin: 2.5rem;
+}
+
+.content-intro {
+  padding: 3.75rem;
+  margin-top: 7rem;
 }
 
 .container {
@@ -2315,9 +2360,6 @@ h1 > .announce {
   width: 100%;
 }
 
-br {
-  display: none;
-}
 
 .sync-up > p {
   margin: 0 auto;
@@ -2374,7 +2416,7 @@ br {
 /* -----------------HOMEPAGE---------------- */
 /* -----------------HOMEPAGE---------------- */
 
-.showcase {
+/* .showcase {
   padding-top: 15rem;
   
 }
@@ -2386,7 +2428,7 @@ br {
   padding: 10rem;
   z-index: 2;
   width: 80rem;
-}
+} */
 
 .project-content {
   align-items: center;
@@ -2395,6 +2437,10 @@ br {
   justify-content: center;
   width: 90%;
 }
+
+/* .travelpak {
+  flex-direction: column-reverse;
+} */
 
 .project-info-wrap {
   display: flex;
@@ -2853,9 +2899,14 @@ width: 100%;
 
 @media screen and (min-width: 750px) {
 
-
+/* 
 h1 {
   font-size: 7.2rem;
+} */
+
+.content-intro {
+  padding: 3.75rem;
+  /* margin-top: 7rem; */
 }
 
 .darkbglogo, .lightbglogo {
@@ -2906,6 +2957,9 @@ h1 {
 
 @media screen and (min-width: 991px) {
 
+h1 {
+  font-size: 7.2rem;
+}
 
 .desktop-menu {
   width: 93%;
@@ -2916,6 +2970,16 @@ h1 {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
+  width: 0%;
+}
+
+.content-intro {
+  width: 75rem;
+  margin: 7rem auto 0;
+}
+
+.tp-homepagesolution {
+  width: 50rem;
 }
 
 .project-title > h2 {
