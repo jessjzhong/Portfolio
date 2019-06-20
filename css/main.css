@@ -1575,17 +1575,24 @@ h1 > .announce {
 
 .tp-logobg1 {
   background-color: #1F3948;
-  padding: 8rem;
+  padding: 5rem;
+  text-align: center;
 }
 
 .tp-logobg2 {
   background-color: #F6F6F6;
-  padding: 8rem;
+  padding: 5rem;
+  text-align: center;
+}
+
+.tp-color-container {
+  text-align: center;
 }
 
 .tp-colorlogo1, .tp-colorlogo2 {
-  width: 100%;
+  max-width: 80%;
   height: auto;
+  
 }
 
 .darkbglogo {
@@ -1885,6 +1892,7 @@ h1 > .announce {
 .tp-wireframe-image, .tp-wireframe-image2 {
   height: auto;
   width: 35rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .wireframesketches {
@@ -1990,6 +1998,7 @@ h1 > .announce {
 .tp-lofitrip1, .tp-lofitrip2 {
   height: auto;
   width: 35rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
 .tp-hfcontainer {
@@ -2048,6 +2057,7 @@ h1 > .announce {
 .tp-pref1image, .tp-pref2image, .tp-pref3image {
   height: auto;
   width: 99%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .preference-images > .pref1 > .caption, .preference-images > .pref2 > .caption {
@@ -2059,7 +2069,7 @@ h1 > .announce {
   text-align: center;
 }
 
-.tp-preference-images > .pref1 > .caption, .tp-preference-images > .pref2 > .caption, .tp-preference-images > .pref3 > .caption{
+.tp-preference-images > .tp-pref1 > .caption, .tp-preference-images > .tp-pref2 > .caption, .tp-preference-images > .tp-pref3 > .caption {
   color: #1F3948;
   font-size: 1.4rem;
   font-weight: 600;
@@ -2124,6 +2134,7 @@ h1 > .announce {
 .tp-annalist {
   width: 35rem;
   height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Final Prototype */
@@ -2147,15 +2158,15 @@ h1 > .announce {
   max-width: 55%;
   height: auto;
 }
-.final-descrp1, .final-descrp2, .final-descrp3 {
+.final-descrp1, .final-descrp2, .final-descrp3, .tp-final-descrp1 {
   text-align: left;
 }
 
-.final-descrp1 > h4, .final-descrp2 > h4, .final-descrp3 > h4 {
+.final-descrp1 > h4, .final-descrp2 > h4, .final-descrp3 > h4, .tp-final-descrp1 > h4 {
   margin: 4rem auto 2rem auto;
 }
 
-.final-descrp1 > p, .final-descrp2 > p, .final-descrp3 > p {
+.final-descrp1 > p, .final-descrp2 > p, .final-descrp3 > p, .tp-final-descrp1 > p {
   margin-bottom: 6rem;
 }
 
@@ -2210,7 +2221,9 @@ h1 > .announce {
   margin-top: 0.75rem;
 } 
 
-
+.tp-conclude {
+  margin-top: 1rem;
+}
 
 /* ----------------------Media Queries / Responsive Design -------------------------*/
 /* ----------------------Media Queries / Responsive Design -------------------------*/
@@ -2252,11 +2265,6 @@ h1 > .announce {
   max-width: 70%;
 }
 
-.tp-colorlogo1, .tp-colorlogo2 {
-  width: 65%;
-  height: auto;
-}
-
 .tp-logobg1, .tp-logobg2 {
   text-align: center;
 }
@@ -2268,6 +2276,10 @@ h1 > .announce {
 
 .lofi-activity-dash, .lofi-signup, .lofi-dashboard {
   width: 45%;
+}
+
+.tp-preference-images > .tp-pref2 > .caption {
+  width: 50rem;
 }
 }
 /*---------------------- For Tablets ---------------------*/
@@ -2674,7 +2686,7 @@ width: 100%;
 /* Branding */
 
 .branding-identity > div > .branding {
-  margin-top: 8rem;
+  margin-top: 13rem;
 }
 
 /* Logo */
@@ -2692,7 +2704,7 @@ width: 100%;
 }
 
 .tp-colorlogo1, .tp-colorlogo2 {
-  max-width: 40%;
+  max-width: 45%;
   height: auto;
 }
 
@@ -2772,6 +2784,7 @@ width: 100%;
   width: 80%;
 } */
 
+
 .tp-wireframe-image, .tp-wireframe-image2 {
   height: auto;
   width: 45rem;
@@ -2785,6 +2798,10 @@ width: 100%;
 .tp-lofitrip1, .tp-lofitrip2 {
   height: auto;
   width: 45rem;
+}
+
+.tp-hfcontainer {
+  padding-bottom: 0rem;
 }
 
 .tp-hfdescrp {
@@ -2826,6 +2843,9 @@ width: 100%;
   height: auto;
 }
 
+.tp-preference-images > .tp-pref2 > .caption {
+  width: 50rem;
+}
 
 }
 
@@ -3047,7 +3067,7 @@ h1 {
 }
 
 .container {
-  width: 50%;
+  width: 55%;
 }
 
 .desktop-btn {
@@ -3326,6 +3346,7 @@ h1 {
 .tp-persona-grid {
   grid-auto-columns: 1fr 1fr 1fr;
   /* margin: 0 auto; */
+  width: 50%;
   align-items: center;
   justify-content: center;
   grid-column-gap: 3rem;
@@ -3463,7 +3484,7 @@ div.user-benefits {
   text-align: center;
 }
 .userflow-descrp > h5 {
-    color: #91B7CF;
+    color: #02547B;
     font-weight: 400;
     padding-bottom: 3rem;
     font-size: 1.8rem;
@@ -3528,11 +3549,11 @@ div.user-benefits {
 
 .tp-logo-sketches {
   height: auto;
-  width: 70rem;
+  width: 74rem;
 }
 
 .tp-logobg1, .tp-logobg2 {
-  width: 35rem;
+  width: 37rem;
   padding: 1rem;
 }
 
@@ -3572,26 +3593,26 @@ div.user-benefits {
 /* Color Palette */
 
 .color-palette1, .color-palette2 {
-    align-items: center;
-    justify-content: center;
-    grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: 1fr;
 }
 
 .color-palette1 {
-    grid-template-areas: 
-    "color1 color2 color3 color4";
-    grid-gap: 6rem;
-    margin-top: 5rem;
-    width: 62rem;
+  grid-template-areas: 
+  "color1 color2 color3 color4";
+  grid-gap: 6rem;
+  margin-top: 5rem;
+  width: 62rem;
 }
 .color6, .color5 {
-    margin-right: 6rem;
+  margin-right: 6rem;
 }
 
 .color-palette2 {
-    grid-template-areas: 
-    "color5 color6 color7";
-    width: 46rem;
+  grid-template-areas: 
+  "color5 color6 color7";
+  width: 46rem;
 }
 
 .tp-color-container {
@@ -3730,13 +3751,29 @@ div.user-benefits {
   display: grid;
   justify-content: center;
   padding-bottom: 2rem;
-  grid-column-gap: 0rem;
+  grid-column-gap: 6rem;
   align-items: center;
   grid-template-areas:
   "tp-hfimage1 tp-hfimage2";
 }
 
+.tp-hfdescrp {
+  width: 50rem;
+}
 
+/* TravelPak HiFi Mockups */
+.tp-lofitrip1, .tp-lofitrip2 {
+  height: auto;
+  width: 50rem;
+}
+
+.tp-hfimage1 > .tp-lofitrip1 {
+  width: 51rem;
+}
+
+.tp-hfimage4 > .tp-lofitrip2 {
+  margin-top: -11.75rem;
+}
 /* Preference Testing */
 
 .preference-images {
@@ -3749,27 +3786,61 @@ div.user-benefits {
   width: 90%;
   margin: 0 3rem;
 }
-/* 
-.pref1image {
-  padding-left: 2rem;
-} */
 
 .pref2image {
   margin-top: 2rem;
 }
-/* 
-.pref1 {
-  margin-right: 6rem;
+
+
+.tp-pref2image, .tp-pref1image, .tp-pref3image {
+  height: auto;
+  max-width: 100%;
 }
-.pref2 {
-    margin-top: 2rem;
-    margin-right: 12rem;
+
+/* .tp-pref1image, .tp-pref3image {
+  height: auto;
+  width: 135%;
 } */
 
-/* .preference-images > .pref1 > .caption, .preference-images > .pref2 > .caption {
-  /* margin-right: 6rem; */
+.tp-preference-images > .tp-pref1, .tp-preference-images > .tp-pref2, .tp-preference-images > .tp-pref3 {
+  text-align: center;
+}
 
+.tp-pref2 > .caption {
+  width: 45rem;
+}
 
+.tp-pref1image {
+  margin-top: -2rem;
+}
+
+.tp-pref1 {
+  grid-area: tp-pref1;
+}
+
+.tp-pref2 {
+  grid-area: tp-pref2;
+}
+
+.tp-pre3 {
+  grid-area: tp-pref3;
+}
+
+.tp-preference-images {
+  align-items: center;
+  display: grid;
+  justify-content: center;
+  margin: 1rem auto 0;
+  padding-bottom: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 5rem;
+  grid-template-areas:
+  "tp-pref1 tp-pref2";
+}
+
+.tp-pref1 > .caption, .tp-pref3 > .caption {
+  width: 50rem;
+}
 
 /* Usability Take 2 */
 
@@ -3796,10 +3867,26 @@ div.user-benefits {
   margin: 1rem auto 1rem auto;
 }
 
+.tp-Round2image2 {
+  margin-top: -2rem;
+  padding-left: 4rem
+}
+
+.tp-testing-2-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* margin: 0 auto;
+  padding: 4rem; */
+  text-align: center;
+  margin-bottom: 3rem;
+  width: 45%;
+}
+
 /* Final Prototype */
 
 
-.final-descrp1 > p, .final-descrp2 > p, .final-descrp3 > p {
+.final-descrp1 > p, .final-descrp2 > p, .final-descrp3 > p, .tp-final-descrp1 > p {
   width: 48rem;
 }
 
@@ -3852,6 +3939,59 @@ div.user-benefits {
 
 .goals-image-phone {
   margin-bottom: 7rem;
+}
+
+.final1, .final2, .final3 {
+  width: 55rem;
+  height: auto;
+}
+
+.tp-finalimage1 {
+  grid-area: tp-finalimage1;
+}
+
+.tp-final-descrp1 {
+  grid-area: tp-final-descrp1;
+}
+
+.tp-finalimage2 {
+  grid-area: tp-finalimage2;
+}
+
+.tp-finalimage3 {
+  grid-area: tp-finalimage3;
+}
+
+.tp-final1, .tp-final2, .tp-final3 {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 10rem;
+  grid-column-gap: 9rem;
+}
+
+.tp-final1 {
+  margin-top: 6rem;
+  grid-template-areas:
+  "tp-finalimage1 tp-final-descrp1";
+}
+
+.tp-final2 {
+  grid-template-areas:
+  "tp-finalimage2 tp-final-descrp1";
+  margin-bottom: 3rem;
+}
+
+.tp-final3 {
+  grid-template-areas:
+  "tp-final-descrp1 tp-finalimage3";
+}
+
+.final3 {
+  width: 58rem;
+}
+
+.tp-left {
+  padding-left: 3.5rem;
 }
 
 }
