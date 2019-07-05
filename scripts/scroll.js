@@ -16,9 +16,13 @@ $(document).ready(function () {
 
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 1000, function () {
+            }, 2000, function () {
                 window.location.hash = hash;
             });
         }
     });
 });
+
+// close hamburger menu after click a
+Open: $('.menu-wrap input').prop("checked", true);
+Close: $('.menu-wrap input').prop("checked", false);
