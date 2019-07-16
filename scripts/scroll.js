@@ -23,6 +23,6 @@ $(document).ready(function () {
     });
 });
 
-// close hamburger menu after click a
+// close hamburger menu after click
 Open: $('.menu-wrap input').prop("checked", true);
 Close: $('.menu-wrap input').prop("checked", false);
