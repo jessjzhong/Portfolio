@@ -430,7 +430,7 @@ footer {
 } */
 
 .hero-section {
-  height: 100vh;
+  /* height: 100vh; */
   min-height: 4rem;
 }
 
@@ -447,7 +447,11 @@ footer {
 
 .content-intro {
   margin-top: 4rem;
+}
 
+.illustration-jess {
+  max-width: 100%;
+  margin: 3rem auto 1rem;
 }
 
 /* .homepage-dots {
@@ -2319,6 +2323,11 @@ br {
   padding: 1.5rem;
   margin-top: 7rem;
 } */
+
+.illustration-jess {
+  width: 100%;
+  margin: 5rem auto 1rem;
+}
 
 .hp-solution {
   height: auto;
