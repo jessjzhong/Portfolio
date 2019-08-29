@@ -27,7 +27,7 @@ $(document).ready(function () {
 Open: $('.menu-wrap input').prop("checked", true);
 Close: $('.menu-wrap input').prop("checked", false);
 
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 5px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
